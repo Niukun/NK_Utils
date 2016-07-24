@@ -10,16 +10,17 @@ public class ReadConf {
 		Properties prop = new Properties();//属性集合对象      
 		FileInputStream fis = new FileInputStream("files/file.properties");//属性文件流 
 		prop.load(fis);//将属性文件流装载到Properties对象中  
-		//获取属性值，sitename已在文件中定义      
-		System.out.println("获取属性值：sitename=" + prop.getProperty("name"));  
+//		//获取属性值，sitename已在文件中定义      
+//		System.out.println("获取属性值：name=" + prop.getProperty("name"));  
+		
 		//修改sitename的属性值   
-		prop.setProperty("sitename", "Boxcode");   
+//		prop.setProperty("name", "NIUKUN");   
 		//添加一个新的属性studio   
 		prop.setProperty("studio", "Boxcode Studio");   
 		//文件输出流   
-		FileOutputStream fos = new FileOutputStream("files/file.properties");   
+		FileOutputStream fos = new FileOutputStream("files/fileniu.properties");   
 		//将Properties集合保存到流中   
-		prop.store(fos, "Copyright (c) Boxcode Studio");   
+		prop.store(fos, "Copyright (c) Boxcode Studio"); 
 		fos.close();//关闭流 
 	}
 }
