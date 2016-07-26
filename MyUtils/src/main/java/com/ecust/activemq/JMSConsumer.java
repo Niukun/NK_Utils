@@ -3,8 +3,10 @@ package com.ecust.activemq;
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
 import javax.jms.Destination;
+import javax.jms.JMSException;
 import javax.jms.MessageConsumer;
 import javax.jms.Session;
+import javax.jms.TextMessage;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
@@ -23,6 +25,23 @@ public class JMSConsumer {
 		connectionFactory = new ActiveMQConnectionFactory(JMSConsumer.USERNAME, JMSConsumer.USERNAME,
 				JMSConsumer.BROKERURL);
 
+		try {
+			connection = connectionFactory.createConnection();
+			connection.start();
+			session = connection.createSession(Boolean.FALSE, Session.AUTO_ACKNOWLEDGE);
+			destination = session.createQueue("FirstQ");
+			messageConsumer = session.createConsumer(destination);
+			while (true) {
+				TextMessage textMessage = (TextMessage) messageConsumer.receive(100000);
+				if (textMessage != null) {
+					System.out.println("Received info: " + textMessage.getText());
+				}else{
+					break;
+				}
+			}
+		} catch (JMSException e) {
+			e.printStackTrace();
+		}
 	}
 
 }
