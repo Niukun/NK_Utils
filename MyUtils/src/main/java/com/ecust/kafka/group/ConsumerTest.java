@@ -1,4 +1,4 @@
-package com.ecust.topic;
+package com.ecust.kafka.group;
 
 import kafka.consumer.ConsumerIterator;
 import kafka.consumer.KafkaStream;

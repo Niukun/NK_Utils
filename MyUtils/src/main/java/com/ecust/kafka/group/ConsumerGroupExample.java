@@ -1,4 +1,4 @@
-package com.ecust.topic;
+package com.ecust.kafka.group;
 
 import java.util.HashMap;
 import java.util.List;
