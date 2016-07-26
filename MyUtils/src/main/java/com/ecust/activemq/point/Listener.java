@@ -1,4 +1,4 @@
-package com.ecust.activemq;
+package com.ecust.activemq.point;
 
 import javax.jms.JMSException;
 import javax.jms.Message;

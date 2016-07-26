@@ -30,7 +30,7 @@ public class JMSConsumer2 {
 			// destination = session.createQueue("FirstQ");
 			destination = session.createTopic("topic1");
 			messageConsumer = session.createConsumer(destination);
-			messageConsumer.setMessageListener(new Listener());
+			messageConsumer.setMessageListener(new Listener2());
 		} catch (JMSException e) {
 			e.printStackTrace();
 		}
