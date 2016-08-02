@@ -1,4 +1,4 @@
-package com.ecust.kafka;
+package com.niukun.kafka;
 
 import java.io.FileReader;
 import java.io.IOException;

@@ -1,7 +1,6 @@
-package com.ecust.kafka;
+package com.niukun.kafka;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -13,6 +12,7 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
 
 public class MyProducer {
+	@SuppressWarnings("resource")
 	public static void main(String[] args) throws IOException {
 		Properties props = new Properties();
 		props.put("bootstrap.servers", "59.78.100.126:9092");//172.21.219.0 //59.78.100.126

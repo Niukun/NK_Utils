@@ -1,13 +1,13 @@
-package com.ecust.kafka.group;
+package com.niukun.kafka.group;
 
 import kafka.consumer.ConsumerIterator;
 import kafka.consumer.KafkaStream;
 
 public class ConsumerTest implements Runnable {
-	private KafkaStream m_stream;
+	private KafkaStream<byte[], byte[]> m_stream;
 	private int m_threadNumber;
 
-	public ConsumerTest(KafkaStream a_stream, int a_threadNumber) {
+	public ConsumerTest(KafkaStream<byte[], byte[]> a_stream, int a_threadNumber) {
 		m_threadNumber = a_threadNumber;
 		m_stream = a_stream;
 	}

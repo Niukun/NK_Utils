@@ -36,8 +36,7 @@ public class testCsv {
 	 * 
 	 * @throws IOException
 	 */
-	public static List<String> ReadAndWriteCSV(String filepath)
-			throws IOException {
+	public static List<String> ReadAndWriteCSV(String filepath) throws IOException {
 		FileInputStream fis = new FileInputStream(filepath);
 		FileOutputStream fos = new FileOutputStream("E:/123_copy.txt");
 
@@ -64,8 +63,7 @@ public class testCsv {
 			// System.out.println(i+":"+list.get(i-1).toString());
 			System.out.println(i);
 		}
-		System.out.println("总计用时："
-				+ (float) (System.currentTimeMillis() - start) / 1000 + "s");
+		System.out.println("总计用时：" + (float) (System.currentTimeMillis() - start) / 1000 + "s");
 		System.out.println("list长度为" + ":" + list.size());
 		pw.close();
 		br.close();
@@ -82,6 +80,7 @@ public class testCsv {
 	 * @throws IOException
 	 */
 	public static void createExcel() throws IOException {
+		@SuppressWarnings("resource")
 		Workbook wb = new HSSFWorkbook();
 		Sheet sheet1 = (Sheet) wb.createSheet("niukun");
 
@@ -89,8 +88,7 @@ public class testCsv {
 		Cell cell = row.createCell(0);
 		cell.setCellValue("Niukun's Excel!!!");
 		row.createCell(1).setCellValue("Two!");
-		row.createCell(2).setCellValue(
-				"This is a kind of apple,calles i-phone.");
+		row.createCell(2).setCellValue("This is a kind of apple,calles i-phone.");
 		row.createCell(3).setCellValue(true);
 
 		FileOutputStream fileOut = new FileOutputStream("E:/work.xls");
@@ -116,6 +114,7 @@ public class testCsv {
 			BufferedReader br = new BufferedReader(isr);
 			PrintWriter pw = new PrintWriter(osw);
 
+			@SuppressWarnings("resource")
 			Workbook wb = new HSSFWorkbook();
 			Sheet sheet1 = (Sheet) wb.createSheet("niukun");
 
@@ -160,10 +159,7 @@ public class testCsv {
 				}
 			}
 			wb.write(fos);
-			System.out
-					.println("总计用时："
-							+ (float) (System.currentTimeMillis() - start)
-							/ 1000 + "s");
+			System.out.println("总计用时：" + (float) (System.currentTimeMillis() - start) / 1000 + "s");
 			System.out.println("list长度为" + ":" + list.size());
 			pw.close();
 			br.close();
@@ -182,8 +178,8 @@ public class testCsv {
 	}
 
 	/**
-	 * 完整实现csv到xls的转换，以英文“,”作为分隔符,实现分页保存，摆脱行数限制 
-	 * 完成：可以读入40万条数据
+	 * 完整实现csv到xls的转换，以英文“,”作为分隔符,实现分页保存，摆脱行数限制 完成：可以读入40万条数据
+	 * 
 	 * @param oldpath
 	 * @param newpath
 	 */
@@ -198,6 +194,7 @@ public class testCsv {
 			BufferedReader br = new BufferedReader(isr);
 			PrintWriter pw = new PrintWriter(osw);
 
+			@SuppressWarnings("resource")
 			Workbook wb = new HSSFWorkbook();
 			Sheet sheet1 = (Sheet) wb.createSheet("niukun1");
 			Sheet sheet2 = (Sheet) wb.createSheet("niukun2");
@@ -321,15 +318,9 @@ public class testCsv {
 					break;
 				}
 			}
-			System.out
-			.println("读取用时："
-					+ (float) (System.currentTimeMillis() - start)
-					/ 1000 + "s");
+			System.out.println("读取用时：" + (float) (System.currentTimeMillis() - start) / 1000 + "s");
 			wb.write(fos);
-			System.out
-					.println("总计用时："
-							+ (float) (System.currentTimeMillis() - start)
-							/ 1000 + "s");
+			System.out.println("总计用时：" + (float) (System.currentTimeMillis() - start) / 1000 + "s");
 			System.out.println("list长度为" + ":" + list.size());
 			pw.close();
 			br.close();
@@ -364,6 +355,7 @@ public class testCsv {
 			BufferedReader br = new BufferedReader(isr);
 			PrintWriter pw = new PrintWriter(osw);
 
+			@SuppressWarnings("resource")
 			Workbook wb = new HSSFWorkbook();
 			Sheet sheet1 = (Sheet) wb.createSheet("niukun");
 
@@ -408,10 +400,7 @@ public class testCsv {
 				}
 			}
 			wb.write(fos);
-			System.out
-					.println("总计用时："
-							+ (float) (System.currentTimeMillis() - start)
-							/ 1000 + "s");
+			System.out.println("总计用时：" + (float) (System.currentTimeMillis() - start) / 1000 + "s");
 			System.out.println("list长度为" + ":" + list.size());
 			pw.close();
 			br.close();

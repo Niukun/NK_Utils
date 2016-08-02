@@ -1,4 +1,4 @@
-package com.ecust.kafka.group;
+package com.niukun.kafka.group;
 
 import java.util.HashMap;
 import java.util.List;
@@ -36,6 +36,7 @@ public class ConsumerGroupExample extends Thread {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	public void run(int a_numThreads) {
 		Map<String, Integer> topicCountMap = new HashMap<String, Integer>();
 		topicCountMap.put(topic, new Integer(a_numThreads));
@@ -49,7 +50,7 @@ public class ConsumerGroupExample extends Thread {
 		// now create an object to consume the messages
 		//
 		int threadNumber = 0;
-		for (final KafkaStream stream : streams) {
+		for (@SuppressWarnings("rawtypes") final KafkaStream stream : streams) {
 			executor.submit(new ConsumerTest(stream, threadNumber));
 			threadNumber++;
 		}

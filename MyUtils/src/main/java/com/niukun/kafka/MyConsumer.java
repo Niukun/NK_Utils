@@ -1,4 +1,4 @@
-package com.ecust.kafka;
+package com.niukun.kafka;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -9,13 +9,13 @@ import java.util.Properties;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
-import org.apache.log4j.BasicConfigurator;
 
 //Automatic Offset Committing
 public class MyConsumer {
 
 	// private static KafkaConsumer<String, String> consumer;
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) throws IOException {
 		Properties props = new Properties();
 		props.put("bootstrap.servers", "59.78.100.126:9092");//172.21.219.0 //59.78.100.126

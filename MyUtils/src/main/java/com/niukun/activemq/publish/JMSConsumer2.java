@@ -1,4 +1,4 @@
-package com.ecust.activemq.publish;
+package com.niukun.activemq.publish;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -9,8 +9,9 @@ import javax.jms.Session;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
 
-public class JMSConsumer {
+public class JMSConsumer2 {
 	private static final String USERNAME = ActiveMQConnectionFactory.DEFAULT_USER;
+	@SuppressWarnings("unused")
 	private static final String PASSWORD = ActiveMQConnectionFactory.DEFAULT_PASSWORD;
 	private static final String BROKERURL = ActiveMQConnectionFactory.DEFAULT_BROKER_URL;
 
@@ -20,8 +21,8 @@ public class JMSConsumer {
 		Session session;
 		Destination destination;
 		MessageConsumer messageConsumer;
-		connectionFactory = new ActiveMQConnectionFactory(JMSConsumer.USERNAME, JMSConsumer.USERNAME,
-				JMSConsumer.BROKERURL);
+		connectionFactory = new ActiveMQConnectionFactory(JMSConsumer2.USERNAME, JMSConsumer2.USERNAME,
+				JMSConsumer2.BROKERURL);
 
 		try {
 			connection = connectionFactory.createConnection();
@@ -30,10 +31,9 @@ public class JMSConsumer {
 			// destination = session.createQueue("FirstQ");
 			destination = session.createTopic("topic1");
 			messageConsumer = session.createConsumer(destination);
-			messageConsumer.setMessageListener(new Listener());
+			messageConsumer.setMessageListener(new Listener2());
 		} catch (JMSException e) {
 			e.printStackTrace();
 		}
 	}
-
 }

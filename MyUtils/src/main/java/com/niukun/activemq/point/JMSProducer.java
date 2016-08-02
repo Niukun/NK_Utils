@@ -1,4 +1,4 @@
-package com.ecust.activemq.publish;
+package com.niukun.activemq.point;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -17,6 +17,7 @@ import org.apache.activemq.ActiveMQConnectionFactory;
  */
 public class JMSProducer {
 	private static final String USERNAME = ActiveMQConnectionFactory.DEFAULT_USER;
+	@SuppressWarnings("unused")
 	private static final String PASSWORD = ActiveMQConnectionFactory.DEFAULT_PASSWORD;
 	private static final String BROKERURL = ActiveMQConnectionFactory.DEFAULT_BROKER_URL;
 	private static final int SENDNUM = 10;
@@ -34,21 +35,18 @@ public class JMSProducer {
 			connection = connectionFactory.createConnection();
 			connection.start();
 			session = connection.createSession(Boolean.TRUE, Session.AUTO_ACKNOWLEDGE);
-//			destination = session.createQueue("FirstQ");
-			destination = session.createTopic("topic1");
+			destination = session.createQueue("FirstQ");
 			messageProducer = session.createProducer(destination);
 			sendMessage(session, messageProducer);
 			session.commit();
 			
 		} catch (JMSException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally{
 			if(connection!=null){
 				try {
 					connection.close();
 				} catch (JMSException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -62,7 +60,6 @@ public class JMSProducer {
 				System.out.println("The message snet " + i);
 				messageProducer.send(message);
 			} catch (JMSException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}

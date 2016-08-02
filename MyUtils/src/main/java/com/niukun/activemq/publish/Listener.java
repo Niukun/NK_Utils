@@ -1,4 +1,4 @@
-package com.ecust.activemq.point;
+package com.niukun.activemq.publish;
 
 import javax.jms.JMSException;
 import javax.jms.Message;
@@ -14,7 +14,7 @@ public class Listener implements MessageListener{
 
 	public void onMessage(Message message) {
 		try {
-			System.out.println("收到的消息：" +((TextMessage)message).getText());
+			System.out.println("订阅者1收到的消息：" +((TextMessage)message).getText());
 		} catch (JMSException e) {
 			e.printStackTrace();
 		}

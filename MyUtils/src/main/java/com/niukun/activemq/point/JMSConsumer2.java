@@ -1,4 +1,4 @@
-package com.ecust.activemq.point;
+package com.niukun.activemq.point;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -11,6 +11,7 @@ import org.apache.activemq.ActiveMQConnectionFactory;
 
 public class JMSConsumer2 {
 	private static final String USERNAME = ActiveMQConnectionFactory.DEFAULT_USER;
+	@SuppressWarnings("unused")
 	private static final String PASSWORD = ActiveMQConnectionFactory.DEFAULT_PASSWORD;
 	private static final String BROKERURL = ActiveMQConnectionFactory.DEFAULT_BROKER_URL;
 

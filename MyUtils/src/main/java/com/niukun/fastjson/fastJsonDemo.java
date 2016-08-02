@@ -16,8 +16,10 @@ public class fastJsonDemo {
 //		testGson();
 	}
 
+	@SuppressWarnings("unused")
 	private static void testGson() {
 		try {
+			@SuppressWarnings("resource")
 			BufferedReader bufr = new BufferedReader(new FileReader("files/kafka.json"));
 			String str = bufr.readLine();
 			JsonParser parser = new JsonParser();
@@ -33,6 +35,7 @@ public class fastJsonDemo {
 
 	private static void testFastJson() {
 		try {
+			@SuppressWarnings("resource")
 			BufferedReader bufr = new BufferedReader(new FileReader("files/kafka.json"));
 			String str = bufr.readLine();
 			JSONObject obj = JSONObject.parseObject(str);

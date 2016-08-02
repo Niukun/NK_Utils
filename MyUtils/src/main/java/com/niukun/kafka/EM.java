@@ -1,4 +1,4 @@
-package com.ecust.kafka;
+package com.niukun.kafka;
 
 public enum EM {
 	MON("ZHOUYI"),SUN("ZHOURI");
