@@ -14,7 +14,7 @@ public class App {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		PropertyConfigurator.configure("log4j.properties");
+		PropertyConfigurator.configure("src/main/resources/log4j.properties");
 		// 记录debug级别的信息
 		logger.debug("This is debug message.");
 		// 记录info级别的信息

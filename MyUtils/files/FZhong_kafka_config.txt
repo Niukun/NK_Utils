@@ -1,0 +1,83 @@
+kafka相关命令：
+=============================================================================================
+启动zookeeper：
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+启动kafka：
+bin/kafka-server-start.sh config/server.properties
+
+创建主题：
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+
+查看主题：
+bin/kafka-topics.sh --list --zookeeper localhost:2181
+
+指定主题发送信息：
+bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
+
+指定主题接收信息：
+bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic test --from-beginning
+
+删除主题：
+bin/kafka-topics.sh --zookeeper 59.78.100.126:2181 --delete --topic ERPBuilding
+
+查看主题信息：
+bin/kafka-topics.sh --describe --zookeeper localhost:2181 --topic test
+
+
+夏云给的配置：
+=============================================================================================
+
+git库:
+fmgitserver 地址是 139.196.98.202
+使用示例：
+git clone git@fmgitserver:/opt/git/test.git
+
+
+kafka 的 zookeeper 连接地址是：
+aliyun.datagroup01.focusmedia.cn:2181,
+aliyun.datagroup02.focusmedia.cn:2181,
+aliyun.datagroup03.focusmedia.cn:2181/kafka
+
+对应的 ip 地址
+139.224.15.14	aliyun.datagroup01.focusmedia.cn
+139.224.14.18	aliyun.datagroup02.focusmedia.cn
+139.224.14.250	aliyun.datagroup03.focusmedia.cn
+
+数据格式：
+{
+    "schema": {
+        "type": "struct",
+        "fields": [
+            {
+                "type": "string",
+                "optional": true,
+                "field": "object"
+            }
+        ],
+        "optional": false,
+        "name": "cabia_building"
+    },
+    "payload": {
+        "object": "{ \"_id\" : \"ae55a4dbb857e510840906ba0e1ce55f\", \"source_name\" : \"安居客\", \"update_time\" : { \"$numberLong\" : \"1466768976886\" }, \"building_name\" : \"宝钢大厦\", \"city\" : \"上海\", \"location\" : \"[浦东-竹园商贸区 浦电路370号]\", \"floor_desc\" : \"33层\", \"wuye_name\" : \"\", \"wuye_charges\" : \"\", \"building_type\" : \"写字楼(甲级)\" }"
+    }
+}
+name 字段表示的数据是什么来源
+cabia_building 是爬虫的楼宇数据，
+cabia_company 是爬虫的企业数据
+
+
+
+
+git clone git@139.196.98.202:/opt/git/kafka-connect-mongodb.git
+
+git clone git@139.196.98.202:/opt/git/test.git
+
+
+
+
+
+
+
+
+

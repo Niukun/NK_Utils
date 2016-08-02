@@ -1,0 +1,31 @@
+learning URL:http://blog.csdn.net/evankaka/article/details/45815047
+
+some of the page:
+********************************************************************************
+1.得到记录器
+　　使用Log4j，第一步就是获取日志记录器，这个记录器将负责控制日志信息。其语法为：
+　　public static Logger getLogger( String name)
+　　通过指定的名字获得记录器，如果必要的话，则为这个名字创建一个新的记录器。Name一般取本类的名字，比如：
+　　static Logger logger = Logger.getLogger ( ServerWithLog4j.class.getName () )
+2.读取配置文件
+　　当获得了日志记录器之后，第二步将配置Log4j环境，其语法为：
+[java] view plain copy 在CODE上查看代码片派生到我的代码片
+BasicConfigurator.configure ()： 自动快速地使用缺省Log4j环境。  
+PropertyConfigurator.configure ( String configFilename) ：读取使用Java的特性文件编写的配置文件。  
+DOMConfigurator.configure ( String filename ) ：读取XML形式的配置文件。  
+3.插入记录信息（格式化日志信息）
+　　当上两个必要步骤执行完毕，您就可以轻松地使用不同优先级别的日志记录语句插入到您想记录日志的任何地方，其语法如下：
+[java] view plain copy 在CODE上查看代码片派生到我的代码片
+Logger.debug ( Object message ) ;  
+Logger.info ( Object message ) ;  
+Logger.warn ( Object message ) ;  
+Logger.error ( Object message ) ;  
+2.3、日志级别
+每个Logger都被了一个日志级别（log level），用来控制日志信息的输出。日志级别从高到低分为：
+A：off 最高等级，用于关闭所有日志记录。
+B：fatal 指出每个严重的错误事件将会导致应用程序的退出。
+C：error 指出虽然发生错误事件，但仍然不影响系统的继续运行。
+D：warm 表明会出现潜在的错误情形。
+E：info 一般和在粗粒度级别上，强调应用程序的运行全程。
+F：debug 一般用于细粒度级别上，对调试应用程序非常有帮助。
+G：all 最低等级，用于打开所有日志记录。

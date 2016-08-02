@@ -1,8 +1,7 @@
 package com.niukun.log4j;
 
-import org.apache.log4j.Appender;
-import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 
 public class Test {
 	private static Logger logger = Logger.getLogger(Test.class);
@@ -11,9 +10,7 @@ public class Test {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Appender appender = logger.getAppender("stdout");
-		// System.out.println("This is println message.");
-		BasicConfigurator.configure(appender);
+		PropertyConfigurator.configure("src/main/resources/log4j.properties");
 		// 记录debug级别的信息
 		logger.debug("This is debug message.");
 		// 记录info级别的信息
