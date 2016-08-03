@@ -69,9 +69,12 @@ cabia_company 是爬虫的企业数据
 
 
 
-git clone git@139.196.98.202:/opt/git/kafka-connect-mongodb.git
+git clone git@139.224.98.202:/opt/git/kafka-connect-mongodb.git
 
 git clone git@139.196.98.202:/opt/git/test.git
+
+git clone ssh://git@139.196.98.202:28504/opt/git/cabia.git
+
 
 
 
