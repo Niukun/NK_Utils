@@ -1,0 +1,51 @@
+###
+driver= bolt://59.78.100.126
+user=neo4j
+password=123
+###########
+
+company= merge (city:City{name:{cityName}}) merge (road:Road{name:{roadName}}) merge  (county:County{name:{countyName}}) merge (address:Address{name:{addressName},lat:{lat},lng:{lng},zuo:{zuo},floor:{floor},buildingNum:{buildingNum}}) create (company:Company{id:{companyid},name:{companyName}, companyId:{companyId}})merge (industry:Industry{name:{industry}}) merge (company)-[:CompanyToIndustry]->(industry) merge (address)-[:AddressToCity]->(city) merge (address)-[:AddressToCounty]->(county)merge (address)-[:AddressToRoad{hao:{hao}}]->(road) create (address)<-[:CompanyToAddress]-(company) merge (road)-[:RoadToCounty]->(county) merge (county)-[:CountyToCity]->(city) return city.id,county.id,road.id,address.id,industry.id;
+  
+companyNoneIndustry=merge (city:City{name:{cityName}}) merge (road:Road{name:{roadName}}) merge  (county:County{name:{countyName}}) merge (address:Address{name:{addressName},lat:{lat},lng:{lng},zuo:{zuo},floor:{floor},buildingNum:{buildingNum}}) create (company:Company{id:{companyid},name:{companyName}, companyId:{companyId}}) merge (address)-[:AddressToCity]->(city) merge (address)-[:AddressToCounty]->(county)merge (address)-[:AddressToRoad{hao:{hao}}]->(road) create (address)<-[:CompanyToAddress]-(company) merge (road)-[:RoadToCounty]->(county) merge (county)-[:CountyToCity]->(city) return city.id,county.id,road.id,address.id;
+  
+buildingNoneProject=merge (city:City{name:{cityName}}) merge (road:Road{name:{roadName}}) merge (county:County{name:{countyName}}) merge (address:Address{name:{addressName},lat:{lat},lng:{lng},zuo:{zuo},floor:{floor},buildingNum:{buildingNum}}) create (building:Building{id:{buildingid},name:{buildingName},buildingType:{buildingType}}) merge (address)-[:AddressToCity]->(city) merge (address)-[:AddressToCounty]->(county)merge (address)-[:AddressToRoad{hao:{hao}}]->(road)create (building)-[:BuildingToAddress]->(address) merge (road)-[:RoadToCounty]->(county)merge (county)-[:CountyToCity]->(city)return city.id,county.id,road.id,address.id;
+   
+building=merge (city:City{name:{name}}) merge (road:Road{name:{name}}) merge (county:County{name:{countyName}}) merge (address:Address{name:{addressName},lat:{lat},lng:{lng},zuo:{zuo},floor:{floor},buildingNum:{buildingNum}})create (building:Building{id:{buildingid},name:{buildingName},buildingType:{buildingType}}) create (project:Project{id:{projectid},name:{projectName},projectId:{projectId},updateTime:{updateTime}})merge (address)-[:AddressToCity]->(city)merge (address)-[:AddressToCounty]->(county)merge (address)-[:AddressToRoad{hao:{hao}}]->(road)create (project)<-[:ProjectToBuilding]-(building)merge (building)-[:BuildingToAddress]->(address)merge (road)-[:RoadToCounty]->(county) merge (county)-[:CountyToCity]->(city)return city.id,county.id,road.id,address.id;
+   
+########
+
+city= match(city:City{name:{cityName}}) set city.id = {id}
+county=match(county{name:{countyName}}) set county.id = {id}
+road=match(road:Road{name:{roadName}}) set road.id = {id}
+address=match(address:Address{name:{addressName}}) set address.id = {id}
+industry=match(industry:Industry{name:{industry}}) set industry.id = {id}
+
+#########
+getProjectInfoByProjectId=MATCH (a:Project) WHERE a.id = {id} RETURN a.name as projectName,a.projectId as projectId,a.updateTime as updateTime
+getBuildingInfoByBuildingId=MATCH (a:Building) WHERE a.id = {id} RETURN a.name as buildingName,a.buildingType as buildingType,a.otherInfo as otherInfo
+getProjectListByBuilding=MATCH (a:Building)-[]-(p:Project) WHERE a.id = {id} RETURN p.name as projectName,p.projectId as projectId,p.updateTime as updateTime
+getCompanyInfoByCompanyId=MATCH (a:Company) WHERE a.id = {id}  RETURN a.name as companyName,a.companyId as companyId,a.otherInfo as otherInfo
+getAddressInfoByAddressId=MATCH (a:Address) WHERE a.id = {id} RETURN a.name as addressName,a.lat as lat,a.lng as lng
+getIndustryInfoByIndustryId=MATCH (a:Industry) WHERE a.id = {id} RETURN a.name as industry
+getAreaInfoByAreaId= MATCH (a:County) WHERE a.id = {id} RETURN a.name as countyName
+#########
+
+getBuildingListByProject= MATCH (p:Project)-[]-(b:Building) WHERE p.id = {id} RETURN b.name as buildingName,b.buildingType as buildingType,b.otherInfo as otherInfo
+getProjectListByBuildingId=MATCH (p:Project)-[]-(b:Building) where b.id={id} RETURN p.name as projectName,p.projectId as projectId,p.updateTime as updateTime
+getAddressListByBuilding=MATCH (c:City)-[]-(a:Address)-[]-(b:Building) match (county:County)-[]-(a:Address)-[]-(b:Building)  match (r:Road)-[]-(a:Address)-[]-(b:Building) where b.id={id} RETURN a.name as addressName,c.name as cityName,county.name as countyName,r.name as roadName
+getAddressListByCompany=MATCH (city:City)-[]-(a:Address)-[]-(c:Company) match (county:County)-[]-(a:Address)-[]-(c:Company) match (r:Road)-[]-(a:Address)-[]-(c:Company) where c.id={id} RETURN a.name as addressName,city.name as cityName,county.name as countyName,r.name as roadName
+getBuildingInfoByAddress= MATCH (a:Address)-[]-(b:Building) where a.id = {id}  RETURN b.name as buildingName,b.buildingType as buildingType,b.otherInfo as otherInfo
+getCompanyListByAddress=MATCH (a:Address)-[]-(c:Company) WHERE a.id = {id}  RETURN c.name as companyName,c.companyId as companyId,c.otherInfo as otherInfo
+getCompanyListByIndustry=MATCH (i:Industry)-[]-(c:Company) where i.id={id} RETURN c.name as companyName,c.companyId as companyId,c.otherInfo as otherInfo
+getIndustryListByCompany=MATCH (i:Industry)-[]-(c:Company) where c.id={id} RETURN i.industry as industry
+getAddressListByArea=MATCH (c:County)-[]-(a:Address) where c.id={id} RETURN a.name as addressName,a.lat as lat,a.lng as lng
+getAreaListByAddress=MATCH (cou:County)-[]-(a:Address),(c:City)-[]-(a:Address),(r:Road)-[]-(a:Address) WHERE a.id={id} RETURN c.name as cityName,cou.name as countyName,r.name as roadName
+
+########
+getEntityListByFuzzyCompanyName=match (n:Company) where n.name CONTAINS {companyName} return n.name as companyName,n.companyId as companyId,n.otherInfo as otherInfo,n.id as id
+getEntityListByFuzzyBuildingName=match (n:Building) where n.name CONTAINS {buildingName} return n.name as buildingName,n.buildingType as buildingType,n.id as id,n.otherInfo as otherInfo
+getEntityListByFuzzyIndustry=match (i:Industry) where i.name CONTAINS {industryName} return i.name as industry,i.id as id
+
+
+
+

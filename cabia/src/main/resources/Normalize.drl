@@ -1,0 +1,59 @@
+//created on: 2016-3-22
+package business.com.fzhong.service.kg.preprocess.normalize;
+
+import business.com.fzhong.service.kg.dto.req.AddressReqDto;
+import business.com.fzhong.service.kg.enums.DoorplateCombinationEnums;
+
+import function business.com.fzhong.service.kg.preprocess.normalize.RuleToolsService.setDcFirstAndRodeType;
+import function business.com.fzhong.service.kg.preprocess.normalize.RuleToolsService.setDcSecondAndDcType;
+import function business.com.fzhong.service.kg.preprocess.normalize.RuleToolsService.checkDcTypeHao;
+import function business.com.fzhong.service.kg.preprocess.normalize.RuleToolsService.getCity;
+import function business.com.fzhong.service.kg.preprocess.normalize.RuleToolsService.getCountyAndRoadOrUptown;
+
+//判断地址是否正确
+rule "Check address"
+	no-loop true
+	salience 99
+    when
+        $address : AddressReqDto(address matches NormalizeService.CORRECT_ADDRESS)
+    then
+    	$address.setCorrectAddress(true);
+    	setDcFirstAndRodeType($address);
+    	update($address);
+end
+
+//获取完整的弄号组合
+rule "Get whole Number"
+	salience 1
+	when
+		$address : AddressReqDto(correctAddress == true && dcType == DoorplateCombinationEnums.NONG)
+	then
+		setDcSecondAndDcType($address);
+end
+
+//解决将号楼误判为号
+rule "Void regard HaoLou as Hao"
+	salience 1
+	when
+		$address : AddressReqDto(correctAddress == true && dcType == DoorplateCombinationEnums.HAO)
+	then
+		checkDcTypeHao($address);
+end
+
+//获取市
+rule "Get city"
+	salience 2
+	when 
+		$address : AddressReqDto(correctAddress == true)
+	then
+		getCity($address);
+end
+
+//获取区
+rule "Get county"
+	salience 1
+	when
+		$address : AddressReqDto(correctAddress == true)
+	then
+		getCountyAndRoadOrUptown($address);
+end
