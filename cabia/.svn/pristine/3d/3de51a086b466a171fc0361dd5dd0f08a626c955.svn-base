@@ -1,7 +1,0 @@
-bootstrap.servers = 139.224.15.14:9092,139.224.14.18:9092,139.224.14.250:9092
-group.id = cabia02
-enable.auto.commit = false
-auto.offset.reset = earliest
-session.timeout.ms = 30000
-key.deserializer = org.apache.kafka.common.serialization.StringDeserializer
-value.deserializer = org.apache.kafka.common.serialization.StringDeserializer
