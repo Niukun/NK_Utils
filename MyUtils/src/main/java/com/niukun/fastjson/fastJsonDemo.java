@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.Date;
+import java.text.SimpleDateFormat;
 
 import com.alibaba.fastjson.JSONObject;
 import com.google.gson.JsonObject;
@@ -13,7 +15,33 @@ public class fastJsonDemo {
 
 	public static void main(String[] args) {
 		testFastJson();
-//		testGson();
+		// testGson();
+	}
+
+	private static void testFastJson() {
+		try {
+			@SuppressWarnings("resource")
+			BufferedReader bufr = new BufferedReader(new FileReader("files/kafka.json"));
+			String str = bufr.readLine();
+			
+			JSONObject obj = JSONObject.parseObject(str);
+			System.out.println(obj.getJSONObject("schema").getString("name"));
+			
+									System.out.println(obj.getJSONObject("payload").getString("object"));
+			JSONObject object = JSONObject.parseObject(obj.getJSONObject("payload").getString("object"));
+			
+			System.out.println(object.getString("company_name"));
+			JSONObject timeobj = JSONObject.parseObject(object.getString("update_time"));
+			System.out.println(timeobj.getLongValue("$numberLong"));
+			Long time = timeobj.getLongValue("$numberLong");
+			Date date = new Date(time);
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy--MM--dd");
+			System.out.println(sdf.format(date));
+		} catch (FileNotFoundException e) {
+			System.out.println("FileNotFoundException");
+		} catch (IOException e) {
+			System.out.println("IOException");
+		}
 	}
 
 	@SuppressWarnings("unused")
@@ -33,20 +61,4 @@ public class fastJsonDemo {
 		}
 	}
 
-	private static void testFastJson() {
-		try {
-			@SuppressWarnings("resource")
-			BufferedReader bufr = new BufferedReader(new FileReader("files/kafka.json"));
-			String str = bufr.readLine();
-			JSONObject obj = JSONObject.parseObject(str);
-			System.out.println(obj.getJSONObject("schema").getString("name"));
-			JSONObject object = JSONObject.parseObject(obj.getJSONObject("payload").getString("object"));
-			System.out.println(obj.getJSONObject("payload").getString("object"));
-			System.out.println(object.getString("company_name"));
-		} catch (FileNotFoundException e) {
-			System.out.println("FileNotFoundException");
-		} catch (IOException e) {
-			System.out.println("IOException");
-		}
-	}
 }
