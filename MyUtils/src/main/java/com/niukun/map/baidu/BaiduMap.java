@@ -10,6 +10,7 @@ public class BaiduMap {
 //	private static String key = "DcrelvGvRBKGzmMCnbZKFzfAwbNv2ofx";
 	private static String key = "6tbmRDwZNyBNPnWw6wFuzufb";
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) throws IOException {
 		long start = System.currentTimeMillis();
 		for (int i = 0; i < 1000; i++) {

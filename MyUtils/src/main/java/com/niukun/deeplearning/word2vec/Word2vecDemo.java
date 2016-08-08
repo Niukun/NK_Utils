@@ -17,6 +17,7 @@ import org.deeplearning4j.text.tokenization.tokenizerfactory.TokenizerFactory;
 public class Word2vecDemo {
 	private static Logger log = Logger.getLogger(Word2vecDemo.class);
 
+	@SuppressWarnings("serial")
 	public static void main(String[] args) {
 		PropertyConfigurator.configure("src/main/resources/log4j.properties");
 		log.info("Load data....");// 加载数据
