@@ -1,33 +1,94 @@
 package com.niukun.crawler;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+/**
+ * 58同城爬虫
+ * 
+ * @author Niukun
+ *
+ */
 public class JsoupDemo {
+	private static List<String> urllist = new ArrayList<String>();
+	private static Map<String,String> map = new TreeMap<String,String>();
+	private static BufferedWriter bufw = null;
+	private static Document doc;
 
-	public static void main(String[] args) {
-		getURLs();
+	public static void main(String[] args) throws Exception {
+		bufw = new BufferedWriter(new FileWriter("files/page.txt"));
+		String urlfront = "http://sh.58.com/zhaozu/pn";
+		String urltail = "/?utm_source=market&spm=b-31580022738699-me-f-824.bdpz_biaoti&PGTID=0d30000d-0000-2d0e-9866-8c48539ae76a&ClickID=1";
+		int pageNum = 70;
+		String pageurl = urlfront + pageNum + urltail;
+		for (int i = 1; i <= pageNum; i++) {
+			getURLFromPage(pageurl);
+			System.out.println("第" + i + "个页面爬取完毕;");
+		}
+		for (int i = 0; i < urllist.size(); i++) {
+			getInfoFromURL(urllist.get(i));
+			System.out.println("第"+i+"个网页数据");
+		}
+		System.out.println("urllist size:"+urllist.size());
+		Set<String> set = map.keySet();
+		Iterator setIter = set.iterator();
+		String key;
+		while(setIter.hasNext()){
+			key = (String) setIter.next();
+			bufw.write(map.get(key));
+			bufw.newLine();
+//			System.out.println(key+","+map.get(key));
+		}
+		System.out.println("Finished.....");
+		bufw.close();
 	}
 
-	private static void getURLs() {
-		Document doc;
+	private static void getInfoFromURL(String url) {
+		StringBuilder sb = new StringBuilder();
 		try {
-			doc = Jsoup.connect("http://www.baidu.com").get();
-			Element content = doc.getElementById("head");
-			System.out.println(content.toString());
-			Elements links = content.getElementsByTag("a");
+			doc = Jsoup.connect(url).get();
+			Elements links = doc.getElementsByClass("info");
+//			System.out.println(links);
 			for (Element link : links) {
-				String linkHref = link.attr("href");
-				String linkText = link.text();
-				System.out.println(linkHref+":"+linkText);
+				Elements lis = link.getElementsByTag("li");
+				for (Element li : lis) {
+					sb.append(li.text()+"\t");
+//					System.out.println(li.text());
+				}
+//				System.out.println(sb.toString());
+				map.put(url, sb.toString().replace("轻松买铺，贷来财富", ""));
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
+	private static void getURLFromPage(String pageurl) {
+		try {
+			doc = Jsoup.connect(pageurl).get();
+			Elements links = doc.getElementsByClass("t");
+			for (Element link : links) {
+				String linkHref = link.attr("href");
+				if (linkHref != "") {
+					urllist.add(linkHref);
+//					bufw.write(linkHref);
+//					bufw.newLine();
+				}
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }
