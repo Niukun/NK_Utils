@@ -32,24 +32,22 @@ public class JsoupDemo {
 		String urlfront = "http://sh.58.com/zhaozu/pn";
 		String urltail = "/?utm_source=market&spm=b-31580022738699-me-f-824.bdpz_biaoti&PGTID=0d30000d-0000-2d0e-9866-8c48539ae76a&ClickID=1";
 		int pageNum = 70;
-		String pageurl = urlfront + pageNum + urltail;
 		for (int i = 1; i <= pageNum; i++) {
+			String pageurl = urlfront + i + urltail;
 			getURLFromPage(pageurl);
 			System.out.println("第" + i + "个页面爬取完毕;");
 		}
 		for (int i = 0; i < urllist.size(); i++) {
 			getInfoFromURL(urllist.get(i));
-			System.out.println("第"+i+"个网页数据");
+			System.out.println(urllist.size()+":第"+i+"个网页数据");
 		}
-		System.out.println("urllist size:"+urllist.size());
 		Set<String> set = map.keySet();
-		Iterator setIter = set.iterator();
+		Iterator<String> setIter = set.iterator();
 		String key;
 		while(setIter.hasNext()){
 			key = (String) setIter.next();
 			bufw.write(map.get(key));
 			bufw.newLine();
-//			System.out.println(key+","+map.get(key));
 		}
 		System.out.println("Finished.....");
 		bufw.close();
@@ -65,9 +63,7 @@ public class JsoupDemo {
 				Elements lis = link.getElementsByTag("li");
 				for (Element li : lis) {
 					sb.append(li.text()+"\t");
-//					System.out.println(li.text());
 				}
-//				System.out.println(sb.toString());
 				map.put(url, sb.toString().replace("轻松买铺，贷来财富", ""));
 			}
 		} catch (IOException e) {
@@ -83,8 +79,6 @@ public class JsoupDemo {
 				String linkHref = link.attr("href");
 				if (linkHref != "") {
 					urllist.add(linkHref);
-//					bufw.write(linkHref);
-//					bufw.newLine();
 				}
 			}
 		} catch (IOException e) {
