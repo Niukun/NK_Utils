@@ -34,7 +34,7 @@ public class CreateQRCode {
 		// 生成二维码
 		try {
 			BitMatrix bitMatrix = new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, width, height, hints);
-			Path file = new File("123.jpg").toPath();
+			Path file = new File("files/123.jpg").toPath();
 			MatrixToImageWriter.writeToPath(bitMatrix, format, file);
 
 		} catch (Exception e) {

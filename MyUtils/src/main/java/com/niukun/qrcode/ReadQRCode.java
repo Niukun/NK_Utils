@@ -26,7 +26,7 @@ public class ReadQRCode {
 	public static void main(String[] args) {
 		try {
 			MultiFormatReader formatReader = new MultiFormatReader();
-			File file = new File("123.jpg");
+			File file = new File("files/123.jpg");
 			BufferedImage image;
 			image = ImageIO.read(file);
 
