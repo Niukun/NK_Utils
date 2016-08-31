@@ -13,7 +13,7 @@ public class BaiduMap {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) throws IOException {
 		long start = System.currentTimeMillis();
-		for (int i = 0; i < 1000; i++) {
+		for (int i = 0; i < 2; i++) {
 			long startone = System.currentTimeMillis();
 			String str = getJsonResult("兆丰世贸大厦");
 			long endone = System.currentTimeMillis();
@@ -33,6 +33,7 @@ public class BaiduMap {
 		while ((inputLine = in.readLine()) != null) {
 			json.append(inputLine);
 		}
+		System.out.println(json.toString());
 		in.close();
 		return json.toString().replaceAll(" ", "");
 	}
