@@ -1,0 +1,2 @@
+2016-09-01 15:11:47 method:com.niukun.log4j.Test.main(Test.java:19)-[ ERROR ] This is error message.
+2016-09-01 15:14:13 method:com.niukun.log4j.Test.main(Test.java:19)-[ ERROR ] This is error message.
