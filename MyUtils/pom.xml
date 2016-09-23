@@ -17,6 +17,13 @@
 	</properties>
 
 	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.beykery/neuroph -->
+		<dependency>
+			<groupId>org.beykery</groupId>
+			<artifactId>neuroph</artifactId>
+			<version>2.92</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.deeplearning4j</groupId>
 			<artifactId>deeplearning4j-ui</artifactId>

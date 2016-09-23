@@ -8,12 +8,14 @@ import java.util.Scanner;
  */
 public class Main {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		System.out.println("Input the num:");
 		Scanner scan = new Scanner(System.in);
 		int n ;
 		while ((n=scan.nextInt())!= 0) {
-			System.out.println(CountOfNum(n));
+			long start = System.currentTimeMillis();
+			System.out.println(CountOfNum(n)+":"+(System.currentTimeMillis()-start));
 		}
 	}
 
@@ -21,7 +23,7 @@ public class Main {
 		int count = 0;
 		for (long i = 1; i <= n; i++) {
 			long temp = i;
-			long res = i;
+//			long res = i;
 			while (temp != 0 && (temp % 10 == 0 || temp % 10 == 1)) {
 				temp = temp / 10;
 			}
