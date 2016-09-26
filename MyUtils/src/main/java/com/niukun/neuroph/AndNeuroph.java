@@ -8,7 +8,7 @@ public class AndNeuroph {
 		// create new perceptron network
 		NeuralNetwork neuralNetwork = NeuralNetwork.load("pro01.nnet");
 		// calculate network
-		double[][] data = new double[][]{{1,1},{0,1},{1,1},{0,1},{1,1},{0,1},{1,1},{0,1},{1,1},{0,1},{1,1},{0,1}};
+		double[][] data = new double[][]{{1,1},{0,1}};
 		for (double[] d:data) {
 			neuralNetwork.setInput(d);
 			neuralNetwork.calculate();
