@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="MyUtils/src/main/java"/>
+	<classpathentry kind="lib" path="MyUtils/lib/activemq-all-5.13.4.jar"/>
+	<classpathentry kind="lib" path="MyUtils/lib/zxing3.2.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="MyUtils/target/classes"/>
+</classpath>

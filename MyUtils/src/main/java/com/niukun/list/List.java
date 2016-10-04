@@ -14,11 +14,6 @@ public class List {
 		BufferedReader bufr = new BufferedReader(new FileReader("fmproject.json"));
 		ArrayList<String> list = new ArrayList<String>();
 		String line;
-		/*while((line=bufr.readLine())!=null){
-			list.add(line);
-			JSONObject obj = JSONObject.parseObject(line);
-//			System.out.println(obj.getString("buildingnme"));
-		}*/
 		list.add("123");
 		list.add("123");
 		list.add("123");

@@ -18,7 +18,7 @@ public class MyConsumer {
 	@SuppressWarnings("resource")
 	public static void main(String[] args) throws IOException {
 		Properties props = new Properties();
-		props.put("bootstrap.servers", "59.78.100.126:9092");//172.21.219.0 //59.78.100.126
+		props.put("bootstrap.servers", "172.21.246.153:19092");//172.21.219.0 //59.78.100.126
 		props.put("group.id", "num01");
 		props.put("enable.auto.commit", "false");
 		props.put("auto.commit.interval.ms", "15000");
@@ -28,7 +28,7 @@ public class MyConsumer {
 		props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
 		props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
 		KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(props);
-		consumer.subscribe(Arrays.asList("test","ERPBuilding"));
+		consumer.subscribe(Arrays.asList("test"));
 		BufferedWriter bufw = new BufferedWriter(new FileWriter("result.txt"));
 		while (true) {
 			ConsumerRecords<String, String> records = consumer.poll(100);
