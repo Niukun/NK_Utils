@@ -15,7 +15,7 @@ public class MyProducer {
 	@SuppressWarnings("resource")
 	public static void main(String[] args) throws IOException {
 		Properties props = new Properties();
-		props.put("bootstrap.servers", "59.78.100.126:9092");//172.21.219.0 //59.78.100.126
+		props.put("bootstrap.servers", "172.21.246.148:9092");//172.21.219.0 //59.78.100.126
 		props.put("acks", "all");
 		// props.put("group.id", "final_test");
 		props.put("retries", 0);
@@ -27,16 +27,16 @@ public class MyProducer {
 		props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
 
 		Producer<String, String> producer = new KafkaProducer<String, String>(props);
-		BufferedReader bufr = new BufferedReader(new FileReader("ERPBuilding.txt"));
+		BufferedReader bufr = new BufferedReader(new FileReader("fmproject.json"));
 		String line = "";
 		int i = 1;
 		while ((line = bufr.readLine()) != null) {
-			producer.send(new ProducerRecord<String, String>("ERPBuilding", Integer.toString(i++), line),
+			producer.send(new ProducerRecord<String, String>("erp", Integer.toString(i++), line),
 					new Callback() {
 						public void onCompletion(RecordMetadata metadata, Exception e) {
 							if (e != null)
 								e.printStackTrace();
-							System.out.println("The offset of the record we just sent is: " + metadata.offset());
+							System.out.println("The offset of the record just sent is: " + metadata.offset());
 						}
 					});
 		}
