@@ -15,7 +15,7 @@ public class MyProducer {
 	@SuppressWarnings("resource")
 	public static void main(String[] args) throws IOException {
 		Properties props = new Properties();
-		props.put("bootstrap.servers", "172.21.246.148:9092");//172.21.219.0 //59.78.100.126
+		props.put("bootstrap.servers", "192.168.1.12:9092");//172.21.219.0 //59.78.100.126
 		props.put("acks", "all");
 		// props.put("group.id", "final_test");
 		props.put("retries", 0);
