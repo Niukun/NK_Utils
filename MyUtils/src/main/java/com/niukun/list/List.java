@@ -1,15 +1,12 @@
 package com.niukun.list;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.ArrayList;
-
-import com.alibaba.fastjson.JSONObject;
 
 public class List {
 
+	@SuppressWarnings({ "unused", "resource" })
 	public static void main(String[] args) throws Exception {
 		BufferedReader bufr = new BufferedReader(new FileReader("fmproject.json"));
 		ArrayList<String> list = new ArrayList<String>();
