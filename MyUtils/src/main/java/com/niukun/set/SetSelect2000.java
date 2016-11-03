@@ -6,6 +6,7 @@ import java.util.TreeSet;
 
 public class SetSelect2000 {
 
+	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 		Set<Integer> numberSet = new TreeSet<Integer>();
 		for (int i = 0; i < 10; i++) {

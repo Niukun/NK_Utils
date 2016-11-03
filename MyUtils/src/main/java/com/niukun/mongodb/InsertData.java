@@ -11,6 +11,7 @@ import com.mongodb.client.MongoDatabase;
 
 public class InsertData {
 
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		 try{   
 	         // 连接到 mongodb 服务

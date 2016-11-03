@@ -16,6 +16,7 @@ public class PrivateClassTest {
 		a = new PrivateClass();
 	}
 
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testNoParamEchoRequest() throws Exception {
 		// 测试没有参数的echoRequest()方法

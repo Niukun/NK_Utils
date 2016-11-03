@@ -6,6 +6,7 @@ import java.util.List;
 
 public class ListRandom {
 
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 		List list = new ArrayList();
 		Integer I ;

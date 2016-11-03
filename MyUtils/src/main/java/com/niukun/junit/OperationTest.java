@@ -1,6 +1,5 @@
 package com.niukun.junit;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class OperationTest {
