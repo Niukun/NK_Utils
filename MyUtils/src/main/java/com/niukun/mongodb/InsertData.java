@@ -20,7 +20,7 @@ public class InsertData {
 	         // 连接到数据库
 	         MongoDatabase mongoDatabase = mongoClient.getDatabase("mycol");  
 	         System.out.println("Connect to database successfully");
-	         mongoDatabase.createCollection("test");
+//	         mongoDatabase.createCollection("test");
 	         MongoCollection<Document> collection = mongoDatabase.getCollection("test");
 	         System.out.println("集合 test 选择成功");
 	         //插入文档  
@@ -33,8 +33,13 @@ public class InsertData {
 	         append("description", "database").  
 	         append("likes", 100).  
 	         append("by", "Fly");  
+	         Document document2 = new Document("title", "MongoDB").  
+	        		 append("description", "database").  
+	        		 append("likes", 100).  
+	        		 append("by", "Fly");  
 	         List<Document> documents = new ArrayList<Document>();  
 	         documents.add(document);  
+	         documents.add(document2); 
 	         collection.insertMany(documents);  
 	         System.out.println("文档插入成功");  
 	      }catch(Exception e){
