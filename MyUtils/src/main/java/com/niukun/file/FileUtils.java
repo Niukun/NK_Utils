@@ -1,4 +1,4 @@
-package file;
+package com.niukun.file;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

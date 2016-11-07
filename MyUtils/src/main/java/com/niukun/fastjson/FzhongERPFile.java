@@ -19,7 +19,6 @@ public class FzhongERPFile {
 
 	private static void testFastJson() {
 		try {
-			@SuppressWarnings("resource")
 			BufferedReader bufr = new BufferedReader(new FileReader("D:/NLPIR/Fenzhong/cabia-building.txt"));
 			String str = null;
 			JSONObject obj = null;

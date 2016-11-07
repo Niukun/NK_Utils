@@ -14,8 +14,16 @@ import com.google.gson.JsonParser;
 public class fastJsonDemo {
 
 	public static void main(String[] args) {
-		testFastJson();
+//		testFastJson();
 		// testGson();
+		removeAttr();
+	}
+
+	private static void removeAttr() {
+		String str = "{age:12,phone:123123}";
+		JSONObject obj = JSONObject.parseObject(str);
+		obj.remove("age");
+		System.out.println(obj);
 	}
 
 	private static void testFastJson() {

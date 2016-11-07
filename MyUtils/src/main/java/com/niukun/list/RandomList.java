@@ -14,7 +14,7 @@ public class RandomList {
 		int ii =0;
 		for (int i = 0; i < 67000; i++) {
 			
-			if (Randlist.size() < 5000) {
+			if (Randlist.size() < 500) {
 				int count = (int) (Math.random() * 67000);
 				Randlist.add(Integer.valueOf(count));
 				ii++;
