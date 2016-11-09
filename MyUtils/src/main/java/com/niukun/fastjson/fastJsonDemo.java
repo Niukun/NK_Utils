@@ -15,8 +15,18 @@ public class fastJsonDemo {
 
 	public static void main(String[] args) {
 //		testFastJson();
-		// testGson();
-		removeAttr();
+// 		testGson();
+//		removeAttr();
+		hasAttrNum();
+		
+	}
+
+	private static void hasAttrNum() {
+		String str = "{age:12,phone:123123,industry:\"[电子技术:半导体]\"}";
+		JSONObject obj = JSONObject.parseObject(str);
+//		obj.remove("age");
+		System.out.println(obj.getString("industry"));
+		
 	}
 
 	private static void removeAttr() {
