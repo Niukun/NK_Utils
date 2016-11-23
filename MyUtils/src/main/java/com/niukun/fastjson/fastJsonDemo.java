@@ -7,18 +7,34 @@ import java.io.IOException;
 import java.sql.Date;
 import java.text.SimpleDateFormat;
 
+import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 public class fastJsonDemo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 //		testFastJson();
 // 		testGson();
-//		removeAttr();
-		hasAttrNum();
+		removeAttr();
+//		hasAttrNum();
+//		JsonArrayTest();
 		
+	}
+
+	private static void JsonArrayTest() throws Exception {
+		BufferedReader bufr = new BufferedReader(new FileReader("D:/NLPIR/Fenzhong/customer-data.json"));
+		StringBuffer sb = new StringBuffer();
+		String line = null;
+		while((line=bufr.readLine())!=null){
+			sb.append(line);
+		}
+		
+		String str = sb.toString().replaceAll("  ", "").replaceAll("\t", "");
+		System.out.println(str);
+		JSONArray objarr = JSONObject.parseArray(str);
+		System.out.println(objarr.get(1));
 	}
 
 	private static void hasAttrNum() {
@@ -33,7 +49,7 @@ public class fastJsonDemo {
 		String str = "{age:12,phone:123123}";
 		JSONObject obj = JSONObject.parseObject(str);
 		obj.remove("age");
-		System.out.println(obj);
+		System.out.println(obj.toJSONString());
 	}
 
 	private static void testFastJson() {

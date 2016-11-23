@@ -9,32 +9,34 @@ import java.io.IOException;
 
 import com.alibaba.fastjson.JSONObject;
 
-public class FzhongERPFile {
+public class getAddressFromFile {
 
 	public static void main(String[] args) {
-		// getfmprojectSingleAttr("address_1");
-		getCabiaSingleAttr("location");
+		getfmprojectSingleAttr("D:/NLPIR/paper/cabia-customer.txt","D:/NLPIR/paper/address.txt","company_address");
+		getfmprojectSingleAttr("D:/NLPIR/paper/cabia-fwo.txt","D:/NLPIR/paper/address.txt","building_address");
+		getfmprojectSingleAttr("D:/NLPIR/paper/fmproject.json","D:/NLPIR/paper/address.txt","address_1");
+		// getCabiaSingleAttr("location");
+		System.out.println("The end...");
 	}
 
-	private static void getfmprojectSingleAttr(String attr) {
+	private static void getfmprojectSingleAttr(String sourcefilename, String destfilename,String attr) {
 		try {
-			BufferedReader bufr = new BufferedReader(new FileReader("D:/NLPIR/paper/fmproject.json"));
-			BufferedWriter bufw = new BufferedWriter(new FileWriter("D:/NLPIR/paper/fmproject_address_1.txt"));
+			BufferedReader bufr = new BufferedReader(new FileReader(sourcefilename));
+			BufferedWriter bufw = new BufferedWriter(new FileWriter(destfilename,true));
 			String str = null;
 			JSONObject obj = null;
 			int i = 0;
 			while ((str = bufr.readLine()) != null) {
-				i++;
-				obj = JSONObject.parseObject(str);
-				System.out.println(i + ":" + obj.getString(attr));
-				if (!obj.getString(attr).contains("路") && !obj.getString(attr).contains("道")
-						&& !obj.getString(attr).contains("街")
-						&& (obj.getString(attr).contains("弄") || obj.getString(attr).contains("号"))) {
+				
+				try {
+					obj = JSONObject.parseObject(str);
+//					System.out.println(i + ":" + obj.getString(attr));
+					if(obj.getString(attr)!=null&&obj.getString(attr).length()>0){
 					bufw.write(obj.getString(attr));
-					bufw.newLine();
-				} else {
+					bufw.newLine();}
+				} catch (Exception e) {
+					System.out.println(i+++" Not a format json string...");
 				}
-
 			}
 			bufw.flush();
 			bufw.close();
