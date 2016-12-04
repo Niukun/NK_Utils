@@ -15,7 +15,7 @@ public class FilterAddress {
 
 	public static void main(String[] args) {
 		try {
-			doSomeThing();
+			addressSorted();
 			System.out.println("End...");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -23,38 +23,53 @@ public class FilterAddress {
 		}
 	}
 
-	private static void doSomeThing() throws IOException {
+	private static void addressSorted() throws IOException {
 		BufferedReader bufr = new BufferedReader(new FileReader("D:/NLPIR/paper/address.txt"));
 		BufferedWriter bufwf = new BufferedWriter(new FileWriter("D:/NLPIR/paper/address_patter_f.txt"));
 		BufferedWriter bufwt = new BufferedWriter(new FileWriter("D:/NLPIR/paper/address_patter_t.txt"));
 		Set<String> addressSet = new TreeSet<String>();
 		String line = null;
-		while((line=bufr.readLine())!=null){
+		int maxLineLength = 1;
+		while ((line = bufr.readLine()) != null) {
 			Pattern pattern = Pattern.compile(".*[路街道村].*[号支弄].*");
 			Matcher matcher = pattern.matcher(line);
-			if(matcher.find()){
+			if (matcher.find()) {
+				if (line != null) {
+					if (line.length() > maxLineLength) {
+						maxLineLength = line.length();
+					}
+				}
 				addressSet.add(line);
-			}else{
+				// bufwt.write(line);
+				// bufwt.newLine();
+				// bufwt.flush();
+			} else {
 				bufwf.write(line);
 				bufwf.newLine();
 				bufwf.flush();
 			}
 		}
-		Iterator<String> iter = addressSet.iterator();
-		while(iter.hasNext()){
-			bufwt.write(iter.next());
-			bufwt.newLine();
-			bufwt.flush();
+		for (int i = 10; i < maxLineLength; i++) {
+
+			Iterator<String> iter = addressSet.iterator();
+			while (iter.hasNext()) {
+				line = iter.next();
+				if (line.length() == i) {
+					bufwt.write(line);
+					bufwt.newLine();
+					bufwt.flush();
+				}
+			}
 		}
-		if(bufwt!=null){
+		if (bufwt != null) {
 			bufwt.close();
 		}
-		if(bufwf!=null){
+		if (bufwf != null) {
 			bufwf.close();
 		}
-		if(bufr!=null){
+		if (bufr != null) {
 			bufr.close();
 		}
+		System.out.println("maxLineLength is: " + maxLineLength);
 	}
-
 }

@@ -17,10 +17,18 @@ public class fastJsonDemo {
 	public static void main(String[] args) throws Exception {
 //		testFastJson();
 // 		testGson();
-		removeAttr();
+//		removeAttr();
 //		hasAttrNum();
 //		JsonArrayTest();
+		createJson();
 		
+	}
+
+	private static void createJson() {
+		String str = "info";
+		JSONObject jo = new JSONObject();
+		jo.put("key", str);
+		System.out.println(jo.toJSONString());
 	}
 
 	private static void JsonArrayTest() throws Exception {

@@ -2,7 +2,9 @@ package com.niukun.file;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
@@ -46,4 +48,28 @@ public class FileUtils {
 		System.out.println(filenumb+"\tfile finished");
 	}
 
+	public static void getFilesBinary(String filename,String destfile) throws Exception{
+		FileInputStream fis = new FileInputStream(filename);
+		InputStreamReader isr = new InputStreamReader(fis);
+		
+		BufferedReader bufr = new BufferedReader(isr);
+		BufferedWriter bufw = new BufferedWriter(new FileWriter(new File(destfile)));
+		
+		String str =null;
+		while((str=bufr.readLine())!=null){
+			bufw.write(getStringFromBytes(str.getBytes()));
+			bufw.newLine();
+			bufw.flush();
+		}
+		
+		System.out.println("Finished ...");
+	}
+	public static String getStringFromBytes(byte[] bytes){
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < bytes.length; i++) {
+			sb.append(Integer.toBinaryString(bytes[i]));
+		}
+		return sb.toString();
+	}
+	
 }
