@@ -17,10 +17,10 @@ public class fastJsonDemo {
 	public static void main(String[] args) throws Exception {
 //		testFastJson();
 // 		testGson();
-//		removeAttr();
+		removeAttr();
 //		hasAttrNum();
 //		JsonArrayTest();
-		createJson();
+//		createJson();
 		
 	}
 
@@ -56,7 +56,7 @@ public class fastJsonDemo {
 	private static void removeAttr() {
 		String str = "{age:12,phone:123123}";
 		JSONObject obj = JSONObject.parseObject(str);
-		obj.remove("age");
+		obj.remove("name");
 		System.out.println(obj.toJSONString());
 	}
 
