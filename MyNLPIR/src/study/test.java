@@ -1,16 +1,19 @@
 package study;
 
-import java.util.Properties;
-import java.util.Set;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class test {
 
-	public static void main(String[] args) {
-//		Properties p = System.getProperties();
-//		Set<Object> set = p.keySet();
-//		for(Object o : set){
-//			System.out.println(o.toString()+":"+System.getProperty(o.toString()));
-//		}
-		System.out.println(System.getProperty("user.dir"));
+	public static void main(String[] args) throws IOException {
+		BufferedWriter bufw = new BufferedWriter(new FileWriter("test.txt"));
+		File file = new File("test.txt");
+		if(file.exists()){
+			System.out.println("文件已经存在");
+		}else{
+			System.out.println("文件不存在");
+		}
 	}
 }
