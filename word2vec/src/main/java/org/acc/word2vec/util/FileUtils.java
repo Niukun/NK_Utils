@@ -10,61 +10,103 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 
+/**
+ * 此工具类处理把大文件切分成小文件
+ * 
+ * @author Niukun
+ *
+ */
 public class FileUtils {
+	private static int totalLine = 6 * 2048 * 10;
 	public static void main(String[] args) throws UnsupportedEncodingException, Exception {
-		FileSplitByMulti("D:/NLPIR/sougou/news_sohusite_xml.dat", 6 * 2048*10);
-		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/","<doc>"));
+		// 切分文件
+//		FileSplitByMulti("D:/NLPIR/sougou/news_sohusite_xml/news_sohusite_xml.dat", totalLine);
+//		FileSplitByMulti("D:/NLPIR/sougou/news_tensite_xml/news_tensite_xml.dat", totalLine);
+		// 验证制定路径下的文件是否以"<doc>"作为开头
+		System.out.println("FilesBeginsWithCertainString:" + FilesBeginsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/", "<doc>"));
+		System.out.println("FilesEndsWithCertainString:" + FilesEndsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/", "</doc>"));
 	}
 
-	/**
-	 * 判断一个文件夹目录下所有文件是否以某一个字符串开头
-	 * 2016-12-20
-	 * @param path 文件集所在文件
-	 * @param str 目标字符串
-	 * @return 
-	 * @throws IOException
-	 */
-	private static boolean FilesBeginsWithCertainString(String path, String str) throws IOException {
+	private static boolean FilesEndsWithCertainString(String path, String str) throws IOException{
+		// 开始时设置标志位为true
 		boolean flag = true;
 		File file = new File(path);
+		// 得到目录下所有文件的列表
 		File[] files = file.listFiles();
-		BufferedReader bufr ;
+		String line = null,linetem = "1";
+		BufferedReader bufr;
+		// 对每个文件进行判断，如果有文件不是制定字符串开头，则把标志位设为false
 		for (int i = 0; i < files.length; i++) {
 			bufr = new BufferedReader(new FileReader(files[i]));
-			if(!str.equals(bufr.readLine())){
+			bufr.skip(totalLine-2);
+			while((line = bufr.readLine())!=null){
+				linetem = line;
+			}
+			if (!str.equals(linetem)) {
 				flag = false;
 			}
+//			System.out.println("第"+i+"个文件开始测试Ends..."+ flag+":"+files[i].getName());
 		}
 		return flag;
 	}
 
+	/**
+	 * 判断一个文件夹目录下所有文件是否以某一个字符串开头 2016-12-20
+	 * 
+	 * @param path
+	 *            文件集所在文件
+	 * @param str
+	 *            目标字符串
+	 * @return
+	 * @throws IOException
+	 */
+	private static boolean FilesBeginsWithCertainString(String path, String str) throws IOException {
+		// 开始时设置标志位为true
+		boolean flag = true;
+		File file = new File(path);
+		// 得到目录下所有文件的列表
+		File[] files = file.listFiles();
+		BufferedReader bufr;
+		// 对每个文件进行判断，如果有文件不是制定字符串开头，则把标志位设为false
+		for (int i = 0; i < files.length; i++) {
+			bufr = new BufferedReader(new FileReader(files[i]));
+			if (!str.equals(bufr.readLine())) {
+				flag = false;
+			}
+//			System.out.println("第"+i+"个文件开始测试Begins..."+ flag+":"+files[i].getName());
+		}
+		return flag;
+	}
 
 	/**
-	 * 已知一个文件，固定抽出来每个文件的行数（fileSize行）作为一个新的文件保存，剩下的存入一个单独的文件
-	 * 2016-12-20
+	 * 已知一个文件，固定抽出来每个文件的行数（fileSize行）作为一个新的文件保存，剩下的存入一个单独的文件 2016-12-20
+	 * 
 	 * @param string
 	 * @param fileSize
 	 * @throws IOException
 	 */
 	private static void FileSplitByMulti(String string, int fileSize) throws IOException {
-		InputStreamReader isr = new InputStreamReader(
-				new FileInputStream(string), "gbk");
+		InputStreamReader isr = new InputStreamReader(new FileInputStream(string), "gbk");
+
+		// 得到文件行数
 		BufferedReader bufr = new BufferedReader(isr);
 		int num = 0;
 		String str = null;
 		while ((str = bufr.readLine()) != null) {
 			num++;
 		}
-		System.out.println(num);
+		System.out.println("文件行数:" + num);
+		// 确定需要分割成的文件数量
 		int filenum = num / fileSize;
 
-		BufferedReader bufrtTwo = new BufferedReader(new InputStreamReader(
-				new FileInputStream(string), "gbk"));
+		// 重新读该文件，进行处理
+		BufferedReader bufrtTwo = new BufferedReader(new InputStreamReader(new FileInputStream(string), "gbk"));
 		int count = 1;
-		for (int i = 1; i <= filenum - 1; i++) {
+		for (int i = 1; i <= filenum; i++) {
 			BufferedWriter bufw = new BufferedWriter(
-					new FileWriter("D:/NLPIR/sougou/news_sohusite_xml/" + (i) + ".txt"));
-			while (((count++) <= fileSize * (i + 1))) {
+					new FileWriter(new File(string).getParent()+"/" + (i) + ".txt"));
+//					new FileWriter("D:/NLPIR/sougou/news_sohusite_xml/" + (i) + ".txt"));
+			while (((count++) <= fileSize * (i))) {
 				if ((str = bufrtTwo.readLine()) != null) {
 					bufw.write(str);
 					bufw.newLine();
@@ -75,10 +117,10 @@ public class FileUtils {
 				bufw.close();
 			}
 			count--;
-			System.out.println(i + 1 + "\tfile finished");
+			System.out.println(i + "\tfile finished");
 		}
 		BufferedWriter bufw = new BufferedWriter(
-				new FileWriter("D:/NLPIR/sougou/news_sohusite_xml/" + filenum + ".txt"));
+				new FileWriter(new File(string).getParent()+"/" + (filenum + 1) + ".txt"));
 		while ((str = bufrtTwo.readLine()) != null) {
 			bufw.write(str);
 			bufw.newLine();
@@ -87,13 +129,13 @@ public class FileUtils {
 		if (bufw != null) {
 			bufw.close();
 		}
-		System.out.println(filenum + "\tfile finished");
+		System.out.println((filenum + 1) + "\tfile finished...");
 
 	}
 
 	/**
-	 * 按文件数分解大文件
-	 * 2016-12-20
+	 * 按文件数分解大文件 2016-12-20
+	 * 
 	 * @param filenumb
 	 * @throws UnsupportedEncodingException
 	 * @throws Exception
@@ -136,10 +178,9 @@ public class FileUtils {
 		System.out.println(filenumb + "\tfile finished");
 	}
 
-	
 	/**
-	 * 得到一个文件的二进制数字形式
-	 * 2016-12-19
+	 * 得到一个文件的二进制数字形式 2016-12-19
+	 * 
 	 * @param filename
 	 * @param destfile
 	 * @throws Exception
