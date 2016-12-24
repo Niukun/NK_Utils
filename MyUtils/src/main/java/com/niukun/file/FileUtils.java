@@ -12,8 +12,8 @@ import java.io.UnsupportedEncodingException;
 
 public class FileUtils {
 	public static void main(String[] args) throws UnsupportedEncodingException, Exception {
-		FileSplitByMulti("src/main/resources/testfiles/news_tensite_xml.dat", 6 * 2048*10);
-		System.out.println(FilesBeginsWithCertainString("src/main/resources/testfiles/news_tensite_xml/","<doc>"));
+		FileSplitByMulti("D:/NLPIR/sougou/news_sohusite_xml.dat", 6 * 2048*10);
+		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/","<doc>"));
 	}
 
 	/**
@@ -35,7 +35,6 @@ public class FileUtils {
 				flag = false;
 			}
 		}
-		System.out.println(flag);
 		return flag;
 	}
 
@@ -49,7 +48,7 @@ public class FileUtils {
 	 */
 	private static void FileSplitByMulti(String string, int fileSize) throws IOException {
 		InputStreamReader isr = new InputStreamReader(
-				new FileInputStream("src/main/resources/testfiles/news_tensite_xml.dat"), "gbk");
+				new FileInputStream(string), "gbk");
 		BufferedReader bufr = new BufferedReader(isr);
 		int num = 0;
 		String str = null;
@@ -60,11 +59,11 @@ public class FileUtils {
 		int filenum = num / fileSize;
 
 		BufferedReader bufrtTwo = new BufferedReader(new InputStreamReader(
-				new FileInputStream("src/main/resources/testfiles/news_tensite_xml.dat"), "gbk"));
+				new FileInputStream(string), "gbk"));
 		int count = 1;
 		for (int i = 1; i <= filenum - 1; i++) {
 			BufferedWriter bufw = new BufferedWriter(
-					new FileWriter("src/main/resources/testfiles/news_tensite_xml/" + (i) + ".txt"));
+					new FileWriter("D:/NLPIR/sougou/news_sohusite_xml/" + (i) + ".txt"));
 			while (((count++) <= fileSize * (i + 1))) {
 				if ((str = bufrtTwo.readLine()) != null) {
 					bufw.write(str);
@@ -79,7 +78,7 @@ public class FileUtils {
 			System.out.println(i + 1 + "\tfile finished");
 		}
 		BufferedWriter bufw = new BufferedWriter(
-				new FileWriter("src/main/resources/testfiles/news_tensite_xml/" + filenum + ".txt"));
+				new FileWriter("D:/NLPIR/sougou/news_sohusite_xml/" + filenum + ".txt"));
 		while ((str = bufrtTwo.readLine()) != null) {
 			bufw.write(str);
 			bufw.newLine();
@@ -101,7 +100,7 @@ public class FileUtils {
 	 */
 	private static void FileSplitByNum(int filenumb) throws UnsupportedEncodingException, Exception {
 		InputStreamReader isr = new InputStreamReader(
-				new FileInputStream("src/main/resources/testfiles/news_tensite_xml.dat"), "gbk");
+				new FileInputStream("src/main/resources/testfiles/news_sohusite_xml.dat"), "gbk");
 		BufferedReader bufr = new BufferedReader(isr);
 		int num = 0;
 		String str = null;
@@ -111,11 +110,11 @@ public class FileUtils {
 		System.out.println(num);
 		int singlefilenum = num / filenumb;
 		BufferedReader bufrtem = new BufferedReader(new InputStreamReader(
-				new FileInputStream("src/main/resources/testfiles/news_tensite_xml.dat"), "gbk"));
+				new FileInputStream("src/main/resources/testfiles/news_sohusite_xml.dat"), "gbk"));
 		int count = 0;
 		for (int i = 0; i < filenumb - 1; i++) {
 			BufferedWriter bufw = new BufferedWriter(
-					new FileWriter("src/main/resources/testfiles/news_tensite_xml/" + (i + 1) + ".txt"));
+					new FileWriter("src/main/resources/testfiles/news_sohusite_xml/" + (i + 1) + ".txt"));
 			while ((str = bufrtem.readLine()) != null && ((count++) < singlefilenum * (i + 1))) {
 				bufw.write(str);
 			}

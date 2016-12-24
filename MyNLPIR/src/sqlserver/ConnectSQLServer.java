@@ -33,7 +33,7 @@ public class ConnectSQLServer {
 			con = DriverManager.getConnection(url);
 
 			// Create and execute an SQL statement that returns some data.
-			String sql_classes = "SELECT distinct Categorization  FROM NewsTestingCorpus";
+			String sql_classes = "SELECT distinct Categorization  FROM [NewsTrainingCorpus]";
 			stmt = con.createStatement();
 
 			// 得到所有类别
@@ -47,15 +47,15 @@ public class ConnectSQLServer {
 			for (int i = 0; i < classList.size(); i++) {
 				System.out.println("***********************");
 				String cla = ((String) classList.get(i)).trim();
-				String sql_singleclass = "SELECT * FROM NewsTestingCorpus where Categorization = '" + cla + "'";
+				String sql_singleclass = "SELECT * FROM [NewsTrainingCorpus] where Categorization = '" + cla + "'";
 				System.out.println(sql_singleclass);
 
 				rss = stmt.executeQuery(sql_singleclass);
 				System.out.println("正在处理：" + cla);
 				// 写入文件
 				while (rss.next()) {
-					file = new File("D:/NLPIR/paper/files/test/" + cla + "/"
-							+ rss.getString(2).replaceAll("[:：/\\?*\"|<>]", " ") + ".txt");
+					file = new File("D:/NLPIR/paper/files/trainnum/" + cla + "/"
+							+ rss.getString(1).replaceAll("[:：/\\?*\"|<>]", " ") + ".txt");
 					bufw = new BufferedWriter(new FileWriter(file));
 
 					bufw.write(rss.getString(3));
