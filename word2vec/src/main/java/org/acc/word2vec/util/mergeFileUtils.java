@@ -13,13 +13,18 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PaperFileUtils {
+/**
+ * 
+ * @author Niukun
+ *
+ */
+public class mergeFileUtils {
 
 	public static void main(String[] args) {
 		System.out.println("start");
-		// filetoOne(new File("D:/NLPIR/paper/files/bigfile"));
-		int strlen = countFileWords("D:/NLPIR/paper/files/bigfile/bigfileSegment.txt");
-		System.out.println(strlen);
+		filetoOne(new File("D:/NLPIR/sougou/big"));
+//		int strlen = countFileWords("D:/NLPIR/paper/files/bigfile/bigfileSegment.txt");
+//		System.out.println(strlen);
 		System.out.println("end");
 	}
 
@@ -56,12 +61,16 @@ public class PaperFileUtils {
 		return wordNum;
 	}
 
+	/**
+	 * 把指定目录下所有文件合并成一个文件，以bigfile.txt存在当前文件夹中
+	 * @param file
+	 */
 	private static void filetoOne(File file) {
 		BufferedReader bufr = null;
 		BufferedWriter bufw = null;
 		String line = null;
 		try {
-			bufw = new BufferedWriter(new FileWriter("D:/NLPIR/paper/files/bigfile/bigfile.txt", true));
+			bufw = new BufferedWriter(new FileWriter(file.getParent()+"/bigfile.txt", true));
 			if (file.isDirectory()) {
 				File[] files = file.listFiles();
 				for (int i = 0; i < files.length; i++) {
@@ -69,6 +78,7 @@ public class PaperFileUtils {
 				}
 			} else {
 				bufr = new BufferedReader(new FileReader(file));
+				System.out.println(file.getAbsolutePath());
 				while ((line = bufr.readLine()) != null) {
 					bufw.write(line);
 					bufw.newLine();
@@ -82,7 +92,6 @@ public class PaperFileUtils {
 				try {
 					bufw.close();
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -90,7 +99,6 @@ public class PaperFileUtils {
 				try {
 					bufw.close();
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}

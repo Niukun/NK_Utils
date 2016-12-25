@@ -12,21 +12,30 @@ import java.io.UnsupportedEncodingException;
 
 /**
  * 此工具类处理把大文件切分成小文件
- * 
+ * -Xms256m -Xmx512m
  * @author Niukun
  *
  */
-public class FileUtils {
+public class splitFileUtils {
 	private static int totalLine = 6 * 2048 * 10;
 	public static void main(String[] args) throws UnsupportedEncodingException, Exception {
-		// 切分文件
-//		FileSplitByMulti("D:/NLPIR/sougou/news_sohusite_xml/news_sohusite_xml.dat", totalLine);
-//		FileSplitByMulti("D:/NLPIR/sougou/news_tensite_xml/news_tensite_xml.dat", totalLine);
+		// 切分文件，默认生成文件与本文件同级目录
+		FileSplitByMulti("D:/NLPIR/sougou/news_sohusite_xml.dat", totalLine);
+//		FileSplitByMulti("D:/NLPIR/sougou/news_tensite_xml.dat", totalLine);
 		// 验证制定路径下的文件是否以"<doc>"作为开头
 		System.out.println("FilesBeginsWithCertainString:" + FilesBeginsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/", "<doc>"));
 		System.out.println("FilesEndsWithCertainString:" + FilesEndsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/", "</doc>"));
+		System.out.println("FilesBeginsWithCertainString:" + FilesBeginsWithCertainString("D:/NLPIR/sougou/news_tensite_xml/", "<doc>"));
+		System.out.println("FilesEndsWithCertainString:" + FilesEndsWithCertainString("D:/NLPIR/sougou/news_tensite_xml/", "</doc>"));
 	}
 
+	/**
+	 * 判断一个文件是否以某一字符串作为结束行 2016-12-20
+	 * @param path
+	 * @param str
+	 * @return
+	 * @throws IOException
+	 */
 	private static boolean FilesEndsWithCertainString(String path, String str) throws IOException{
 		// 开始时设置标志位为true
 		boolean flag = true;
@@ -51,7 +60,7 @@ public class FileUtils {
 	}
 
 	/**
-	 * 判断一个文件夹目录下所有文件是否以某一个字符串开头 2016-12-20
+	 * 判断一个文件是否以某一字符串作为开头行 2016-12-20
 	 * 
 	 * @param path
 	 *            文件集所在文件
@@ -105,7 +114,6 @@ public class FileUtils {
 		for (int i = 1; i <= filenum; i++) {
 			BufferedWriter bufw = new BufferedWriter(
 					new FileWriter(new File(string).getParent()+"/" + (i) + ".txt"));
-//					new FileWriter("D:/NLPIR/sougou/news_sohusite_xml/" + (i) + ".txt"));
 			while (((count++) <= fileSize * (i))) {
 				if ((str = bufrtTwo.readLine()) != null) {
 					bufw.write(str);

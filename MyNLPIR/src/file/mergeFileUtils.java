@@ -13,7 +13,7 @@ import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PaperFileUtils {
+public class mergeFileUtils {
 
 	public static void main(String[] args) {
 		System.out.println("start");
@@ -82,7 +82,6 @@ public class PaperFileUtils {
 				try {
 					bufw.close();
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -90,7 +89,6 @@ public class PaperFileUtils {
 				try {
 					bufw.close();
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
