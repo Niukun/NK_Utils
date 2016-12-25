@@ -20,7 +20,7 @@ public class FitDemo {
                 .newWord2Vec()
                 .addAllTextFile(files)
                 .charset(Charset.forName("UTF-8"))
-                .saveAt("D:/NLPIR/paper/files/bigfile/bigfile.bin", true)
+                .saveAt("D:/NLPIR/paper/files/bigfile/48.bin", true)
                 .build();
         System.out.println("end...");
 
