@@ -1,10 +1,16 @@
 package org.acc.word2vec.core;
 
-import com.google.common.base.Charsets;
-import com.google.common.base.Preconditions;
-import com.google.common.base.Strings;
-import com.google.common.io.Files;
-import lombok.NonNull;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 import org.acc.word2vec.text.AnsjTokenizerFactory;
 import org.acc.word2vec.text.ChineseTokenPreProcess;
 import org.acc.word2vec.util.RegexUtils;
@@ -16,14 +22,11 @@ import org.deeplearning4j.text.tokenization.tokenizerfactory.TokenizerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.nio.charset.Charset;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import com.google.common.base.Charsets;
+import com.google.common.base.Preconditions;
+import com.google.common.base.Strings;
+
+import lombok.NonNull;
 
 /**
  * Created by zhaoyy on 2016/12/19.
@@ -83,18 +86,33 @@ public final class Word2VecUtils {
     private static StringBuilder readAllText(Collection<File> files, Charset charset) {
         StringBuilder builder = new StringBuilder();
         for (File file : files) {
-            logger.info("reading text from [{}]...", file.getAbsolutePath());
-            List<String> lines = null;
-            try {
-                lines = Files.readLines(file, charset);
-            } catch (IOException e) {
-                logger.error(e.getMessage(), e);
-            }
-            if (lines == null)
-                continue;
-            for (String line : lines)
-                builder.append(line);
+        	try {
+				BufferedReader bufr = new BufferedReader(new FileReader(file));
+				String line = null;
+				try {
+					while((line = bufr.readLine()) != null){
+						builder.append(line);
+					}
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			}
         }
+//        for (File file : files) {
+//            logger.info("reading text from [{}]...", file.getAbsolutePath());
+//            List<String> lines = null;
+//            try {
+//                lines = Files.readLines(file, charset);
+//            } catch (IOException e) {
+//                logger.error(e.getMessage(), e);
+//            }
+//            if (lines == null)
+//                continue;
+//            for (String line : lines)
+//                builder.append(line);
+//        }
         return builder;
     }
 
