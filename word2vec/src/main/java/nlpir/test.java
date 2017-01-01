@@ -42,41 +42,47 @@ public class test {
 		File file = new File("D:/NLPIR/word2vec/class/trainnum/education/");
 		File[] files = file.listFiles();
 		for (File f : files) {
-			String[] strs;
+			String[] strs;//用来存放关键字
 			WordUtil wu = new WordUtil();
 			strs = getKeyWords(f, 9);
-			if (strs != null) {//如果不是null，和不同关键字计算距离
-				for (int i = 0; i < strs.length; i++) {//对于每个关键字
-					//得到关键字的分类，和与该类的cos值
+			for (int i = 0; i < strs.length; i++) {// 对于每个关键字
+				if (strs[i] != null) {// 如果不是null，和不同类别计算距离
+					// 1 得到关键字最近的分类，和与该类的距离
 					ResuUtils re = getWordsClass(strs[i]);
-					//找到该分类在WordUtil中classes的序号，类标志位加1，得分加上cos值
-					int index;
+					// 2 找到该分类在WordUtil中classes的序号，类标志位加1，得分加上cos值
 					for (int j = 0; j < wu.classes.length; j++) {
-						if(re.c.equals(wu.classes[j])){
-							index = j;
+						if (re.c.equals(wu.classes[j])) {
 							wu.num[j]++;
-							wu.score[j].add(re.temp);
+							wu.score[j] = wu.score[j].add(re.temp);
 						}
 					}
-					
+
 				}
 			}
 			//得到每个类平均的cos值
-			for (int i = 0; i < wu.score.length; i++) {
+			for (int i = 0; i < wu.results.length; i++) {
 				if(wu.num[i]!=0){
-					wu.results[i]= wu.score[i].divide(new BigDecimal(wu.num[i]));
-					System.out.print("wu.results "+i+":"+wu.results[i]+"--");
+					wu.results[i]= wu.score[i].divide(new BigDecimal(wu.num[i]), 8, BigDecimal.ROUND_HALF_UP);
+//					System.out.print(wu.classes[i]+i+":"+wu.results[i]+"--");
+				}else{
+					wu.results[i]=new BigDecimal(0);
 				}
 			}
 			
 			//最大cos值的index，通过它找到类
 			int resulIndex = 0;
 			for (int i = 1; i < wu.results.length; i++) {
-				if(wu.results[i].compareTo(wu.results[i-1])>=0){
-					resulIndex = i;
+				System.out.print(wu.results[i] + " ");
+				if(wu.results[i].compareTo(wu.results[resulIndex])>0){
+					if(wu.results[i].compareTo(new BigDecimal(0.99999999))>=0){
+					}else{
+						resulIndex = i;
+					}
+					
 				}
 			}
-			System.out.println("分类结果为："+wu.classes[resulIndex] + resulIndex);
+			System.out.println();
+			System.out.println("分类结果为："+wu.classes[resulIndex] + " " + wu.results[resulIndex]);
 			System.out.println("*********************************************");
 		}
 
@@ -88,6 +94,7 @@ public class test {
 		ResuUtils re = new ResuUtils();
 		for (int i = 0; i < classes.length; i++) {
 			BigDecimal distince = calcWordsDistance(str, classes[i]);
+			//找出离该词最近的分类和距离
 			if (distince.compareTo(re.temp) >= 0) {
 				re.temp = distince;
 				re.c = classes[i];
