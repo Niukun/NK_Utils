@@ -7,6 +7,6 @@ public class WordUtil {
 	int[] num = {0,0,0,0,0,0,0,0};
 	BigDecimal[] score = {new BigDecimal(0),new BigDecimal(0),new BigDecimal(0),new BigDecimal(0),new BigDecimal(0),new BigDecimal(0),new BigDecimal(0),new BigDecimal(0)};
 	BigDecimal[] results = {new BigDecimal(0),new BigDecimal(0),new BigDecimal(0),new BigDecimal(0),new BigDecimal(0),new BigDecimal(0),new BigDecimal(0),new BigDecimal(0)};
-	
+	int resultIndex = 0;
 	
 }

@@ -1,9 +1,11 @@
 package nlpir;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
 
@@ -17,6 +19,7 @@ public class test {
 	static CLibrary instance = (CLibrary) Native.loadLibrary(System.getProperty("user.dir") + "\\source\\NLPIR",
 			CLibrary.class);
 	static Word2Vec word2Vec;
+	static BufferedWriter bufw = null; 
 
 	// 初始化
 	static {
@@ -38,13 +41,28 @@ public class test {
 	}
 
 	public static void main(String[] args) throws IOException {
+		long start = System.currentTimeMillis();
+		System.out.println("文化正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/culture/","文化")*100) + "%" + (System.currentTimeMillis()-start));
+		System.out.println("教育正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/education/","教育")*100) + "%" + (System.currentTimeMillis()-start));
+		System.out.println("娱乐正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/entertainment/","娱乐")*100) + "%" + (System.currentTimeMillis()-start));
+		System.out.println("历史正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/history/","历史")*100) + "%" + (System.currentTimeMillis()-start));
+		System.out.println("互联网正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/it/","互联网")*100) + "%" + (System.currentTimeMillis()-start));
+		System.out.println("军事正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/military/","军事")*100) + "%" +(System.currentTimeMillis()-start));
+		System.out.println("阅读正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/reading/","阅读")*100) + "%" + (System.currentTimeMillis()-start));
+		System.out.println("社会正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/society&law/","社会")*100) + "%" + (System.currentTimeMillis()-start));
 
-		File file = new File("D:/NLPIR/word2vec/class/trainnum/education/");
+	}
+
+	public static double getCorrectNum(String path,String className){
+		File file = new File(path);
 		File[] files = file.listFiles();
+		int correctNum = 0;
 		for (File f : files) {
 			String[] strs;//用来存放关键字
 			WordUtil wu = new WordUtil();
-			strs = getKeyWords(f, 9);
+			try{
+				strs = getKeyWords(f, 9);
+			
 			for (int i = 0; i < strs.length; i++) {// 对于每个关键字
 				if (strs[i] != null) {// 如果不是null，和不同类别计算距离
 					// 1 得到关键字最近的分类，和与该类的距离
@@ -59,35 +77,41 @@ public class test {
 
 				}
 			}
+			}catch(NullPointerException e){
+				
+			}
 			//得到每个类平均的cos值
 			for (int i = 0; i < wu.results.length; i++) {
 				if(wu.num[i]!=0){
 					wu.results[i]= wu.score[i].divide(new BigDecimal(wu.num[i]), 8, BigDecimal.ROUND_HALF_UP);
-//					System.out.print(wu.classes[i]+i+":"+wu.results[i]+"--");
 				}else{
 					wu.results[i]=new BigDecimal(0);
 				}
 			}
 			
 			//最大cos值的index，通过它找到类
-			int resulIndex = 0;
+//			System.out.print(wu.results[0] + " ");
 			for (int i = 1; i < wu.results.length; i++) {
-				System.out.print(wu.results[i] + " ");
-				if(wu.results[i].compareTo(wu.results[resulIndex])>0){
+//				System.out.print(wu.results[i] + " ");
+				if(wu.results[i].compareTo(wu.results[wu.resultIndex])>0){
 					if(wu.results[i].compareTo(new BigDecimal(0.99999999))>=0){
 					}else{
-						resulIndex = i;
+						wu.resultIndex = i;
 					}
 					
 				}
 			}
-			System.out.println();
-			System.out.println("分类结果为："+wu.classes[resulIndex] + " " + wu.results[resulIndex]);
-			System.out.println("*********************************************");
+			if(wu.classes[wu.resultIndex].equals(className)){
+				correctNum++;
+			}
+//			System.out.println();
+//			System.out.println("分类结果为："+wu.classes[wu.resultIndex] + " " + wu.results[wu.resultIndex]);
+//			System.out.println("*********************************************");
 		}
-
+//		System.out.println("正确率为：" + (correctNum*1.0/files.length) + "%...");
+		return correctNum*1.0/files.length;
 	}
-
+	
 	// 得到一个关键字的分类
 	public static ResuUtils getWordsClass(String str) {
 		String[] classes = getClassWords();
@@ -100,7 +124,7 @@ public class test {
 				re.c = classes[i];
 			}
 		}
-		System.out.println(str + ":最接近的分类是：" + re.c + "---最接近的余弦值为：" + re.temp);
+//		System.out.println(str + ":最接近的分类是：" + re.c + "---最接近的余弦值为：" + re.temp);
 		return re;
 	}
 
