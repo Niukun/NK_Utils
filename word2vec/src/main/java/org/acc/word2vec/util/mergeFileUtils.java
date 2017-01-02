@@ -10,8 +10,6 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 import java.util.TreeSet;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * 
@@ -22,7 +20,7 @@ public class mergeFileUtils {
 
 	public static void main(String[] args) {
 		System.out.println("start");
-		filetoOne(new File("D:/NLPIR/sougou/big"));
+		filetoOne(new File("D:/NLPIR/word2vec/class/bigger"));
 //		int strlen = countFileWords("D:/NLPIR/paper/files/bigfile/bigfileSegment.txt");
 //		System.out.println(strlen);
 		System.out.println("end");
@@ -78,7 +76,7 @@ public class mergeFileUtils {
 				}
 			} else {
 				bufr = new BufferedReader(new FileReader(file));
-				System.out.println(file.getAbsolutePath());
+//				System.out.println(file.getAbsolutePath());
 				while ((line = bufr.readLine()) != null) {
 					bufw.write(line);
 					bufw.newLine();

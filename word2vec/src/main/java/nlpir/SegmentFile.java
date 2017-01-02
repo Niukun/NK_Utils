@@ -18,7 +18,7 @@ public class SegmentFile {
 		}
 
 		//以上部分的内容不用管
-		String sInput = "曾经有一份真挚的感情摆在我的面前我没有珍惜，等我失去的时候才追悔莫及，人间最痛苦的事莫过于此，你的剑在我的咽喉上刺下去吧，不用在犹豫了！如果上天能给我一次再来一次的机会，我会对哪个女孩说三个字：我爱你，如果非要在这份爱上加一个期限，我希望是一万年！";
+		String sInput = "曾经有一份真挚的感情摆在我的面前我没有珍惜，等我失去的时候才追悔莫及！";
 
 		try {
 			resultString = instance.NLPIR_ParagraphProcess(sInput, 0);
@@ -44,17 +44,17 @@ public class SegmentFile {
 			resultString = instance.NLPIR_GetNewWords(sInput, 10, false);
 			System.out.println("新词提取结果为：\n" + resultString);
 
-//			Double d = instance.NLPIR_FileProcess("D:/NLPIR/paper/files/bigfile/bigfile.txt", "D:/NLPIR/paper/files/bigfile/bigfileSegment.txt", 0);
-//
-//			System.out.println("对文件内容进行分词的运行速度为： ");
-//			if (d.isInfinite())
-//				System.out.println("无结果");
-//			else {
-//				BigDecimal b = new BigDecimal(d);
-//				System.out.println(b.divide(new BigDecimal(1000), 2, BigDecimal.ROUND_HALF_UP) + "秒");
-//			}
-//			resultString = instance.NLPIR_GetFileKeyWords("source/3.txt", 10, false);
-//			System.out.println("从3.txt文件中提取关键词的结果为：\n" + resultString);
+			Double d = instance.NLPIR_FileProcess("D:/NLPIR/word2vec/big/trainandtest.txt", "D:/NLPIR/word2vec/big/trainandtestSegment.txt", 0);
+
+			System.out.println("对文件内容进行分词的运行速度为： ");
+			if (d.isInfinite())
+				System.out.println("无结果");
+			else {
+				BigDecimal b = new BigDecimal(d);
+				System.out.println(b.divide(new BigDecimal(1000), 2, BigDecimal.ROUND_HALF_UP) + "秒");
+			}
+			resultString = instance.NLPIR_GetFileKeyWords("source/3.txt", 10, false);
+			System.out.println("从3.txt文件中提取关键词的结果为：\n" + resultString);
 
 			instance.NLPIR_Exit();
 
