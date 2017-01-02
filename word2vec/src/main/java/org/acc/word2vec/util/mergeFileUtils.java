@@ -78,7 +78,7 @@ public class mergeFileUtils {
 				bufr = new BufferedReader(new FileReader(file));
 //				System.out.println(file.getAbsolutePath());
 				while ((line = bufr.readLine()) != null) {
-					bufw.write(line);
+					bufw.write(line.toLowerCase());
 					bufw.newLine();
 					bufw.flush();
 				}

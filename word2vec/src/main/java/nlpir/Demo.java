@@ -34,6 +34,7 @@ public class Demo {
 		long start = System.currentTimeMillis();
 		try {
 			word2Vec = Word2VecUtils.restore("D:/NLPIR/word2vec/big/trainandtestSegment/trainandtestSegment.bin");
+//			word2Vec = Word2VecUtils.restore("D:/NLPIR/word2vec/big/tenbigfileSegment.bin");
 		} catch (FileNotFoundException e) {
 			System.out.println("模型加载失败...");
 		}
@@ -42,14 +43,14 @@ public class Demo {
 
 	public static void main(String[] args) throws IOException {
 		long start = System.currentTimeMillis();
-		System.out.println("文化正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/culture/","文化")*100) + "%" + (System.currentTimeMillis()-start));
-		System.out.println("教育正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/education/","教育")*100) + "%" + (System.currentTimeMillis()-start));
-		System.out.println("娱乐正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/entertainment/","娱乐")*100) + "%" + (System.currentTimeMillis()-start));
+//		System.out.println("文化正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/culture/","文化")*100) + "%" + (System.currentTimeMillis()-start));
+//		System.out.println("教育正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/education/","教育")*100) + "%" + (System.currentTimeMillis()-start));
+//		System.out.println("娱乐正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/entertainment/","娱乐")*100) + "%" + (System.currentTimeMillis()-start));
 		System.out.println("历史正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/history/","历史")*100) + "%" + (System.currentTimeMillis()-start));
-		System.out.println("互联网正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/it/","互联网")*100) + "%" + (System.currentTimeMillis()-start));
-		System.out.println("军事正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/military/","军事")*100) + "%" +(System.currentTimeMillis()-start));
-		System.out.println("书籍正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/reading/","书籍")*100) + "%" + (System.currentTimeMillis()-start));
-		System.out.println("犯罪正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/society&law/","犯罪")*100) + "%" + (System.currentTimeMillis()-start));
+//		System.out.println("互联网正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/it/","互联网")*100) + "%" + (System.currentTimeMillis()-start));
+//		System.out.println("军事正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/military/","军事")*100) + "%" +(System.currentTimeMillis()-start));
+//		System.out.println("书籍正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/reading/","书籍")*100) + "%" + (System.currentTimeMillis()-start));
+//		System.out.println("犯罪正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/society&law/","犯罪")*100) + "%" + (System.currentTimeMillis()-start));
 
 	}
 
@@ -61,7 +62,7 @@ public class Demo {
 			String[] strs;//用来存放关键字
 			WordUtil wu = new WordUtil();
 			try{
-				strs = getKeyWords(f, 11);
+				strs = getKeyWords(f, 9);
 //				System.out.println();//为方便打印关键字换行
 			for (int i = 0; i < strs.length; i++) {// 对于每个关键字
 //				System.out.print(strs[i] + " ");//打印每个文件的关键字
@@ -79,7 +80,8 @@ public class Demo {
 				}
 			}
 			}catch(NullPointerException e){
-				
+				System.out.println(f.getAbsolutePath());
+				e.printStackTrace();
 			}
 			
 			//得到每个类平均的cos值
@@ -96,7 +98,7 @@ public class Demo {
 			for (int i = 1; i < wu.results.length; i++) {
 //				System.out.print(wu.results[i] + " ");
 				if(wu.results[i].compareTo(wu.results[wu.resultIndex])>0){
-					if(wu.results[i].compareTo(new BigDecimal(0.99999999))>=0){
+					if(wu.results[i].compareTo(new BigDecimal(0.9))>=0){
 					}else{
 						wu.resultIndex = i;
 					}
@@ -107,8 +109,8 @@ public class Demo {
 				correctNum++;
 			}
 //			System.out.println();
-//			System.out.println("分类结果为："+wu.classes[wu.resultIndex] + " " + wu.results[wu.resultIndex]);
-//			System.out.println("*********************************************");
+			System.out.println("分类结果为："+wu.classes[wu.resultIndex] + " " + wu.results[wu.resultIndex]);
+			System.out.println("*********************************************");
 		}
 //		System.out.println("正确率为：" + (correctNum*1.0/files.length) + "%...");
 		return correctNum*1.0/files.length;
@@ -126,12 +128,12 @@ public class Demo {
 				re.c = classes[i];
 			}
 		}
-//		System.out.println(str + ":最接近的分类是：" + re.c + "---最接近的余弦值为：" + re.temp);
+		System.out.println(str + ":最接近的分类是：" + re.c + "---最接近的余弦值为：" + re.temp);
 		return re;
 	}
 
 	// 计算两个字符串的cos值
-	private static BigDecimal calcWordsDistance(String string, String string2) {
+	public static BigDecimal calcWordsDistance(String string, String string2) {
 		double[] ds1 = word2Vec.getWordVector(string);
 		double[] ds2 = word2Vec.getWordVector(string2);
 		BigDecimal b1, b2, son, moth, res = null;
@@ -189,7 +191,7 @@ public class Demo {
 			while ((line = bufr.readLine()) != null) {
 				sb.append(line);
 			}
-			resultString = instance.NLPIR_GetKeyWords(sb.toString(), numOfKeysWords, false);
+			resultString = instance.NLPIR_GetKeyWords(sb.toString(), numOfKeysWords, false).toLowerCase();
 			strs = resultString.split("#");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

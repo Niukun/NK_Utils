@@ -18,15 +18,16 @@ public class RestoreDemo {
     public static void main(String[] args) throws FileNotFoundException {
     	long start = System.currentTimeMillis();
         Word2Vec word2Vec = Word2VecUtils
-                .restore("D:/NLPIR/word2vec/tenbigfileSegment.bin");
+//                .restore("D:/NLPIR/word2vec/tenbigfileSegment.bin");
+        .restore("D:/NLPIR/word2vec/big/trainandtestSegment/trainandtestSegment.bin");
         System.out.println("加载模型使用时间："+(System.currentTimeMillis()-start));
-        /*double[] ds =  word2Vec.getWordVector("西游记");
+        double[] ds =  word2Vec.getWordVector("灵柩");
         for (int i = 0; i < ds.length; i++) {
         	System.out.print(ds[i]+" ");
-		}*/
+		}
         System.out.println("______________________");
         
-        System.out.println(word2Vec.wordsNearest("西游记", 10));
+        System.out.println(word2Vec.wordsNearest("灵柩", 10));
         //[水浒传, 三国演义, 霸王别姬, 红楼梦, 西厢记, 文昭关, 怀玉, 铁梨花, 花木兰, 四郎探母]
     }
 }
