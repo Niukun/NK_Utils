@@ -33,8 +33,8 @@ public class Demo {
 		// 词向量模型加载
 		long start = System.currentTimeMillis();
 		try {
-			word2Vec = Word2VecUtils.restore("D:/NLPIR/word2vec/big/trainandtestSegment/trainandtestSegment.bin");
-//			word2Vec = Word2VecUtils.restore("D:/NLPIR/word2vec/big/tenbigfileSegment.bin");
+//			word2Vec = Word2VecUtils.restore("D:/NLPIR/word2vec/big/trainandtestSegment/trainandtestSegment.bin");
+			word2Vec = Word2VecUtils.restore("D:/NLPIR/word2vec/big/tenbigfileSegment.bin");
 		} catch (FileNotFoundException e) {
 			System.out.println("模型加载失败...");
 		}
@@ -46,10 +46,10 @@ public class Demo {
 //		System.out.println("文化正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/culture/","文化")*100) + "%" + (System.currentTimeMillis()-start));
 //		System.out.println("教育正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/education/","教育")*100) + "%" + (System.currentTimeMillis()-start));
 //		System.out.println("娱乐正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/entertainment/","娱乐")*100) + "%" + (System.currentTimeMillis()-start));
-		System.out.println("历史正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/history/","历史")*100) + "%" + (System.currentTimeMillis()-start));
+//		System.out.println("历史正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/history/","历史")*100) + "%" + (System.currentTimeMillis()-start));
 //		System.out.println("互联网正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/it/","互联网")*100) + "%" + (System.currentTimeMillis()-start));
 //		System.out.println("军事正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/military/","军事")*100) + "%" +(System.currentTimeMillis()-start));
-//		System.out.println("书籍正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/reading/","书籍")*100) + "%" + (System.currentTimeMillis()-start));
+		System.out.println("教育正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/reading/","教育")*100) + "%" + (System.currentTimeMillis()-start));
 //		System.out.println("犯罪正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/society&law/","犯罪")*100) + "%" + (System.currentTimeMillis()-start));
 
 	}
@@ -62,7 +62,7 @@ public class Demo {
 			String[] strs;//用来存放关键字
 			WordUtil wu = new WordUtil();
 			try{
-				strs = getKeyWords(f, 9);
+				strs = getKeyWords(f, 11);
 //				System.out.println();//为方便打印关键字换行
 			for (int i = 0; i < strs.length; i++) {// 对于每个关键字
 //				System.out.print(strs[i] + " ");//打印每个文件的关键字
@@ -80,7 +80,17 @@ public class Demo {
 				}
 			}
 			}catch(NullPointerException e){
-				System.out.println(f.getAbsolutePath());
+				/*try {
+					bufw = new BufferedWriter(new FileWriter(f.getParent()+"/0000000.txt",true));
+					bufw.write(f.getAbsolutePath());
+					bufw.newLine();
+					bufw.flush();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}*/
+				System.out.println();
+//				System.out.println(f.getAbsolutePath());
 				e.printStackTrace();
 			}
 			
@@ -109,8 +119,8 @@ public class Demo {
 				correctNum++;
 			}
 //			System.out.println();
-			System.out.println("分类结果为："+wu.classes[wu.resultIndex] + " " + wu.results[wu.resultIndex]);
-			System.out.println("*********************************************");
+//			System.out.println("分类结果为："+wu.classes[wu.resultIndex] + " " + wu.results[wu.resultIndex]);
+//			System.out.println("*********************************************");
 		}
 //		System.out.println("正确率为：" + (correctNum*1.0/files.length) + "%...");
 		return correctNum*1.0/files.length;
@@ -128,7 +138,7 @@ public class Demo {
 				re.c = classes[i];
 			}
 		}
-		System.out.println(str + ":最接近的分类是：" + re.c + "---最接近的余弦值为：" + re.temp);
+//		System.out.println(str + ":最接近的分类是：" + re.c + "---最接近的余弦值为：" + re.temp);
 		return re;
 	}
 
@@ -170,7 +180,7 @@ public class Demo {
 	 * @return
 	 */
 	public static String[] getClassWords() {
-		String[] strs = { "文化", "教育", "娱乐", "历史", "互联网", "军事", "书籍", "犯罪" };
+		String[] strs = { "文化", "教育", "娱乐", "历史", "互联网", "军事", "教育", "犯罪" };
 
 		return strs;
 	}

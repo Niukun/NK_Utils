@@ -91,7 +91,7 @@ public final class Word2VecUtils {
 				String line = null;
 				try {
 					while((line = bufr.readLine()) != null){
-						builder.append(line);
+						builder.append(line.toLowerCase());
 					}
 				} catch (IOException e) {
 					e.printStackTrace();
