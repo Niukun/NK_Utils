@@ -44,17 +44,17 @@ public class SegmentFile {
 			resultString = instance.NLPIR_GetNewWords(sInput, 10, false);
 			System.out.println("新词提取结果为：\n" + resultString);
 
-//			Double d = instance.NLPIR_FileProcess("D:/NLPIR/word2vec/class/bigger/trainandtest.txt", "D:/NLPIR/word2vec/big/trainandtestSegment.txt", 0);
+			Double d = instance.NLPIR_FileProcess("D:/NLPIR/segment/class_bigfile.txt", "D:/NLPIR/segment/class_bigfileSegment.txt", 0);
 //
-//			System.out.println("对文件内容进行分词的运行速度为： ");
-//			if (d.isInfinite())
-//				System.out.println("无结果");
-//			else {
-//				BigDecimal b = new BigDecimal(d);
-//				System.out.println(b.divide(new BigDecimal(1000), 2, BigDecimal.ROUND_HALF_UP) + "秒");
-//			}
-			resultString = instance.NLPIR_GetFileKeyWords("D:/NLPIR/word2vec/class/trainnum/culture/9187.txt", 10, false);
-			System.out.println("从3.txt文件中提取关键词的结果为：\n" + resultString);
+			System.out.println("对文件内容进行分词的运行速度为： ");
+			if (d.isInfinite())
+				System.out.println("无结果");
+			else {
+				BigDecimal b = new BigDecimal(d);
+				System.out.println(b.divide(new BigDecimal(1000), 2, BigDecimal.ROUND_HALF_UP) + "秒");
+			}
+//			resultString = instance.NLPIR_GetFileKeyWords("D:/NLPIR/word2vec/class/trainnum/culture/9187.txt", 10, false);
+//			System.out.println("从3.txt文件中提取关键词的结果为：\n" + resultString);
 
 			instance.NLPIR_Exit();
 

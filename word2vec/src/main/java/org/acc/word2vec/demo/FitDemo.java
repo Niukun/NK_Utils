@@ -15,12 +15,12 @@ public class FitDemo {
     public static void main(String[] args) {
 
     	System.out.println("start...");
-        List<File> files = TextUtils.listFilesRecursively("D:/NLPIR/word2vec/big/trainandtestSegment/", file -> file.getName().endsWith(".txt"));
+        List<File> files = TextUtils.listFilesRecursively("D:/NLPIR/word2vec/big/class_bigfile/", file -> file.getName().endsWith(".txt"));
         Word2VecUtils
                 .newWord2Vec()
                 .addAllTextFile(files)
                 .charset(Charset.forName("UTF-8"))
-                .saveAt("D:/NLPIR/word2vec/big/trainandtestSegment/tenbigfileSegment.bin", true)
+                .saveAt("D:/NLPIR/word2vec/big/class_bigfile/class_bigfileSegment.bin", true)
                 .build();
         System.out.println("end...");
 

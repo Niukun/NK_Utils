@@ -20,7 +20,7 @@ public class mergeFileUtils {
 
 	public static void main(String[] args) {
 		System.out.println("start");
-		filetoOne(new File("D:/NLPIR/word2vec/class/bigger"));
+		filetoOne(new File("D:/NLPIR/sougou/big/bigger"));
 //		int strlen = countFileWords("D:/NLPIR/paper/files/bigfile/bigfileSegment.txt");
 //		System.out.println(strlen);
 		System.out.println("end");

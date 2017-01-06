@@ -34,7 +34,8 @@ public class Demo {
 		long start = System.currentTimeMillis();
 		try {
 //			word2Vec = Word2VecUtils.restore("D:/NLPIR/word2vec/big/trainandtestSegment/trainandtestSegment.bin");
-			word2Vec = Word2VecUtils.restore("D:/NLPIR/word2vec/big/tenbigfileSegment.bin");
+			word2Vec = Word2VecUtils.restore("D:/NLPIR/word2vec/big/class_bigfile/class_bigfileSegment.bin");
+//			word2Vec = Word2VecUtils.restore("D:/NLPIR/word2vec/big/tenbigfileSegment.bin");
 		} catch (FileNotFoundException e) {
 			System.out.println("模型加载失败...");
 		}
@@ -43,13 +44,13 @@ public class Demo {
 
 	public static void main(String[] args) throws IOException {
 		long start = System.currentTimeMillis();
-//		System.out.println("文化正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/culture/","文化")*100) + "%" + (System.currentTimeMillis()-start));
-//		System.out.println("教育正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/education/","教育")*100) + "%" + (System.currentTimeMillis()-start));
-//		System.out.println("娱乐正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/entertainment/","娱乐")*100) + "%" + (System.currentTimeMillis()-start));
+		System.out.println("文化正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/culture/","文化")*100) + "%" + (System.currentTimeMillis()-start));
+		System.out.println("教育正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/education/","教育")*100) + "%" + (System.currentTimeMillis()-start));
+		System.out.println("娱乐正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/entertainment/","娱乐")*100) + "%" + (System.currentTimeMillis()-start));
 //		System.out.println("历史正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/history/","历史")*100) + "%" + (System.currentTimeMillis()-start));
-//		System.out.println("互联网正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/it/","互联网")*100) + "%" + (System.currentTimeMillis()-start));
-//		System.out.println("军事正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/military/","军事")*100) + "%" +(System.currentTimeMillis()-start));
-		System.out.println("教育正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/reading/","教育")*100) + "%" + (System.currentTimeMillis()-start));
+		System.out.println("互联网正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/it/","互联网")*100) + "%" + (System.currentTimeMillis()-start));
+		System.out.println("军事正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/military/","军事")*100) + "%" +(System.currentTimeMillis()-start));
+//		System.out.println("教育正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/reading/","教育")*100) + "%" + (System.currentTimeMillis()-start));
 //		System.out.println("犯罪正确率：" + (getCorrectNum("D:/NLPIR/word2vec/class/trainnum/society&law/","犯罪")*100) + "%" + (System.currentTimeMillis()-start));
 
 	}
@@ -62,7 +63,7 @@ public class Demo {
 			String[] strs;//用来存放关键字
 			WordUtil wu = new WordUtil();
 			try{
-				strs = getKeyWords(f, 11);
+				strs = getKeyWords(f, 9);
 //				System.out.println();//为方便打印关键字换行
 			for (int i = 0; i < strs.length; i++) {// 对于每个关键字
 //				System.out.print(strs[i] + " ");//打印每个文件的关键字
@@ -89,9 +90,9 @@ public class Demo {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}*/
-				System.out.println();
+//				System.out.println();
 //				System.out.println(f.getAbsolutePath());
-				e.printStackTrace();
+//				e.printStackTrace();
 			}
 			
 			//得到每个类平均的cos值
