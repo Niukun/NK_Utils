@@ -29,41 +29,51 @@ public class xmlFilesToTxt {
 
 	public static void main(String[] args) throws IOException, DocumentException {
 		System.out.println("code start...");
-		getFormatedData(news_sohusite_xml_strPath);
+//		getFormatedData(news_sohusite_xml_strPath);
 		
-		getFormatedData(news_tensite_xml_strPath);
+//		getFormatedData(news_tensite_xml_strPath);
+		TxtsToXMLs(news_tensite_xml_strPath);
 		
 		System.out.println("code end ...");
 	}
 
-	private static void getFormatedData(String filename){
+	private static void getFormatedData(String path){
 	
-		File file = new File(filename);
+		FilesToTxts(path);
+		
+		System.out.println("FilesToTxt finish...");
+		
+		//会更深一层文件夹
+		TxtsToXMLs(path);
+	}
+
+	public static void TxtsToXMLs(String path) {
+		File domfile = new File(path+"xml/");
+		File[] domfiles = domfile.listFiles();
+		for (int i = 0; i < domfiles.length; i++) {
+			if(!domfiles[i].isDirectory()){
+				System.out.println(domfiles[i].getAbsolutePath()+":start");
+				DOM4JXML(domfiles[i].getAbsolutePath(),path + "xml/final/"+(i+1)+".txt");
+				System.out.println(domfiles[i].getAbsolutePath()+":end");
+			}
+		}
+	}
+
+	public static void FilesToTxts(String path) {
+		File file = new File(path);
 		File[] files = file.listFiles();
 		for (int i = 0; i < files.length; i++) {
+			//不会递归处理文件夹里面的文件
 			if(!files[i].isDirectory()){
 				System.out.println(files[i].getAbsolutePath()+":start");
 				try {
-					showText(files[i].getAbsolutePath(), filename + "xml/"+(i+1)+".xml");
+					showText(files[i].getAbsolutePath(), path + "xml/"+(i+1)+".xml");
 				} catch (IOException e) {
 					e.printStackTrace();
 				} catch (DocumentException e) {
 					e.printStackTrace();
 				}
 				System.out.println(files[i].getAbsolutePath()+":end");
-			}
-		}
-		
-		System.out.println("showText finish...");
-		
-		
-		File domfile = new File(filename+"xml/");
-		File[] domfiles = domfile.listFiles();
-		for (int i = 0; i < domfiles.length; i++) {
-			if(!domfiles[i].isDirectory()){
-				System.out.println(domfiles[i].getAbsolutePath()+":start");
-				DOM4JXML(domfiles[i].getAbsolutePath(),filename + "xml/final/"+(i+1)+".txt");
-				System.out.println(domfiles[i].getAbsolutePath()+":end");
 			}
 		}
 	}
@@ -93,6 +103,12 @@ public class xmlFilesToTxt {
 				while (itt.hasNext()) {
 					Element bookChild = (Element) itt.next();
 //					System.out.println("节点名：" + bookChild.getName() + "--节点值：" + bookChild.getStringValue());
+					
+					
+					
+					
+					
+					
 					if(bookChild.getName().equals("contenttitle")||bookChild.getName().equals("content")){
 						bufw.write(toSemiangle(bookChild.getStringValue()));
 						bufw.newLine();
