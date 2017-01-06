@@ -5,11 +5,8 @@ import java.io.File;
 public class test {
 
 	public static void main(String[] args) {
-		File file = new File("D:/NLPIR/word2vec/class/bigger");
-		File[] files = file.listFiles();
-		for (int i = 0; i < files.length; i++) {
-			System.out.println(files[i].getParent());
-		}
+		String str = "http://star.news.sohu.com/20120703/n347124223.shtml";
+		System.out.println(str.substring(0, str.indexOf(".com")+".com".length()));
 	}
 
 }

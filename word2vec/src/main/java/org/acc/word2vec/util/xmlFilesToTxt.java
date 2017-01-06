@@ -5,11 +5,17 @@ import java.io.BufferedWriter;
 import java.io.File;
 //import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -26,23 +32,78 @@ public class xmlFilesToTxt {
 	static String news_tensite_xml_strPath = "D:/NLPIR/sougou/news_tensite_xml/";
 	static String news_sohusite_xml_strPath = "D:/NLPIR/sougou/news_sohusite_xml/";
 	static BufferedWriter bufw = null;
+	static BufferedWriter classbufw = null;//将所有的网站类别写入文件
+	static Set<String> set = new HashSet<String>();//用来存储所有的网站类别
+	static List<String> urlList = new ArrayList<String>();
 
+	static{
+		try {
+			BufferedReader bufr = new BufferedReader(new FileReader("source/ten_urls.txt"));
+			String line = null;
+			while((line = bufr.readLine())!=null){
+				urlList.add(line);
+			}
+			for (int i = 0; i < urlList.size(); i++) {
+				System.out.println(urlList.get(i));
+			}
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public static void main(String[] args) throws IOException, DocumentException {
 		System.out.println("code start...");
 //		getFormatedData(news_sohusite_xml_strPath);
-		
 //		getFormatedData(news_tensite_xml_strPath);
+		
+		//得到各个分类网站名称并且提取含有配置文件url的文档内容
+//		getAllSURLS(news_tensite_xml_strPath);
+//		getAllSURLS(news_sohusite_xml_strPath);
+		
+		
+		classbufw = new BufferedWriter(new FileWriter(new File(news_tensite_xml_strPath + "/xml/final3/classes.txt")));
 		TxtsToXMLs(news_tensite_xml_strPath);
+		Iterator setit = set.iterator();
+		while(setit.hasNext()){
+			classbufw.write((String)setit.next());
+			classbufw.newLine();
+			classbufw.flush();
+		}
+		classbufw.close();
+		
+		classbufw = new BufferedWriter(new FileWriter(new File(news_sohusite_xml_strPath + "/xml/final3/classes.txt")));
+		TxtsToXMLs(news_sohusite_xml_strPath);
+		
+		Iterator setit2 = set.iterator();
+		while(setit2.hasNext()){
+			classbufw.write((String)setit2.next());
+			classbufw.newLine();
+			classbufw.flush();
+		}
+		classbufw.close();
+		
 		
 		System.out.println("code end ...");
 	}
 
+	public static void getAllSURLs(String path) throws IOException {
+		classbufw = new BufferedWriter(new FileWriter(new File(path + "/xml/final3/classes.txt")));
+		TxtsToXMLs(path);
+		Iterator setit = set.iterator();
+		while(setit.hasNext()){
+			classbufw.write((String)setit.next());
+			classbufw.newLine();
+			classbufw.flush();
+		}
+		classbufw.close();
+	}
+	
 	private static void getFormatedData(String path){
 	
 		FilesToTxts(path);
-		
 		System.out.println("FilesToTxt finish...");
-		
 		//会更深一层文件夹
 		TxtsToXMLs(path);
 	}
@@ -53,7 +114,7 @@ public class xmlFilesToTxt {
 		for (int i = 0; i < domfiles.length; i++) {
 			if(!domfiles[i].isDirectory()){
 				System.out.println(domfiles[i].getAbsolutePath()+":start");
-				DOM4JXML(domfiles[i].getAbsolutePath(),path + "xml/final/"+(i+1)+".txt");
+				DOM4JXML(domfiles[i].getAbsolutePath(),path + "xml/final3/"+(i+1)+".txt");
 				System.out.println(domfiles[i].getAbsolutePath()+":end");
 			}
 		}
@@ -99,22 +160,44 @@ public class xmlFilesToTxt {
 //				for (Attribute attr : bookAttrs) {
 //					System.out.println("属性名：" + attr.getName() + "--属性值：" + attr.getValue());
 //				}
-				Iterator itt = book.elementIterator();
-				while (itt.hasNext()) {
-					Element bookChild = (Element) itt.next();
-//					System.out.println("节点名：" + bookChild.getName() + "--节点值：" + bookChild.getStringValue());
-					
-					
-					
-					
-					
-					
-					if(bookChild.getName().equals("contenttitle")||bookChild.getName().equals("content")){
-						bufw.write(toSemiangle(bookChild.getStringValue()));
+				
+				if(book.element("url").getStringValue().contains(".cn")){
+					set.add(book.element("url").getStringValue().substring(0, book.element("url").getStringValue().indexOf(".cn")+".cn".length()));
+				}else if(book.element("url").getStringValue().contains(".com")){
+					set.add(book.element("url").getStringValue().substring(0, book.element("url").getStringValue().indexOf(".com")+".com".length()));
+				}
+				
+				//把url写入文件
+//				bufw.write(toSemiangle(book.element("url").getStringValue()));
+//				bufw.newLine();
+				
+				//把标题和内容写入文件
+				for (int i = 0; i < urlList.size(); i++) {
+					if(book.element("url").getStringValue().contains(urlList.get(i))){
+						bufw.write(toSemiangle(book.element("contenttitle").getStringValue().trim()));
+						bufw.newLine();
+						bufw.write(toSemiangle(book.element("content").getStringValue().trim()));
 						bufw.newLine();
 						bufw.flush();
 					}
 				}
+				
+				//另一种用迭代器取元素的方法
+//				Iterator itt = book.elementIterator();
+//				while (itt.hasNext()) {
+//					Element bookChild = (Element) itt.next();
+////					System.out.println("节点名：" + bookChild.getName() + "--节点值：" + bookChild.getStringValue());
+//					
+//					for (int i = 0; i < urlList.size(); i++) {
+//						if(bookChild.getStringValue().contains(urlList.get(i))){
+//							if(bookChild.getName().equals("contenttitle")||bookChild.getName().equals("content")){
+//								bufw.write(toSemiangle(bookChild.getStringValue()));
+//								bufw.newLine();
+//								bufw.flush();
+//							}
+//						}
+//					}
+//				}
 			}
 			bufw.close();
 		} catch (DocumentException e) {
