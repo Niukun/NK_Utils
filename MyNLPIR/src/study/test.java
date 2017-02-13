@@ -1,4 +1,4 @@
-package study;
+﻿package study;
 
 import java.io.BufferedWriter;
 import java.io.File;
