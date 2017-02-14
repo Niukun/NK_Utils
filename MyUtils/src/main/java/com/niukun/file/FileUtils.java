@@ -12,12 +12,13 @@ import java.io.UnsupportedEncodingException;
 
 public class FileUtils {
 	public static void main(String[] args) throws UnsupportedEncodingException, Exception {
-		FileSplitByMulti("D:/NLPIR/sougou/news_sohusite_xml.dat", 6 * 2048*10);
+		FileSplitByLine("D:/NLPIR/sougou/news_sohusite_xml.dat", 6 * 2048*10);
 		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/","<doc>"));
+		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_tensite_xml/","<doc>"));
 	}
 
 	/**
-	 * 判断一个文件夹目录下所有文件是否以某一个字符串开头
+	 * 判断一个文件夹目录下所有非目录文件是否以某一个字符串开头
 	 * 2016-12-20
 	 * @param path 文件集所在文件
 	 * @param str 目标字符串
@@ -30,11 +31,14 @@ public class FileUtils {
 		File[] files = file.listFiles();
 		BufferedReader bufr ;
 		for (int i = 0; i < files.length; i++) {
+			if(!files[i].isDirectory()){
 			bufr = new BufferedReader(new FileReader(files[i]));
 			if(!str.equals(bufr.readLine())){
 				flag = false;
-			}
+			}}
+			System.out.println(i + " " + flag);
 		}
+		
 		return flag;
 	}
 
@@ -46,7 +50,7 @@ public class FileUtils {
 	 * @param fileSize
 	 * @throws IOException
 	 */
-	private static void FileSplitByMulti(String string, int fileSize) throws IOException {
+	private static void FileSplitByLine(String string, int fileSize) throws IOException {
 		InputStreamReader isr = new InputStreamReader(
 				new FileInputStream(string), "gbk");
 		BufferedReader bufr = new BufferedReader(isr);
@@ -98,7 +102,7 @@ public class FileUtils {
 	 * @throws UnsupportedEncodingException
 	 * @throws Exception
 	 */
-	private static void FileSplitByNum(int filenumb) throws UnsupportedEncodingException, Exception {
+	private static void FileSplitByFilenum(int filenumb) throws UnsupportedEncodingException, Exception {
 		InputStreamReader isr = new InputStreamReader(
 				new FileInputStream("src/main/resources/testfiles/news_sohusite_xml.dat"), "gbk");
 		BufferedReader bufr = new BufferedReader(isr);

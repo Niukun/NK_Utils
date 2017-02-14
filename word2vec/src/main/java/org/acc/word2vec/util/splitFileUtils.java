@@ -20,7 +20,7 @@ public class splitFileUtils {
 	private static int totalLine = 6 * 2048 * 10;
 	public static void main(String[] args) throws UnsupportedEncodingException, Exception {
 		// 切分文件，默认生成文件与本文件同级目录
-		FileSplitByMulti("D:/NLPIR/sougou/news_sohusite_xml.dat", totalLine);
+//		FileSplitByMulti("D:/NLPIR/sougou/news_sohusite_xml.dat", totalLine);
 //		FileSplitByMulti("D:/NLPIR/sougou/news_tensite_xml.dat", totalLine);
 		// 验证制定路径下的文件是否以"<doc>"作为开头
 		System.out.println("FilesBeginsWithCertainString:" + FilesBeginsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/", "<doc>"));
@@ -46,13 +46,15 @@ public class splitFileUtils {
 		BufferedReader bufr;
 		// 对每个文件进行判断，如果有文件不是制定字符串开头，则把标志位设为false
 		for (int i = 0; i < files.length; i++) {
-			bufr = new BufferedReader(new FileReader(files[i]));
-			bufr.skip(totalLine-2);
-			while((line = bufr.readLine())!=null){
-				linetem = line;
-			}
-			if (!str.equals(linetem)) {
-				flag = false;
+			if(!files[i].isDirectory()){
+				bufr = new BufferedReader(new FileReader(files[i]));
+				bufr.skip(totalLine-2);
+				while((line = bufr.readLine())!=null){
+					linetem = line;
+				}
+				if (!str.equals(linetem)) {
+					flag = false;
+				}
 			}
 //			System.out.println("第"+i+"个文件开始测试Ends..."+ flag+":"+files[i].getName());
 		}
@@ -78,9 +80,11 @@ public class splitFileUtils {
 		BufferedReader bufr;
 		// 对每个文件进行判断，如果有文件不是制定字符串开头，则把标志位设为false
 		for (int i = 0; i < files.length; i++) {
-			bufr = new BufferedReader(new FileReader(files[i]));
-			if (!str.equals(bufr.readLine())) {
-				flag = false;
+			if(!files[i].isDirectory()){
+				bufr = new BufferedReader(new FileReader(files[i]));
+				if (!str.equals(bufr.readLine())) {
+					flag = false;
+				}
 			}
 //			System.out.println("第"+i+"个文件开始测试Begins..."+ flag+":"+files[i].getName());
 		}

@@ -34,7 +34,7 @@ public class xmlFilesToTxt {
 	static BufferedWriter bufw = null;
 	static BufferedWriter classbufw = null;//将所有的网站类别写入文件
 	static Set<String> set = new HashSet<String>();//用来存储所有的网站类别
-	static List<String> urlList = new ArrayList<String>();
+	static List<String> urlList = new ArrayList<String>();//存储需要过滤的url（从文件读取）
 
 	static{
 		try {
@@ -63,8 +63,8 @@ public class xmlFilesToTxt {
 //		getAllSURLS(news_sohusite_xml_strPath);
 		
 		
-		classbufw = new BufferedWriter(new FileWriter(new File(news_tensite_xml_strPath + "/xml/final3/classes.txt")));
-		TxtsToXMLs(news_tensite_xml_strPath);
+		classbufw = new BufferedWriter(new FileWriter(new File(news_tensite_xml_strPath + "/xml/final4/classes.txt")));
+		XMLsToTxts(news_tensite_xml_strPath);
 		Iterator setit = set.iterator();
 		while(setit.hasNext()){
 			classbufw.write((String)setit.next());
@@ -73,8 +73,8 @@ public class xmlFilesToTxt {
 		}
 		classbufw.close();
 		
-		classbufw = new BufferedWriter(new FileWriter(new File(news_sohusite_xml_strPath + "/xml/final3/classes.txt")));
-		TxtsToXMLs(news_sohusite_xml_strPath);
+		classbufw = new BufferedWriter(new FileWriter(new File(news_sohusite_xml_strPath + "/xml/final4/classes.txt")));
+		XMLsToTxts(news_sohusite_xml_strPath);
 		
 		Iterator setit2 = set.iterator();
 		while(setit2.hasNext()){
@@ -90,7 +90,7 @@ public class xmlFilesToTxt {
 
 	public static void getAllSURLs(String path) throws IOException {
 		classbufw = new BufferedWriter(new FileWriter(new File(path + "/xml/final3/classes.txt")));
-		TxtsToXMLs(path);
+		XMLsToTxts(path);
 		Iterator setit = set.iterator();
 		while(setit.hasNext()){
 			classbufw.write((String)setit.next());
@@ -102,25 +102,36 @@ public class xmlFilesToTxt {
 	
 	private static void getFormatedData(String path){
 	
-		FilesToTxts(path);
+		FilesToXMLs(path);
 		System.out.println("FilesToTxt finish...");
 		//会更深一层文件夹
-		TxtsToXMLs(path);
+		XMLsToTxts(path);
 	}
 
-	public static void TxtsToXMLs(String path) {
+	/**
+	 * 从xml中解析出需要的内容并保存
+	 * 2017/02/14
+	 * @author Niukun
+	 * @param path
+	 */
+	public static void XMLsToTxts(String path) {
 		File domfile = new File(path+"xml/");
 		File[] domfiles = domfile.listFiles();
 		for (int i = 0; i < domfiles.length; i++) {
 			if(!domfiles[i].isDirectory()){
 				System.out.println(domfiles[i].getAbsolutePath()+":start");
-				DOM4JXML(domfiles[i].getAbsolutePath(),path + "xml/final3/"+(i+1)+".txt");
+				DOM4JXML(domfiles[i].getAbsolutePath(),path + "xml/final4/"+(i+1)+".txt");
 				System.out.println(domfiles[i].getAbsolutePath()+":end");
 			}
 		}
 	}
 
-	public static void FilesToTxts(String path) {
+	/**
+	 * 把目录下所有txt文件转换成xml文件
+	 * 2017/02/14
+	 * @param path
+	 */
+	public static void FilesToXMLs(String path) {
 		File file = new File(path);
 		File[] files = file.listFiles();
 		for (int i = 0; i < files.length; i++) {
@@ -128,7 +139,7 @@ public class xmlFilesToTxt {
 			if(!files[i].isDirectory()){
 				System.out.println(files[i].getAbsolutePath()+":start");
 				try {
-					showText(files[i].getAbsolutePath(), path + "xml/"+(i+1)+".xml");
+					TextToXML(files[i].getAbsolutePath(), path + "xml/"+(i+1)+".xml");
 				} catch (IOException e) {
 					e.printStackTrace();
 				} catch (DocumentException e) {
@@ -208,14 +219,14 @@ public class xmlFilesToTxt {
 	}
 
 	/**
-	 * 把指定txt文件转换成制定目录下的xml文件
+	 * 把指定txt文件转换成指定目录下的xml文件
 	 * 
 	 * @param filename
 	 * @param destfile
 	 * @throws IOException
 	 * @throws DocumentException
 	 */
-	private static void showText(String filename, String destfile) throws IOException, DocumentException {
+	private static void TextToXML(String filename, String destfile) throws IOException, DocumentException {
 		FileInputStream is = new FileInputStream(new File(filename));
 		InputStreamReader isr = new InputStreamReader(is, Charset.forName("UTF-8"));
 		BufferedReader bufr = new BufferedReader(isr);
