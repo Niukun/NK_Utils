@@ -21,7 +21,7 @@ public class SegmentFile {
 		String sInput = "曾经有一份真挚的感情摆在我的面前我没有珍惜，等我失去的时候才追悔莫及！";
 
 		try {
-			resultString = instance.NLPIR_ParagraphProcess(sInput, 0);
+			/*resultString = instance.NLPIR_ParagraphProcess(sInput, 0);
 			System.out.println("分词结果为：\n " + resultString);
 
 			instance.NLPIR_AddUserWord("金刚圈");
@@ -42,10 +42,10 @@ public class SegmentFile {
 			System.out.println("从段落中提取的关键词：\n" + resultString);
 
 			resultString = instance.NLPIR_GetNewWords(sInput, 10, false);
-			System.out.println("新词提取结果为：\n" + resultString);
+			System.out.println("新词提取结果为：\n" + resultString);*/
 
-			Double d = instance.NLPIR_FileProcess("D:/NLPIR/segment/class_bigfile.txt", "D:/NLPIR/segment/class_bigfileSegment.txt", 0);
-//
+			Double d = instance.NLPIR_FileProcess("D:/NLPIR/sougou/big/0214/52.txt", "D:/NLPIR/sougou/big/0214/52Segment.txt", 0);
+
 			System.out.println("对文件内容进行分词的运行速度为： ");
 			if (d.isInfinite())
 				System.out.println("无结果");
@@ -57,6 +57,7 @@ public class SegmentFile {
 //			System.out.println("从3.txt文件中提取关键词的结果为：\n" + resultString);
 
 			instance.NLPIR_Exit();
+			System.out.println("end");
 
 		} catch (Exception e) {
 			System.out.println("错误信息：");

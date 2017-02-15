@@ -32,6 +32,7 @@ public class xmlFilesToTxt {
 	static String news_tensite_xml_strPath = "D:/NLPIR/sougou/news_tensite_xml/";
 	static String news_sohusite_xml_strPath = "D:/NLPIR/sougou/news_sohusite_xml/";
 	static BufferedWriter bufw = null;
+	static String fileClass = "full";
 	static BufferedWriter classbufw = null;//将所有的网站类别写入文件
 	static Set<String> set = new HashSet<String>();//用来存储所有的网站类别
 	static List<String> urlList = new ArrayList<String>();//存储需要过滤的url（从文件读取）
@@ -63,7 +64,7 @@ public class xmlFilesToTxt {
 //		getAllSURLS(news_sohusite_xml_strPath);
 		
 		
-		classbufw = new BufferedWriter(new FileWriter(new File(news_tensite_xml_strPath + "/xml/final4/classes.txt")));
+		classbufw = new BufferedWriter(new FileWriter(new File(news_tensite_xml_strPath + "/xml/"+fileClass+"/classes.txt")));
 		XMLsToTxts(news_tensite_xml_strPath);
 		Iterator setit = set.iterator();
 		while(setit.hasNext()){
@@ -73,7 +74,7 @@ public class xmlFilesToTxt {
 		}
 		classbufw.close();
 		
-		classbufw = new BufferedWriter(new FileWriter(new File(news_sohusite_xml_strPath + "/xml/final4/classes.txt")));
+		classbufw = new BufferedWriter(new FileWriter(new File(news_sohusite_xml_strPath + "/xml/"+fileClass+"/classes.txt")));
 		XMLsToTxts(news_sohusite_xml_strPath);
 		
 		Iterator setit2 = set.iterator();
@@ -89,7 +90,7 @@ public class xmlFilesToTxt {
 	}
 
 	public static void getAllSURLs(String path) throws IOException {
-		classbufw = new BufferedWriter(new FileWriter(new File(path + "/xml/final3/classes.txt")));
+		classbufw = new BufferedWriter(new FileWriter(new File(path + "/xml/"+fileClass+"/classes.txt")));
 		XMLsToTxts(path);
 		Iterator setit = set.iterator();
 		while(setit.hasNext()){
@@ -120,7 +121,7 @@ public class xmlFilesToTxt {
 		for (int i = 0; i < domfiles.length; i++) {
 			if(!domfiles[i].isDirectory()){
 				System.out.println(domfiles[i].getAbsolutePath()+":start");
-				DOM4JXML(domfiles[i].getAbsolutePath(),path + "xml/final4/"+(i+1)+".txt");
+				DOM4JXML(domfiles[i].getAbsolutePath(),path + "xml/"+fileClass+"/"+(i+1)+".txt");
 				System.out.println(domfiles[i].getAbsolutePath()+":end");
 			}
 		}
@@ -183,15 +184,15 @@ public class xmlFilesToTxt {
 //				bufw.newLine();
 				
 				//把标题和内容写入文件
-				for (int i = 0; i < urlList.size(); i++) {
-					if(book.element("url").getStringValue().contains(urlList.get(i))){
+//				for (int i = 0; i < urlList.size(); i++) {
+//					if(book.element("url").getStringValue().contains(urlList.get(i))){
 						bufw.write(toSemiangle(book.element("contenttitle").getStringValue().trim()));
 						bufw.newLine();
 						bufw.write(toSemiangle(book.element("content").getStringValue().trim()));
 						bufw.newLine();
 						bufw.flush();
-					}
-				}
+//					}
+//				}
 				
 				//另一种用迭代器取元素的方法
 //				Iterator itt = book.elementIterator();

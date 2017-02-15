@@ -1,12 +1,17 @@
 package org.acc.word2vec.util;
 
-import java.io.File;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class test {
 
 	public static void main(String[] args) {
-		String str = "http://star.news.sohu.com/20120703/n347124223.shtml";
-		System.out.println(str.substring(0, str.indexOf(".com")+".com".length()));
+		String str = "23*+_";
+		String pattern = "[^\\dA-Za-z\\u3007\\u4E00-\\u9FCB\\uE815-\\uE864]+";
+
+		Pattern r = Pattern.compile(pattern);
+		Matcher m = r.matcher(str);
+		System.out.println(m.matches());
 	}
 
 }
