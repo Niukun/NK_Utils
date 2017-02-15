@@ -1,0 +1,6 @@
+第一步：splitFileUtils.java:切分大文件，并验证是否符合标准
+第二步：xmlFilesToTxt.java:将小文件逐一转化为xml文件，并从xml文件中逐一解析出需要的小文本集合
+第三步：mergeFileUtils.java:讲小文件合并成大文件，顺便可以进行预处理，并有计算文档词数的功能
+第四步：SegmentFile.java:使用NLPIR工具进行分词
+第五步：FitDemo.java:生成词向量
+第六步：EntryOfTheCode.java:计算准确率

@@ -14,7 +14,7 @@ import org.deeplearning4j.models.word2vec.Word2Vec;
 
 import com.sun.jna.Native;
 
-public class Demo {
+public class EntryOfTheCode {
 
 	static CLibrary instance = (CLibrary) Native.loadLibrary(System.getProperty("user.dir") + "\\source\\NLPIR",
 			CLibrary.class);

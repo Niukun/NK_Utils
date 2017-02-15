@@ -11,6 +11,7 @@ import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 
 /**
+ * 第一步：切分文件并验证
  * 此工具类处理把大文件切分成小文件
  * -Xms256m -Xmx512m
  * @author Niukun
