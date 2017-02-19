@@ -44,7 +44,7 @@ public class SegmentFile {
 			resultString = instance.NLPIR_GetNewWords(sInput, 10, false);
 			System.out.println("新词提取结果为：\n" + resultString);*/
 
-			Double d = instance.NLPIR_FileProcess("D:/NLPIR/sougou/big/0214/52.txt", "D:/NLPIR/sougou/big/0214/52Segment.txt", 0);
+			Double d = instance.NLPIR_FileProcess("D:/NLPIR/sougou/big/0214/52Normalize.txt", "D:/NLPIR/sougou/big/0214/52NormalizeSegment.txt", 0);
 
 			System.out.println("对文件内容进行分词的运行速度为： ");
 			if (d.isInfinite())
