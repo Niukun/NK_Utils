@@ -23,14 +23,16 @@ public class mergeFileUtils {
 	public static void main(String[] args) {
 		System.out.println("start");
 //		filetoOne(new File("D:/NLPIR/sougou/big/0214"));
+		filetoOne(new File("D:/NLPIR/paper/files/trainnum/culture"));
 		System.out.println("end");
 	}
 
 	/**
 	 * 把指定目录下所有文件合并成一个文件，以bigfile.txt存在当前文件夹中
+	 * 递归处理，得到目录中所有的文本文件
 	 * @param file
 	 */
-	private static void filetoOne(File file) {
+	public static void filetoOne(File file) {
 		BufferedReader bufr = null;
 		BufferedWriter bufw = null;
 		String line = null;
