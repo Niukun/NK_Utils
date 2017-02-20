@@ -13,7 +13,7 @@ import java.util.TreeSet;
 public class countFileWords {
 
 	public static void main(String[] args) {
-		int num = countFileWords("D:/NLPIR/sougou/big/0214/", "52NormalizeSegment");
+		int num = countFileWords("D:/NLPIR/sougou/big/0214/", "0214_sougou_bigfileNormalizeSegment");
 		System.out.println("num:" + num);
 	}
 	/**
@@ -33,12 +33,14 @@ public class countFileWords {
 				sb.append(line);
 			}
 			String str = sb.toString();
-			
+			System.out.println("StringBuilder Finished...");
 			String[] strs = str.split(" ");
+			System.out.println("split finished....");
 			Set<String> set = new TreeSet<String>();
 			for (int i = 0; i < strs.length; i++) {
 				set.add(strs[i].trim());
 			}
+			System.out.println("set finished...");
 			Iterator<String> it = set.iterator();
 			while(it.hasNext()){
 				wordNum++;
