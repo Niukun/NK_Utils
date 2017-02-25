@@ -9,6 +9,7 @@ public class FormatFile {
 	public static void main(String[] args) throws Exception {
 		getFileNormalized("C:/D/NLPIR/paper/files/test/");
 //		getFileNormalized("C:/D/NLPIR/paper/files/trainnum/");
+		System.out.println("end...");
 	}
 
 	private static void getFileNormalized(String dataPath) throws Exception {

@@ -11,7 +11,8 @@
 第八步：nlpir/EntryOfTheCode.java:计算准确率
 2、实验数据整理
 第一步：data/FileToLine.java:生成每个类别文件的txt，使其每一行对应一个文件
-第二步：预处理，分词
+第二步：data/FormatFile.java:预处理
+第三部：分词
 
 
 

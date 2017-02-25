@@ -104,12 +104,15 @@ public class Normalize {
 			str = str.replaceAll(" 月", " ");
 			str = str.replaceAll(" 日", " ");
 			str = str.replaceAll(" 转", " ");
+			while(str.contains("　")){
+				str = str.replace("　", "");
+			}
 			while(str.contains("  ")){
 				str = str.replace("  ", " ");
 			}
 			str = str.replaceAll("\t", " ");
 			str = str.toLowerCase();
-			strSet.add(str.trim().replaceAll("  ", " "));
+			strSet.add(str.trim());
 		}
 		Iterator iter = strSet.iterator();
 		while(iter.hasNext()){
