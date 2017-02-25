@@ -58,11 +58,19 @@ public class TfIdf {
 	 *            Given document to filter its words.
 	 * @return List that contains the words of the document which are matched.
 	 */
-	List<String> build_words(String document) {
+	/*List<String> build_words(String document) {
 		List<String> wordList = new ArrayList<String>();
 		Matcher matcher = Pattern.compile("[a-zA-Z]+").matcher(document);
 		while (matcher.find())
 			wordList.add(matcher.group());
+		return wordList;
+	}*/
+	List<String> build_words(String document) {
+		List<String> wordList = new ArrayList<String>();
+		String[] strs = document.split(" ");
+		for (String str : strs) {
+			wordList.add(str);
+		}
 		return wordList;
 	}
 
