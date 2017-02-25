@@ -24,6 +24,7 @@ public class SegmentDoc {
 		
 		
 		segFile("C:/D/NLPIR/paper/files/test/Normalize/");
+		segFile("C:/D/NLPIR/paper/files/train/Normalize/");
 		
 		
 		instance.NLPIR_Exit();
@@ -32,10 +33,12 @@ public class SegmentDoc {
 
 	private static void segFile(String dataPath) {
 		File file = new File(dataPath);
+		File segFile = new File(dataPath + "/seg/");
+		segFile.mkdirs();
 		File[] files = file.listFiles();
 		for (File f : files) {
 			if(!f.isDirectory()){
-				instance.NLPIR_FileProcess(f.getAbsolutePath(), f.getParentFile()+"/seg/"+f.getName(), 0);
+				instance.NLPIR_FileProcess(f.getAbsolutePath(), segFile.getAbsolutePath()+"/"+f.getName(), 0);
 				System.out.println(f.getName() + ":分词完成...");
 			}
 		}

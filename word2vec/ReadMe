@@ -12,7 +12,8 @@
 2、实验数据整理
 第一步：data/FileToLine.java:生成每个类别文件的txt，使其每一行对应一个文件
 第二步：data/FormatFile.java:预处理
-第三部：分词
+第三部：data/SegmentDoc.java:分词
+第四步：data/keyWords.java:获取每个文档的ifidf
 
 
 
