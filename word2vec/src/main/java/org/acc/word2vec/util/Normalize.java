@@ -52,7 +52,7 @@ public class Normalize {
 	 */
 	public static void Process(String pathWithFileName) throws Exception {
 		BufferedReader bufr = new BufferedReader(new FileReader(pathWithFileName + ".txt"));
-		BufferedWriter bufw = new BufferedWriter(new FileWriter(pathWithFileName + "Normalize.txt"));
+		BufferedWriter bufw = new BufferedWriter(new FileWriter(pathWithFileName + "Normalized.txt"));
 		Set<String> strSet = new TreeSet<String>();
 		
 		String str = "";
@@ -72,6 +72,44 @@ public class Normalize {
 			str = str.replaceAll("\t", " ");
 			str = str.toLowerCase();
 			strSet.add(str.trim());
+		}
+		Iterator iter = strSet.iterator();
+		while(iter.hasNext()){
+			bufw.write((String)iter.next());
+			bufw.newLine();
+			bufw.flush();
+		}
+		
+		bufw.close();
+		bufr.close();
+	}
+	/**
+	 * 精确到文件名，但是不带后缀
+	 * @param pathWithFileName
+	 * @throws Exception
+	 */
+	public static void ProcessWithoutTXT(String fileName,String distFileName) throws Exception {
+		BufferedReader bufr = new BufferedReader(new FileReader(fileName));
+		BufferedWriter bufw = new BufferedWriter(new FileWriter(distFileName));
+		Set<String> strSet = new TreeSet<String>();
+		
+		String str = "";
+		while((str=bufr.readLine())!=null){
+			for (int i = 0; i < signList.size(); i++) {
+				str = str.replace(signList.get(i), " ");
+			}
+			str = str.replaceAll("[a-zA-Z]{1,2}", " ");
+			str = str.replaceAll("[0-9]{1,40}", " ");
+			str = str.replaceAll(" 年", " ");
+			str = str.replaceAll(" 月", " ");
+			str = str.replaceAll(" 日", " ");
+			str = str.replaceAll(" 转", " ");
+			while(str.contains("  ")){
+				str = str.replace("  ", " ");
+			}
+			str = str.replaceAll("\t", " ");
+			str = str.toLowerCase();
+			strSet.add(str.trim().replaceAll("  ", " "));
 		}
 		Iterator iter = strSet.iterator();
 		while(iter.hasNext()){

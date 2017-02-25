@@ -15,7 +15,8 @@ public class FileToLine {
 
 	public static void main(String[] args) throws IOException {
 		System.out.println("Start...");
-		getClassFile("C:/D/NLPIR/paper/files/testnum/");
+		getClassFile("C:/D/NLPIR/paper/files/test/");
+		getClassFile("C:/D/NLPIR/paper/files/train/");
 		System.out.println("end...");
 
 	}
