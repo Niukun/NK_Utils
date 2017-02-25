@@ -42,14 +42,15 @@ public class TfIdfTest {
   @Test
   public void testTf() throws Exception {
     String document1 = "one one two four";
-    String document2 = "three three three four five five";
+    String document2 = "three three one three four five five";
     List<String> list = new ArrayList<String>();
     list.add(document1);
     list.add(document2);
     TfIdf tfIdf = new TfIdf(list);
     Map<String, MutableInt> map = tfIdf.tf();
     assertNotNull(map);
-    assertEquals(map.get("one").getCounter(), 2);
+    System.out.println(map.get("one").getCounter());
+    assertEquals(map.get("one").getCounter(), 3);
     assertEquals(map.get("two").getCounter(), 1);
     assertEquals(map.get("three").getCounter(), 3);
     assertEquals(map.get("four").getCounter(), 2);

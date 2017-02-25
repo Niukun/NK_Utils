@@ -15,13 +15,15 @@ public class FitDemo {
     public static void main(String[] args) {
 
     	System.out.println("start...");
-        List<File> files = TextUtils.listFilesRecursively("D:/NLPIR/sougou/big/0214/123/", file -> file.getName().endsWith(".txt"));
+    	long start = System.currentTimeMillis();
+        List<File> files = TextUtils.listFilesRecursively("C:/D/NLPIR/paper/files/vec/", file -> file.getName().endsWith(".txt"));
         Word2VecUtils
                 .newWord2Vec()
                 .addAllTextFile(files)
                 .charset(Charset.forName("UTF-8"))
-                .saveAt("D:/NLPIR/sougou/big/0214/123/0214_sougou_bigfileNormalizeSegment.bin", true)
+                .saveAt("C:/D/NLPIR/paper/files/vec/doc.bin", true)
                 .build();
+        System.out.println( System.currentTimeMillis()-start);
         System.out.println("end...");
 
     }
