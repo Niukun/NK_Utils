@@ -11,3 +11,6 @@
 
 第七步：demo/FitDemo.java:生成词向量
 第八步：nlpir/EntryOfTheCode.java:计算准确率
+
+2017/02/25
+今天上午完成tfidf代码块的功能
