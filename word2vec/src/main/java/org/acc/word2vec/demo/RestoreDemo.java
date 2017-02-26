@@ -21,7 +21,7 @@ public class RestoreDemo {
 //                .restore("D:/NLPIR/word2vec/tenbigfileSegment.bin");
         .restore("C:/D/NLPIR/paper/files/vec/doc.bin");
         System.out.println("加载模型使用时间："+(System.currentTimeMillis()-start));
-        double[] ds =  word2Vec.getWordVector("北京");
+        double[] ds =  word2Vec.getWordVector("余建伟");
         for (int i = 0; i < ds.length; i++) {
         	System.out.print(ds[i]+" ");
 		}
