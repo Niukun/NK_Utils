@@ -46,6 +46,7 @@ public class FileToLine {
 	
 	/*
 	 * 传入文件绝对路径，返回改文件的一个字符串，实现一个文件转换为一行
+	 * 工具方法
 	 */
 	public static String singleFileToLine(File file) throws IOException{
 		StringBuilder sb = new StringBuilder();

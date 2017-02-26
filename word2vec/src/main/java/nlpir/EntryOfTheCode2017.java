@@ -32,7 +32,7 @@ public class EntryOfTheCode2017 {
 	private static BufferedWriter bufwtf;
 	private static Map<String, Double> idfmap;
 	private static Map<String, MutableInt> tfmap;
-	private static int keyWordsNum = 20;
+	private static int keyWordsNum = 25;
 	private static BigDecimal big0 = new BigDecimal(0.0);
 
 	// 初始化
@@ -47,7 +47,7 @@ public class EntryOfTheCode2017 {
 		// 词向量模型加载
 		long start = System.currentTimeMillis();
 		try {
-			word2Vec = Word2VecUtils.restore("C:/D/NLPIR/paper/files/vec/doc.bin");
+			word2Vec = Word2VecUtils.restore("C:/D/NLPIR/paper/files/vec/LittleNormalize/LittleNormalize.bin");
 		} catch (FileNotFoundException e) {
 			System.out.println("模型加载失败...");
 		}
@@ -88,7 +88,7 @@ public class EntryOfTheCode2017 {
 		System.out.println("历史正确率："
 				+ (getCorrectNum("C:/D/NLPIR/paper/files/test/Normalize/seg/history.txt", "历史", keyWordsNum) * 100)
 				+ "%");
-		System.out.println("互联网正确率："
+		System.out.println("互联正确率："
 				+ (getCorrectNum("C:/D/NLPIR/paper/files/test/Normalize/seg/it.txt", "互联网", keyWordsNum) * 100) + "%");
 		System.out.println("军事正确率："
 				+ (getCorrectNum("C:/D/NLPIR/paper/files/test/Normalize/seg/military.txt", "军事", keyWordsNum) * 100)
@@ -116,7 +116,7 @@ public class EntryOfTheCode2017 {
 		System.out.println("历史正确率："
 				+ (getCorrectNum("C:/D/NLPIR/paper/files/train/Normalize/seg/history.txt", "历史", keyWordsNum) * 100)
 				+ "%");
-		System.out.println("互联网正确率："
+		System.out.println("互联正确率："
 				+ (getCorrectNum("C:/D/NLPIR/paper/files/train/Normalize/seg/it.txt", "互联网", keyWordsNum) * 100) + "%");
 		System.out.println("军事正确率："
 				+ (getCorrectNum("C:/D/NLPIR/paper/files/train/Normalize/seg/military.txt", "军事", keyWordsNum) * 100)
@@ -142,7 +142,7 @@ public class EntryOfTheCode2017 {
 		for (int index = 0; index < list.size(); index++) {// 对每行（即每个文档）单独处理
 			String[] strs;// 用来存放关键字
 			WordUtil wu = new WordUtil();
-			strs = keyWords.getSortedKeyWords(list.get(index), keyNum);
+			strs = keyWords.getSortedKeyWords(list.get(index), keyNum);//使用tfidf抽取关键字
 			tfmap = keyWords.getTfmap();
 			// System.out.println();//为方便打印关键字换行
 			for (int i = 0; i < strs.length; i++) {// 对于每个关键字

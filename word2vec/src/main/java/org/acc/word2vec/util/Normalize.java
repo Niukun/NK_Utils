@@ -95,15 +95,15 @@ public class Normalize {
 		
 		String str = "";
 		while((str=bufr.readLine())!=null){
-			for (int i = 0; i < signList.size(); i++) {
-				str = str.replace(signList.get(i), " ");
-			}
-			str = str.replaceAll("[a-zA-Z]{1,2}", " ");
-			str = str.replaceAll("[0-9]{1,40}", " ");
-			str = str.replaceAll(" 年", " ");
-			str = str.replaceAll(" 月", " ");
-			str = str.replaceAll(" 日", " ");
-			str = str.replaceAll(" 转", " ");
+//			for (int i = 0; i < signList.size(); i++) {
+//				str = str.replace(signList.get(i), " ");
+//			}
+//			str = str.replaceAll("[a-zA-Z]{1,2}", " ");
+//			str = str.replaceAll("[0-9]{1,40}", " ");
+			str = str.replaceAll("，", ",");
+//			str = str.replaceAll(" 月", " ");
+//			str = str.replaceAll(" 日", " ");
+//			str = str.replaceAll(" 转", " ");
 			while(str.contains("　")){
 				str = str.replace("　", "");
 			}
