@@ -32,7 +32,7 @@ public class EntryOfTheCode2017 {
 	private static BufferedWriter bufwtf;
 	private static Map<String, Double> idfmap;
 	private static Map<String, MutableInt> tfmap;
-	private static int keyWordsNum = 15;
+	private static int keyWordsNum = 20;
 	private static BigDecimal big0 = new BigDecimal(0.0);
 
 	// 初始化
