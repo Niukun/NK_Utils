@@ -21,8 +21,8 @@ public class splitFileUtils {
 	private static int totalLine = 6 * 2048 * 10;
 	public static void main(String[] args) throws UnsupportedEncodingException, Exception {
 		// 切分文件，默认生成文件与本文件同级目录
-//		FileSplitByMulti("D:/NLPIR/sougou/news_sohusite_xml.dat", totalLine);
-//		FileSplitByMulti("D:/NLPIR/sougou/news_tensite_xml.dat", totalLine);
+		FileSplitByMulti("e:/NLPIR/sougou/news_sohusite_xml.dat", totalLine);
+		FileSplitByMulti("e:/NLPIR/sougou/news_tensite_xml.dat", totalLine);
 		// 验证制定路径下的文件是否以"<doc>"作为开头
 		System.out.println("FilesBeginsWithCertainString:" + FilesBeginsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/", "<doc>"));
 		System.out.println("FilesEndsWithCertainString:" + FilesEndsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/", "</doc>"));

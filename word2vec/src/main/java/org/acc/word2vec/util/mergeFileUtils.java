@@ -23,9 +23,12 @@ public class mergeFileUtils {
 	public static void main(String[] args) {
 		System.out.println("start");
 //		filetoOne(new File("D:/NLPIR/sougou/big/0214"));
-//		filetoOne(new File("C:/D/NLPIR/paper/files/test/Normalize"));
-//		filetoOne(new File("C:/D/NLPIR/paper/files/train/Normalize"));
-		filetoOne(new File("C:/D/NLPIR/paper/files/merge/noNormalize_noSegment"));
+//		filetoOne(new File("C:/D/NLPIR/paper/files/test/Normalize/seg"));
+//		filetoOne(new File("E:/NLPIR/sougou/news_sohusite_xml/xml/full"));
+//		filetoOne(new File("E:/NLPIR/sougou/news_tensite_xml/xml/full"));
+		filetoOne(new File("C:/D/NLPIR/paper/files/merge/sohusite_tensite"));
+//		filetoOne(new File("C:/D/NLPIR/paper/files/train/Normalize/seg"));
+//		filetoOne(new File("C:/D/NLPIR/paper/files/merge/noNormalize_Segment"));
 		System.out.println("end");
 	}
 

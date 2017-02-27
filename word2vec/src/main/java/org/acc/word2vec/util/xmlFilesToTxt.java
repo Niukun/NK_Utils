@@ -29,8 +29,8 @@ import org.dom4j.io.SAXReader;
  */
 public class xmlFilesToTxt {
 
-	static String news_tensite_xml_strPath = "D:/NLPIR/sougou/news_tensite_xml/";
-	static String news_sohusite_xml_strPath = "D:/NLPIR/sougou/news_sohusite_xml/";
+	static String news_tensite_xml_strPath = "E:/NLPIR/sougou/news_tensite_xml/";
+	static String news_sohusite_xml_strPath = "E:/NLPIR/sougou/news_sohusite_xml/";
 	static BufferedWriter bufw = null;
 	static String fileClass = "full";
 	static BufferedWriter classbufw = null;//将所有的网站类别写入文件
