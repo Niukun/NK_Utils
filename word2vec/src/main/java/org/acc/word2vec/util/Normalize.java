@@ -14,9 +14,9 @@ import java.util.TreeSet;
 public class Normalize {
 	private static List<String> signList = new ArrayList<String>();
 	public static void main(String[] args) throws Exception {
-		System.out.println("start");
-		Process("D:/NLPIR/sougou/big/0214/0214_sougou_bigfile");
-		System.out.println("end");
+//		System.out.println("start");
+//		Process("D:/NLPIR/sougou/big/0214/0214_sougou_bigfile");
+//		System.out.println("end");
 	}
 	
 	static{
@@ -95,9 +95,9 @@ public class Normalize {
 		
 		String str = "";
 		while((str=bufr.readLine())!=null){
-//			for (int i = 0; i < signList.size(); i++) {
-//				str = str.replace(signList.get(i), " ");
-//			}
+			for (int i = 0; i < signList.size(); i++) {
+				str = str.replace(signList.get(i), " ");
+			}
 //			str = str.replaceAll("[a-zA-Z]{1,2}", " ");
 //			str = str.replaceAll("[0-9]{1,40}", " ");
 			str = str.replaceAll("，", ",");

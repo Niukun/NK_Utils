@@ -16,12 +16,12 @@ public class FitDemo {
 
     	System.out.println("start...");
     	long start = System.currentTimeMillis();
-        List<File> files = TextUtils.listFilesRecursively("C:/D/NLPIR/paper/files/vec/LittleNormalize/", file -> file.getName().endsWith(".txt"));
+        List<File> files = TextUtils.listFilesRecursively("C:/D/NLPIR/paper/files/merge/fullNormalize_Segment/", file -> file.getName().endsWith(".txt"));
         Word2VecUtils
                 .newWord2Vec()
                 .addAllTextFile(files)
                 .charset(Charset.forName("UTF-8"))
-                .saveAt("C:/D/NLPIR/paper/files/vec/LittleNormalize/LittleNormalize.bin", true)
+                .saveAt("C:/D/NLPIR/paper/files/merge/fullNormalize_Segment/fullNormalize_Segment.bin", true)
                 .build();
         System.out.println( System.currentTimeMillis()-start);
         System.out.println("end...");
