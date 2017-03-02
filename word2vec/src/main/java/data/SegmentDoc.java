@@ -23,8 +23,9 @@ public class SegmentDoc {
 	public static void main(String[] args) {
 		
 		
-		segFile("C:/D/NLPIR/paper/files/test/Normalize/");
-		segFile("C:/D/NLPIR/paper/files/train/Normalize/");
+//		segFile("C:/D/NLPIR/paper/files/test/Normalize/");
+//		segFile("C:/D/NLPIR/paper/files/train/Normalize/");
+		segFile("C:/D/NLPIR/paper/files/merge/tensite_5/");
 		
 		
 		instance.NLPIR_Exit();
