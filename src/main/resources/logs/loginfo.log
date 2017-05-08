@@ -1,0 +1,5 @@
+2016-10-05 22:02:20 method:org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.handleResponse(NetworkClient.java:600)-[ WARN ] Error while fetching metadata with correlation id 0 : {erp=LEADER_NOT_AVAILABLE}
+2016-10-05 22:02:20 method:org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.handleResponse(NetworkClient.java:600)-[ WARN ] Error while fetching metadata with correlation id 1 : {erp=LEADER_NOT_AVAILABLE}
+2016-10-05 22:02:22 method:org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.handleResponse(NetworkClient.java:600)-[ WARN ] Error while fetching metadata with correlation id 2 : {erp=LEADER_NOT_AVAILABLE}
+2016-10-05 22:02:22 method:org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.handleResponse(NetworkClient.java:600)-[ WARN ] Error while fetching metadata with correlation id 3 : {erp=LEADER_NOT_AVAILABLE}
+2016-10-05 22:02:23 method:org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.handleResponse(NetworkClient.java:600)-[ WARN ] Error while fetching metadata with correlation id 4 : {erp=LEADER_NOT_AVAILABLE}
