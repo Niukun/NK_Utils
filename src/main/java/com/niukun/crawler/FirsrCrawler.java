@@ -14,7 +14,7 @@ public class FirsrCrawler {
 
 	public static void main(String[] args) throws IOException {
 		 // 定义即将访问的链接
-		  String url = "http://www.baidu.com";
+		  String url = "http://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&ie=gbk&word=%CD%BC%C6%AC&fr=ala&ala=1&alatpl=others&pos=0";
 		  // 访问链接并获取页面内容
 		  String result = SendGet(url);
 		  // 使用正则匹配图片的src内容
@@ -29,9 +29,9 @@ public class FirsrCrawler {
 		// 定义一个matcher用来做匹配
 		Matcher matcher = pattern.matcher(targetStr);
 		// 如果找到了
-		if (matcher.find()) {
+		while (matcher.find()) {
 			// 打印出结果
-			return matcher.group(1);
+			System.out.println(matcher.group(1));
 		}
 		return "";
 	}
