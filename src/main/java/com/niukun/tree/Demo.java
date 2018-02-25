@@ -11,6 +11,7 @@ public class Demo{
 		bt.right.left = new BinaryTree(6);
 		bt.right.right = new BinaryTree(7);
 		
+		
 		BinaryTree.firstRead(bt);
 		System.out.println();
 		BinaryTree.midRead(bt);
