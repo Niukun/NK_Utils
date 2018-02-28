@@ -7,7 +7,6 @@ public abstract class AbstractFactory {
 }
 
 class ShapeFactory extends AbstractFactory {
-
 	@Override
 	Shape getShape(String shape) {
 		if (shape == null) {
