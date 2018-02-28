@@ -1,6 +1,6 @@
 package com.niukun.pattern.abstractfactory;
 
-public class FactoryProducer {
+public class AbstractFactoryFactory {
 	public static AbstractFactory getFactoryInstance(String factoryName) {
 		if (factoryName == null) {
 			return null;
