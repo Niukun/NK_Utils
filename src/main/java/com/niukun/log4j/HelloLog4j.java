@@ -10,10 +10,10 @@ public class HelloLog4j {
 		BasicConfigurator.configure();
 
 		logger.debug("Start of the main() in TestLog4j");
-		logger.info("Just testing a log message with priority set to INFO");
-		logger.warn("Just testing a log message with priority set to WARN");
-		logger.error("Just testing a log message with priority set to ERROR");
-		logger.fatal("Just testing a log message with priority set to FATAL");
+		logger.info("Just INFO");
+		logger.warn("Just WARN");
+		logger.error("Just ERROR");
+		logger.fatal("Just FATAL");
 		logger.debug("End of the main() in TestLog4j");
 	}
 }

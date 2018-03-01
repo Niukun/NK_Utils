@@ -1,5 +1,10 @@
-2016-10-05 22:02:20 method:org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.handleResponse(NetworkClient.java:600)-[ WARN ] Error while fetching metadata with correlation id 0 : {erp=LEADER_NOT_AVAILABLE}
-2016-10-05 22:02:20 method:org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.handleResponse(NetworkClient.java:600)-[ WARN ] Error while fetching metadata with correlation id 1 : {erp=LEADER_NOT_AVAILABLE}
-2016-10-05 22:02:22 method:org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.handleResponse(NetworkClient.java:600)-[ WARN ] Error while fetching metadata with correlation id 2 : {erp=LEADER_NOT_AVAILABLE}
-2016-10-05 22:02:22 method:org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.handleResponse(NetworkClient.java:600)-[ WARN ] Error while fetching metadata with correlation id 3 : {erp=LEADER_NOT_AVAILABLE}
-2016-10-05 22:02:23 method:org.apache.kafka.clients.NetworkClient$DefaultMetadataUpdater.handleResponse(NetworkClient.java:600)-[ WARN ] Error while fetching metadata with correlation id 4 : {erp=LEADER_NOT_AVAILABLE}
+2018-03-01 10:26:03 method:com.niukun.log4j.Test.main(Test.java:19)-[ ERROR ] This is error message.
+2018-03-01 10:26:19 method:com.niukun.log4j.HelloLog4j.main(HelloLog4j.java:14)-[ WARN ] Just WARN
+2018-03-01 10:26:19 method:com.niukun.log4j.HelloLog4j.main(HelloLog4j.java:15)-[ ERROR ] Just ERROR
+2018-03-01 10:26:19 method:com.niukun.log4j.HelloLog4j.main(HelloLog4j.java:16)-[ FATAL ] Just FATAL
+2018-03-01 10:28:36 method:com.niukun.log4j.HelloLog4j.main(HelloLog4j.java:12)-[ DEBUG ] Start of the main() in TestLog4j
+2018-03-01 10:28:36 method:com.niukun.log4j.HelloLog4j.main(HelloLog4j.java:13)-[ INFO ] Just INFO
+2018-03-01 10:28:36 method:com.niukun.log4j.HelloLog4j.main(HelloLog4j.java:14)-[ WARN ] Just WARN
+2018-03-01 10:28:36 method:com.niukun.log4j.HelloLog4j.main(HelloLog4j.java:15)-[ ERROR ] Just ERROR
+2018-03-01 10:28:36 method:com.niukun.log4j.HelloLog4j.main(HelloLog4j.java:16)-[ FATAL ] Just FATAL
+2018-03-01 10:28:36 method:com.niukun.log4j.HelloLog4j.main(HelloLog4j.java:17)-[ DEBUG ] End of the main() in TestLog4j

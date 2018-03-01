@@ -6,28 +6,26 @@ import java.util.List;
 
 public class ListRandom {
 
-	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 		List list = new ArrayList();
-		Integer I ;
+		Integer I;
 		for (int i = 0; i < 100; i++) {
 			list.add(i);
 		}
-		System.out.println("list.size"+list.size());
-	/*	for (int i = 0; i < 10; i++) {
-			int count = (int)(Math.random()*list.size());
-			System.out.println(list.get(count));
-			list.remove(count);
-		}*/
+		System.out.println("list.size: " + list.size());
+		/*
+		 * for (int i = 0; i < 10; i++) { int count = (int)(Math.random()*list.size());
+		 * System.out.println(list.get(count)); list.remove(count); }
+		 */
 		Iterator it = list.iterator();
-		while(it.hasNext()){
+		while (it.hasNext()) {
 			I = (Integer) it.next();
-			if(I.intValue()%18 == 13){
+			if (I.intValue() % 18 == 13) {
 				it.remove();
 			}
 		}
-		System.out.println("list.size"+list.size());
-		
+		System.out.println("list.size: " + list.size());
+
 	}
 
 }

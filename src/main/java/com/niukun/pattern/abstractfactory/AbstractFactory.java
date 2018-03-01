@@ -27,7 +27,8 @@ class ShapeFactory extends AbstractFactory {
 		return null;
 	}
 }
-class ColorFactory extends AbstractFactory{
+
+class ColorFactory extends AbstractFactory {
 
 	@Override
 	Shape getShape(String shape) {
@@ -48,5 +49,5 @@ class ColorFactory extends AbstractFactory{
 			return null;
 		}
 	}
-	
+
 }
