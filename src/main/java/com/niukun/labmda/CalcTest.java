@@ -9,6 +9,10 @@ package com.niukun.labmda;
  * 
  * 可以使用@FunctionalInterface检测当前接口是不是函数式接口
  * 
+ * 使用Lambda必须有推断环境：
+ * ~要么根据参数类型传参来推断函数式接口
+ * ~要么根据赋值语句左侧类型来推断函数式接口
+ * 
  * Lambda的格式就是为了将抽象方法翻译成以下三点：
  *  1.一些参数（方法参数） 
  *  2.一个箭头 
@@ -20,9 +24,10 @@ public class CalcTest {
 		 * 调用方法的时候，参数类型是函数式接口，所以Lambda可以推断出是哪个接口
 		 * 标准写法
 		 */
+		//~要么根据参数类型传参来推断函数式接口
 		method1((int a, int b) -> { return a + b; });
 		
-		//也可以根据赋值语句左侧的类型来进行Lambda上下文推断
+		//~要么根据赋值语句左侧类型来推断函数式接口
 		Calc calc = (int a, int b) -> { return a + b; };
 		method1(calc);
 		
