@@ -18,6 +18,14 @@
 
 	<dependencies>
 
+
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-client -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-client</artifactId>
+			<version>1.19.4</version>
+		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/nz.ac.waikato.cms.weka/weka-dev -->
 		<dependency>
 			<groupId>nz.ac.waikato.cms.weka</groupId>
