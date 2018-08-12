@@ -6,6 +6,9 @@
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-<context:component-scan base-package="com.niukun.spring"></context:component-scan>
+<!-- 开启注解的扫描
+（1）到包里面扫描类、方法、属性上是否有注解
+ -->
+<context:component-scan base-package="com.niukun.spring.anno"></context:component-scan>
 
 </beans>
