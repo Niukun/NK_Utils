@@ -9,15 +9,16 @@ import java.awt.Panel;
 import java.awt.ScrollPane;
 import java.awt.TextField;
 
-public class FrameTest {
-	static Frame f;
+public class MyFrame {
+    //This f will be used by subclasses
+	public static Frame f;
 	
 	static {
 		f = new Frame("Test Frame");
 	}
 	
 	public static void main(String[] args) {
-		test05();
+		test01();
 	}
 
 	private static void test05() {
@@ -63,23 +64,13 @@ public class FrameTest {
 		f.setVisible(true);
 	}
 	
-	private static void test02() {
-		f.setLayout(new FlowLayout(FlowLayout.LEFT,20,5));
-		
-		for(int i =0;i<20;i++) {
-			f.add(new Button("Button" + i));
-		}
-		f.pack();
-		f.setVisible(true);
-	}
-	
 	private static void test01() {
 		ScrollPane p = new ScrollPane(ScrollPane.SCROLLBARS_ALWAYS);
 		p.add(new TextField(20));
 		p.add(new Button("Click me"));
 		f.add(p);
 		
-		f.setBounds(30, 30, 250, 120);
+		f.setBounds(30, 30, 300, 120);
 		f.setVisible(true);
 	}
 	

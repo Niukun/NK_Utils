@@ -25,7 +25,7 @@ public class CreateQRCode {
 		int width = 300;
 		int height = 300;
 		String format = "jpg";
-		String content = "里约奥运会";
+		String content = "https://www.baidu.com";
 		HashMap hints = new HashMap();
 		hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");
 		hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.M);
