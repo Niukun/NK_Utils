@@ -8,8 +8,8 @@ import java.awt.*;
 /**
  * BoxLayout 是Swing提供的布局管理器，用它管理Swing组件会有更好的效果
  *
- * glue设置的变量是可变的
- * strut设置的变量是不可变的
+ * glue可以在两个方向上拉伸
+ * strut只能在一个方向上拉伸
  */
 public class BoxLayoutDemo extends MyFrame {
 
