@@ -1,0 +1,3 @@
+分享一个React入门的教学视频：
+https://www.rails365.net/playlists/you-ren-de-react-shi-pin-jiao-cheng-ji-chu-pian
+适合上手一段时间以后的基础加强
