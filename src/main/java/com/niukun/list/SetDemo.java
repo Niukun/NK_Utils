@@ -6,6 +6,7 @@ import java.util.Set;
 public class SetDemo {
 	private final int TIMES = 5000;
 	public SetDemo() {
+		super();
 	}
 
 	public static void main(String[] args) {
@@ -36,8 +37,8 @@ public class SetDemo {
 		/**
 		 * 两个结果不一样是因为用的是set，不是list
 		 */
-//		System.out.println("Randlist size:\t" + Randlist.size());
-//		System.out.println("Running times:\t" + times);
+		System.out.println("Randlist size:\t" + Randlist.size());
+		System.out.println("Running times:\t" + times);
 		return times;
 	}
 }
