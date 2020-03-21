@@ -12,9 +12,19 @@ import java.io.UnsupportedEncodingException;
 
 public class FileUtils {
 	public static void main(String[] args) throws UnsupportedEncodingException, Exception {
-		FileSplitByLine("D:/NLPIR/sougou/news_sohusite_xml.dat", 6 * 2048*10);
-		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/","<doc>"));
-		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_tensite_xml/","<doc>"));
+//		FileSplitByLine("D:/NLPIR/sougou/news_sohusite_xml.dat", 6 * 2048*10);
+//		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/","<doc>"));
+//		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_tensite_xml/","<doc>"));
+		getAllFileNameInFolder("H:\\BaiduYunDownload\\历经5年锤炼(史上最适合初学者入门的Java基础视频)\\JavaSE基础视频19\\集合框架工具类");
+
+	}
+
+	private static void getAllFileNameInFolder(String filePath){
+		File folder = new File(filePath);
+		File[] files = folder.listFiles();
+		for(File file : files){
+			System.out.println(file.getName().substring(0,file.getName().lastIndexOf(".")));
+		}
 	}
 
 	/**

@@ -1,60 +1,28 @@
 package com.niukun.test;
 
-import java.util.ArrayList;
-import java.util.UUID;
 
-import org.junit.Test;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.serializer.SerializerFeature;
 
 public class test {
-	ArrayList<Person> list = new ArrayList<Person>();
 
-	@Test
-	public void testUUID() throws InterruptedException {
-		for (int i = 0; i < 1000000; i++) {
-			UUID uuid = new UUID(12312313123L, 123123123L);
-			String a = new String("Hello world!");
-			Person p = new Person();
-			list.add(p);
-			Thread.sleep(10);
-//			System.out.println(uuid.toString());
-		}
+	public static void main(String[] args)  {
+		String str = "\"\\u4e3d\\u6c34\\u5e02\"";
+
+		System.out.println(unicodeToString(str));
+		System.out.println(stringToUnicode("牛坤"));
 	}
 
-}
 
-class Person {
-	String name;
-	String addr;
-	int age;
-	
-	
-	
-	public Person() {
-		super();
+	//unicode转中文
+	public static String unicodeToString(String str) {
+		return String.valueOf(JSON.parse(str));
 	}
-	public Person(String name, String addr, int age) {
-		super();
-		this.name = name;
-		this.addr = addr;
-		this.age = age;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getAddr() {
-		return addr;
-	}
-	public void setAddr(String addr) {
-		this.addr = addr;
-	}
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
+	//中文字符转unicode
+	public static String stringToUnicode(String s) {
+		return JSON.toJSONString(s, SerializerFeature.BrowserCompatible);
+
 	}
 
 }
+
