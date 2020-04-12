@@ -9,13 +9,21 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 
 public class FileUtils {
 	public static void main(String[] args) throws UnsupportedEncodingException, Exception {
 //		FileSplitByLine("D:/NLPIR/sougou/news_sohusite_xml.dat", 6 * 2048*10);
 //		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/","<doc>"));
 //		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_tensite_xml/","<doc>"));
-		getAllFileNameInFolder("H:\\BaiduYunDownload\\历经5年锤炼(史上最适合初学者入门的Java基础视频)\\JavaSE基础视频19\\集合框架工具类");
+		getAllFileNameInFolder("K:\\NK\\学习视频\\视频-2020版数据结构与算法\\day01");
+		String property = System.getProperty("java.ext.dirs");
+		property = System.getProperty("java.class.path");
+//		System.out.println(property);
+		int[] ints = {1, 2, 3};
+		int[] d = new int[5];
+		System.arraycopy(ints,0,d,0,ints.length);
+		System.out.println(d[0]);
 
 	}
 

@@ -4,13 +4,18 @@ package com.niukun.test;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
 public class test {
 
 	public static void main(String[] args)  {
-		String str = "\"\\u4e3d\\u6c34\\u5e02\"";
-
-		System.out.println(unicodeToString(str));
-		System.out.println(stringToUnicode("牛坤"));
+		List list = new ArrayList();
+		list.add("123");
+		TestBean testBean = new TestBean();
+		testBean.setList(list);
+		System.out.println(testBean.getList());
 	}
 
 
