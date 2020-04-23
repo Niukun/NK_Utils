@@ -4,12 +4,12 @@ import java.io.File;
 import java.nio.file.Path;
 import java.util.HashMap;
 
-import com.google.zxing.BarcodeFormat;
-import com.google.zxing.EncodeHintType;
-import com.google.zxing.MultiFormatWriter;
-import com.google.zxing.client.j2se.MatrixToImageWriter;
-import com.google.zxing.common.BitMatrix;
-import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
+//import com.google.zxing.BarcodeFormat;
+//import com.google.zxing.EncodeHintType;
+//import com.google.zxing.MultiFormatWriter;
+//import com.google.zxing.client.j2se.MatrixToImageWriter;
+//import com.google.zxing.common.BitMatrix;
+//import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 
 /**
  * 教学网址：http://www.imooc.com/video/10316/0
@@ -22,7 +22,7 @@ public class CreateQRCode {
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public static void main(String[] args) {
 		// 定义二维码参数
-		int width = 300;
+		/*int width = 300;
 		int height = 300;
 		String format = "jpg";
 		String content = "https://www.baidu.com";
@@ -40,7 +40,7 @@ public class CreateQRCode {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		System.out.println("Finished......");
+		System.out.println("Finished......");*/
 	}
 
 }

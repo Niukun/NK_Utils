@@ -16,7 +16,7 @@ public class FileUtils {
 //		FileSplitByLine("D:/NLPIR/sougou/news_sohusite_xml.dat", 6 * 2048*10);
 //		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/","<doc>"));
 //		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_tensite_xml/","<doc>"));
-		getAllFileNameInFolder("K:\\NK\\学习视频\\视频-2020版数据结构与算法\\day01");
+		getAllFileNameInFolder("K:\\NK\\学习视频\\视频-2020版数据结构与算法\\day02");
 		String property = System.getProperty("java.ext.dirs");
 		property = System.getProperty("java.class.path");
 //		System.out.println(property);

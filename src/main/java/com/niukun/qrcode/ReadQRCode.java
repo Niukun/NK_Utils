@@ -5,15 +5,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 
-import javax.imageio.ImageIO;
 
-import com.google.zxing.BinaryBitmap;
-import com.google.zxing.EncodeHintType;
-import com.google.zxing.MultiFormatReader;
-import com.google.zxing.NotFoundException;
-import com.google.zxing.Result;
-import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
-import com.google.zxing.common.HybridBinarizer;
 
 /**
  * 教学网址：http://www.imooc.com/video/10316/0
@@ -22,8 +14,7 @@ import com.google.zxing.common.HybridBinarizer;
  *
  */
 public class ReadQRCode {
-	@SuppressWarnings({ "unchecked", "rawtypes" })
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		try {
 			MultiFormatReader formatReader = new MultiFormatReader();
 			File file = new File("files/123.jpg");
@@ -44,6 +35,6 @@ public class ReadQRCode {
 		} catch (NotFoundException e) {
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 }
