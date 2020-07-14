@@ -1,39 +1,82 @@
 package com.niukun.file;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 
 public class FileUtils {
 	public static void main(String[] args) throws UnsupportedEncodingException, Exception {
 //		FileSplitByLine("D:/NLPIR/sougou/news_sohusite_xml.dat", 6 * 2048*10);
 //		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_sohusite_xml/","<doc>"));
 //		System.out.println(FilesBeginsWithCertainString("D:/NLPIR/sougou/news_tensite_xml/","<doc>"));
-		getAllFileNameInFolder("K:\\NK\\学习视频\\视频-2020版数据结构与算法\\day02");
+		List allFileNameInFolder = getAllFileNameInFolder("H:\\StudyTemp\\struts2框架2016版视频\\day04视频", false);
+		for (Object name: allFileNameInFolder) {
+			System.out.println(name);
+		}
 		String property = System.getProperty("java.ext.dirs");
 		property = System.getProperty("java.class.path");
 //		System.out.println(property);
-		int[] ints = {1, 2, 3};
-		int[] d = new int[5];
-		System.arraycopy(ints,0,d,0,ints.length);
-		System.out.println(d[0]);
+
 
 	}
 
-	private static void getAllFileNameInFolder(String filePath){
+	/**
+	 * 这个方法用来读取文本文件中所有的行数，存到一个list中，然后返回list
+	 * @param path
+	 * @return
+	 */
+	public static List<String> getAllLinesFromFile(String path){
+		List list = new ArrayList();
+		BufferedReader bufr = null;
+		try {
+			bufr = new BufferedReader(new FileReader(path));
+			String line = null;
+			while((line = bufr.readLine())!= null){
+				list.add(line);
+			}
+			bufr.close();
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if(bufr != null){
+				try {
+					bufr.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+			return list;
+		}
+	}
+
+	/**
+	 * 获取指定目录下所有文件或者文件夹名称，结果以list存储并返回
+	 * 默认保留后缀
+	 * @param filePath
+	 */
+	public static List<String> getAllFileNameInFolder(String filePath){
+		return getAllFileNameInFolder(filePath, true);
+	}
+
+	public static List getAllFileNameInFolder(String filePath, boolean keepPostfix){
+		List allFile = new ArrayList();
 		File folder = new File(filePath);
 		File[] files = folder.listFiles();
 		for(File file : files){
-			System.out.println(file.getName().substring(0,file.getName().lastIndexOf(".")));
+			if(keepPostfix){
+				allFile.add(file.getName());
+			}else{
+				allFile.add(file.getName().substring(0,file.getName().lastIndexOf(".")));
+			}
+
 		}
+		return allFile;
 	}
+
+
 
 	/**
 	 * 判断一个文件夹目录下所有非目录文件是否以某一个字符串开头
