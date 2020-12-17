@@ -3,8 +3,6 @@ package com.leetcode;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-
 public class SolutionTest {
     int[] nums = {1,1,2};
 

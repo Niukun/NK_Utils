@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e393c580-2be0-457e-8344-a4511766141c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsTestFinder.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_19_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_19_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_java7_2_4_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_ac_waikato_cms_weka_weka_dev_3_7_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_pentaho_pentaho_commons_pentaho_package_manager_1_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_jobs_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_30.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyUtils.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quartz_learn/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quartz_learn/quartz_learn.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niukun/file/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niukun/file/FileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niukun/qrcode/CreateQRCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niukun/qrcode/CreateQRCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niukun/qrcode/ReadQRCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niukun/qrcode/ReadQRCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/niukun/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niukun/test/test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
@@ -52,30 +52,48 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.2\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1aQiZNWFhRn8Xw73Qa24gPHOfct" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.FileUtils">
-    <configuration name="FileUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.niukun.file.FileUtils" />
-      <module name="MyUtils" />
+  <component name="RunManager" selected="Application.MySQLDao">
+    <configuration name="MySQLDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.db.mysql.MySQLDao" />
+      <module name="mysql_learn" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.niukun.file.*" />
+          <option name="PATTERN" value="com.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +101,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Quick" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.sort.Quick" />
-      <module name="MyUtils" />
+    <configuration name="MySQLUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.utils.MySQLUtil" />
+      <module name="mysql_learn" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.sort.*" />
+          <option name="PATTERN" value="com.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,39 +114,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.leetcode.sort.Test" />
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niukun.test.Test" />
       <module name="MyUtils" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.leetcode.sort.*" />
+          <option name="PATTERN" value="com.niukun.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niukun.thread.TicketDemo" />
+      <module name="MyUtils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niukun.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StrUtil.randomGenerateRoomDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mysql_learn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.utils" />
+      <option name="MAIN_CLASS_NAME" value="com.utils.StrUtil" />
+      <option name="METHOD_NAME" value="randomGenerateRoomDate" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FileUtils" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Quick" />
+        <item itemvalue="Application.MySQLDao" />
+        <item itemvalue="JUnit.StrUtil.randomGenerateRoomDate" />
+        <item itemvalue="Application.MySQLUtil" />
+        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.TicketDemo" />
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -139,54 +177,50 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586674273022</updated>
+      <workItem from="1602409035354" duration="2492000" />
+      <workItem from="1602600131833" duration="2523000" />
+      <workItem from="1603470321045" duration="1208000" />
+      <workItem from="1604707580604" duration="1241000" />
+      <workItem from="1604709357964" duration="655000" />
+      <workItem from="1605716861098" duration="7580000" />
+      <workItem from="1608221966231" duration="103000" />
     </task>
+    <task id="LOCAL-00001" summary="0715">
+      <created>1594750354292</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594750354292</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update 1218">
+      <created>1608223559023</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608223559023</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state width="379" height="438" key="DebuggerActiveHint" timestamp="1586680271206">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="379" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1586680271206" />
-    <state width="1322" height="91" key="GridCell.Tab.0.bottom" timestamp="1586681613287">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="91" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586681613287" />
-    <state width="1322" height="91" key="GridCell.Tab.0.center" timestamp="1586681613287">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="91" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586681613287" />
-    <state width="1322" height="91" key="GridCell.Tab.0.left" timestamp="1586681613287">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="91" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586681613287" />
-    <state width="1322" height="91" key="GridCell.Tab.0.right" timestamp="1586681613287">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="91" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586681613287" />
-    <state width="1322" height="324" key="GridCell.Tab.1.bottom" timestamp="1586681612914">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="324" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586681612914" />
-    <state width="1322" height="324" key="GridCell.Tab.1.center" timestamp="1586681612914">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="324" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1586681612914" />
-    <state width="1322" height="324" key="GridCell.Tab.1.left" timestamp="1586681612914">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="324" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1586681612914" />
-    <state width="1322" height="324" key="GridCell.Tab.1.right" timestamp="1586681612914">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1322" height="324" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1586681612914" />
-    <state x="390" y="125" width="585" height="478" key="find.popup" timestamp="1586681581465">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="390" y="125" width="585" height="478" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1586681581465" />
-    <state x="391" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1586678567138">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="391" y="0" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1586678567138" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="0715" />
+    <MESSAGE value="update 1218" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 1218" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

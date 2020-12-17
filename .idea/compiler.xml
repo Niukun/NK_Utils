@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MyUtils" />
+        <module name="mysql_learn" />
+        <module name="quartz_learn" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mysql_learn" target="1.8" />
       <module name="MyUtils" target="1.8" />
+      <module name="quartz_learn" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
