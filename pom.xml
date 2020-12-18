@@ -8,6 +8,7 @@
     <modules>
         <module>mysql_learn</module>
         <module>quartz_learn</module>
+        <module>ml</module>
     </modules>
     <packaging>pom</packaging>
 

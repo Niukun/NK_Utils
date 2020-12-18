@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/NK_Utils.iml" filepath="$PROJECT_DIR$/.idea/NK_Utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ml/ml.iml" filepath="$PROJECT_DIR$/ml/ml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysql_learn/mysql_learn.iml" filepath="$PROJECT_DIR$/mysql_learn/mysql_learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quartz_learn/quartz_learn.iml" filepath="$PROJECT_DIR$/quartz_learn/quartz_learn.iml" />
+    </modules>
+  </component>
+</project>
