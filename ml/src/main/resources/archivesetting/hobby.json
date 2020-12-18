@@ -1,0 +1,26 @@
+[
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "情志信息",
+    "FIELDNAME": "特长",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "情志信息",
+    "FIELDNAME": "兴趣爱好",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "情志信息",
+    "FIELDNAME": "志向",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  }
+]

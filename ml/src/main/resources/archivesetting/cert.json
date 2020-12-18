@@ -1,0 +1,82 @@
+[
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "证书/证件",
+    "FIELDNAME": "证书名称",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "证书/证件",
+    "FIELDNAME": "发证机构",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "证书/证件",
+    "FIELDNAME": "发证日期",
+    "FIELDTYPE": "日期选择器",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "证书/证件",
+    "FIELDNAME": "有效期起始日",
+    "FIELDTYPE": "日期选择器",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "证书/证件",
+    "FIELDNAME": "有效期到期日",
+    "FIELDTYPE": "日期选择器",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "证书/证件",
+    "FIELDNAME": "证件备注",
+    "FIELDTYPE": "多行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "证书/证件",
+    "FIELDNAME": "证书/证件编号",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "证书/证件",
+    "FIELDNAME": "级别",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "证书/证件",
+    "FIELDNAME": "专业",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "证书/证件",
+    "FIELDNAME": "复审到期日",
+    "FIELDTYPE": "日期选择器",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  }
+]

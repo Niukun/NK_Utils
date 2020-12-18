@@ -1,0 +1,42 @@
+[
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "紧急联系人",
+    "FIELDNAME": "联系人姓名",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "紧急联系人",
+    "FIELDNAME": "和联系人关系",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "紧急联系人",
+    "FIELDNAME": "联系人电话",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "紧急联系人",
+    "FIELDNAME": "联系人地址",
+    "FIELDTYPE": "多行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "紧急联系人",
+    "FIELDNAME": "是否主要联系人",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  }
+]

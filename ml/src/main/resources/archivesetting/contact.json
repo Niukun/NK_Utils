@@ -1,0 +1,42 @@
+[
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "联系信息",
+    "FIELDNAME": "手机号码",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "联系信息",
+    "FIELDNAME": "个人邮箱",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "联系信息",
+    "FIELDNAME": "QQ号",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "联系信息",
+    "FIELDNAME": "微信号",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "联系信息",
+    "FIELDNAME": "现居住地",
+    "FIELDTYPE": "多行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "姓名",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "身份证号码",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "身份证有效期",
+    "FIELDTYPE": "日期选择器",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "身份证地址",
+    "FIELDTYPE": "多行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "出生日期",
+    "FIELDTYPE": "日期选择器",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "年龄",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "性别",
+    "FIELDTYPE": "下拉单选",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "民族",
+    "FIELDTYPE": "下拉单选",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "政治面貌",
+    "FIELDTYPE": "下拉单选",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "参加工作时间",
+    "FIELDTYPE": "日期选择器",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "工龄",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "是否已婚",
+    "FIELDTYPE": "下拉单选",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "是否已育",
+    "FIELDTYPE": "下拉单选",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "籍贯",
+    "FIELDTYPE": "‘省-市’联动选择器",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "户籍类型",
+    "FIELDTYPE": "下拉单选",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "户籍城市",
+    "FIELDTYPE": "‘省-市’联动选择器",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "户籍地址",
+    "FIELDTYPE": "多行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "其它身份证件",
+    "FIELDTYPE": "下拉单选",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "证件号码",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "别名",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "曾用名",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "英文名",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "血型",
+    "FIELDTYPE": "下拉单选",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "身高",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "体重",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "服装尺寸",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "健康状况",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "健康证有效期",
+    "FIELDTYPE": "日期选择器",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "基础信息",
+    "FIELDNAME": "是否退伍军人",
+    "FIELDTYPE": "单行文本",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "否"
+  }
+]

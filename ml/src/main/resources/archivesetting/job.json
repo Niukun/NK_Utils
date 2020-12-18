@@ -1,0 +1,50 @@
+[
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "工作信息",
+    "FIELDNAME": "部门",
+    "FIELDTYPE": "下拉单选",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "工作信息",
+    "FIELDNAME": "试用期",
+    "FIELDTYPE": "下拉单选",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "工作信息",
+    "FIELDNAME": "工作性质",
+    "FIELDTYPE": "下拉单选",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "工作信息",
+    "FIELDNAME": "员工状态",
+    "FIELDTYPE": "下拉单选",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "工作信息",
+    "FIELDNAME": "岗位",
+    "FIELDTYPE": "下拉单选",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  },
+  {
+    "COMPANYID": "8254c484-3f37-4dbc-a9e1-3d4c4f204261",
+    "FIELDCATEGORY": "工作信息",
+    "FIELDNAME": "入职日期",
+    "FIELDTYPE": "日期选择器",
+    "ISSHOWINREGISTER": "是",
+    "ISREQUIRED": "是"
+  }
+]
