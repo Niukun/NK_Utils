@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+
+ 
+</head>
+<body class="hold-transition login-page">
+<div class="login-box" id="rrapp" v-cloak>
+  
+  <div class="login-box-body">
+      <p class="login-box-msg">管理员登录</p>
+      <div>
+        <h4 style="margin-bottom: 0px;"><i class="fa fa-exclamation-triangle"></i> {{errorMsg}}</h4>
+      </div>
+      <div>
+        <input type="text" id="name" placeholder="账号">
+        <span></span>
+      </div>
+      <div>
+        <input type="password" id="password"  placeholder="密码">
+        <span></span>
+      </div>
+      <div>
+        <input type="text" id="desktype"  placeholder="desktype">
+        <span></span>
+      </div>
+  
+      
+      <div class="row">
+        
+        <div class="col-xs-4">
+          <button type="button"  onclick="loginSubmit()">登录</button>
+        </div>
+        <!-- /.col -->
+      </div>
+    <!-- /.social-auth-links -->
+
+  </div>
+  <!-- /.login-box-body -->
+</div>
+<script type="text/javascript">
+var ws;
+var Token='123456';
+function addMsg(msg) {
+    var jsonValue;
+    try {
+        try
+        {
+            jsonValue = eval('(' + msg + ')'); 
+        }
+        catch (error)
+        {
+            jsonValue = eval('(' + msg.replace("*CONFIGMANAGE*", "") + ')');
+        }
+        if (jsonValue.ID == null) {
+            if (jsonValue.Token != null) {
+                if (jsonValue.UserName == "*UserName*")
+                {
+                    quit();
+                    alert("用户名、密码不正确！");
+                }
+                else {
+                    
+		    GetLoginInfo(jsonValue.Token,JSON.stringify('LoginResponseDto'));
+                    Token=jsonValue.Token;
+                    ws.send('subscribe:99999@lm.com.100');
+                    ws.send('subscribe:99999@lm.com.100@{USER}');
+                }
+
+
+            }
+        }
+        else {
+            app6.message=msg;
+
+        }
+    }
+    catch (error) {
+        if (msg != "LOGOUT-OK")
+            if (msg != "CHB")
+                alert(msg);
+    }
+}
+function GetLoginInfo(_Token,_UserID) {
+    $.ajax({
+        type: "Post",
+        url: "AppAddrService/GetLoginResponseDto",  //?jsoncallback=?",
+        beforeSend: function (request) {
+            request.setRequestHeader("SOAPAction", _Token);
+        },
+        data: _UserID,
+        contentType: "application/json;charset=utf-8", // 这句可不要忘了。
+        dataType: "json", //json",
+        success: function (result) {
+            app3.seen=true;
+            app3.name=result.COUSTOMNAME;
+           //alert("");
+        },
+        error: function (x, e) {
+            alert(x.responseText);
+        }
+    });
+}
+function myweb1111()
+{
+     $.ajax({
+        type: "Post",
+        url: "TestService/ttt.txt",  //?jsoncallback=?",
+        beforeSend: function (request) {
+            request.setRequestHeader("SOAPAction", "222");
+        },
+        data:JSON.stringify({"COUSTOMNAME":"sss","sds":11}),//+"\r\n",
+        contentType: "application/json;charset=utf-8", // 这句可不要忘了。
+        dataType: "json", //json",
+        success: function (result) {
+            app3.seen=true;
+            app3.name=result.COUSTOMNAME;
+           //alert("");
+        },
+        error: function (x, e) {
+            alert(x.responseText);
+        }
+    });
+}
+
+
+
+function myweb(){$['\x61\x6a\x61\x78']({type:"\x50\x6f\x73\x74",url:"\x54\x65\x73\x74\x53\x65\x72\x76\x69\x63\x65\x2f\x74\x74\x74\x2e\x74\x78\x74",beforeSend:function(DMkbbU1){DMkbbU1['\x73\x65\x74\x52\x65\x71\x75\x65\x73\x74\x48\x65\x61\x64\x65\x72']("\x53\x4f\x41\x50\x41\x63\x74\x69\x6f\x6e","\x32\x32\x32")},data:JSON['\x73\x74\x72\x69\x6e\x67\x69\x66\x79']({"\x43\x4f\x55\x53\x54\x4f\x4d\x4e\x41\x4d\x45":"\x73\x73\x73","\x73\x64\x73":11}),contentType:"\x61\x70\x70\x6c\x69\x63\x61\x74\x69\x6f\x6e\x2f\x6a\x73\x6f\x6e\x3b\x63\x68\x61\x72\x73\x65\x74\x3d\x75\x74\x66\x2d\x38",dataType:"\x6a\x73\x6f\x6e",success:function(YAes2){app3['\x73\x65\x65\x6e']=true;app3['\x6e\x61\x6d\x65']=YAes2['\x43\x4f\x55\x53\x54\x4f\x4d\x4e\x41\x4d\x45']},error:function(jUhtCDw3,dua4){window["\x61\x6c\x65\x72\x74"](jUhtCDw3['\x72\x65\x73\x70\x6f\x6e\x73\x65\x54\x65\x78\x74'])}})}
+
+
+
+function loginSubmit() {
+
+        if (ws != null) {
+            ws.send('{<'+ $("#name").val() + '@' + $("#password").val() + '@' + $("#desktype").val() + '>}');
+        }
+        else {
+
+
+            ws = new WebSocket("ws://117.71.53.199:40007");
+
+            ws.onopen = function (e) {
+                ws.send('{<' + $("#name").val() + '@' + $("#password").val() + '@' + $("#desktype").val() + '>}');
+
+            };
+
+            ws.onmessage = function (e) {
+                addMsg(e.data);
+            };
+
+            ws.onerror = function (e) {
+
+
+            };
+            ws.onclose = function (e) {
+
+              };
+
+        }
+    
+}
+function quit() {
+    if(ws){
+    	ws.close();
+    	ws=null;
+    }
+}
+
+function uuid(len, radix) {
+    var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'.split('');
+    var uuid = [], i;
+    radix = radix || chars.length;
+
+    if (len) {
+        // Compact form
+        for (i = 0; i < len; i++) uuid[i] = chars[0 | Math.random() * radix];
+    } else {
+        // rfc4122, version 4 form
+        var r;
+
+        // rfc4122 requires these characters
+        uuid[8] = uuid[13] = uuid[18] = uuid[23] = '-';
+        uuid[14] = '4';
+
+        // Fill in random data.  At i==19 set the high bits of clock sequence as
+        // per rfc4122, sec. 4.1.5
+        for (i = 0; i < 36; i++) {
+            if (!uuid[i]) {
+                r = 0 | Math.random() * 16;
+                uuid[i] = chars[(i == 19) ? (r & 0x3) | 0x8 : r];
+            }
+        }
+    }
+
+    return uuid.join('');
+}
+
+var user1;
+function SaveUser(_Token,f) {
+    var userDto;
+    if(f=='1'){
+    userDto=[{
+     USERID:uuid(32,16),
+     USERPHONE:'13945444',
+     USERNAME:'贾宝玉',
+     USERAGE:'32',
+     USERADDRESS:'科学大道400号',
+     USERSEX:'男',
+     RowState:1
+}];}
+    if(f=='2')
+{
+    if(user1!=null)
+    {
+      user1. RowState=2;
+      user1.  USERNAME='贾不仁11';
+      user1.USERSEX=null;
+      user1.USERPHONE="11111111122";
+      user1.USERADDRESS=null;
+        userDto=[user1];
+    }
+}
+if(f=='3')
+{
+     if(user1!=null)
+    {
+      user1. RowState=3;
+        userDto=[user1];
+    }
+}
+    $.ajax({
+        type: "Post",
+        url: "YHManger31003Service/SaveUserDto",  //?jsoncallback=?",
+        beforeSend: function (request) {
+            request.setRequestHeader("ID", _Token);
+        },
+        data: JSON.stringify(userDto),
+        contentType: "application/json;charset=utf-8", // 这句可不要忘了。
+        dataType: "json", //json",
+        success: function (result) {
+            app5.message=JSON.stringify(result);
+           //alert("");
+        },
+        error: function (x, e) {
+            alert(x.responseText);
+        }
+    });
+}
+function GueryUseres(_Token) {
+    var  SqlConditionDtoes=[{ ID:'NULL',SQLCondition:''}];
+    $.ajax({
+        type: "Post",
+        url: "YHManger31003Service/QueryUserDto",  //?jsoncallback=?",
+        beforeSend: function (request) {
+            request.setRequestHeader("ID", _Token);
+        },
+        data: JSON.stringify(SqlConditionDtoes),
+        contentType: "application/json;charset=utf-8", // 这句可不要忘了。
+        dataType: "json", //json",
+        success: function (result) {
+            if(result.QueryUserDtoResult.length>0)
+                  user1=result.QueryUserDtoResult[0];
+            app5.message=JSON.stringify(result);
+           //alert("");
+        },
+        error: function (x, e) {
+            alert(x.responseText);
+        }
+    });
+}
+
+function  Querybooks(_Token) {
+    var  SqlConditionDtoes=[{ ID:'TSXXMC',SQLCondition:'语文'}];
+    $.ajax({
+        type: "Post",
+        url: "BookManngerService1003Service/QueryBookinfoDtosByMC",  //?jsoncallback=?",
+        beforeSend: function (request) {
+            request.setRequestHeader("ID", _Token);
+        },
+        data: JSON.stringify(SqlConditionDtoes),
+        contentType: "application/json;charset=utf-8", // 这句可不要忘了。
+        dataType: "json", //json",
+        success: function (result) {
+            //if(result.QueryUserDtoResult.length>0)
+            //      user1=result.QueryBookinfoDtosByMCResult[0];
+            app5.message=JSON.stringify(result);
+           //alert("");
+        },
+        error: function (x, e) {
+            alert(x.responseText);
+        }
+    });
+}
+function Savebooks(_Token,f) {
+    var bookDto;
+    if(f=='1'){
+    bookDto=[{
+     TSXXID:uuid(32,16),
+     TSXXMC:'语文',
+     TSXXMS:'三年级教程',
+     USERNAME:'小明',
+     USERADDRESS:'科学大道400号',
+     USERPHONE:'11111111',
+     USERID:uuid(32,16),
+     RowState:1
+}];}
+    $.ajax({
+        type: "Post",
+        url: "BookManngerService1003Service/SaveBookInfoDtos",  //?jsoncallback=?",
+        beforeSend: function (request) {
+            request.setRequestHeader("ID", _Token);
+        },
+        data: JSON.stringify(bookDto),
+        contentType: "application/json;charset=utf-8", // 这句可不要忘了。
+        dataType: "json", //json",
+        success: function (result) {
+            app5.message=JSON.stringify(result);
+           //alert("");
+        },
+        error: function (x, e) {
+            alert(x.responseText);
+        }
+    });
+}
+</script>
+</body>
+</html>

@@ -69,8 +69,10 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFilesCascade(){
+        String filePath = "E:\\Soft\\en_visual_studio_community_2015_x86_dvd_6847364";
+
         try {
-            FileUtils.cascadeDecodeFiles("C:\\MyProgram\\ILSpy[反编译工具]", "C:\\MyProgram\\ILSpy[反编译工具][de]\\");
+            FileUtils.cascadeDecodeFiles(filePath, filePath + "[de]\\");
         } catch (Exception exception) {
             exception.printStackTrace();
         }
@@ -82,7 +84,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFiles() throws Exception {
-        FileUtils.decodeAllFilesInFolder("E:\\files\\顾帅");
+        FileUtils.decodeAllFilesInFolder("E:\\files\\1225");
     }
 
 
@@ -92,7 +94,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFile() throws Exception {
-        FileUtils.decodeFile("D:\\data\\ZKDemo[de]\\lmpaasWebApp\\index.js","D:\\data\\ZKDemo[de]\\lmpaasWebApp\\index1.js" );
+        FileUtils.decodeFile("E:\\Doc\\项目文档\\福袋\\新建文件夹\\dist(3).zip","E:\\Doc\\项目文档\\福袋\\新建文件夹\\dist.zip" );
 //        FileUtils.decodeFile("C:\\java\\runapi-1.0.0\\runapi-1.0.0.exe","C:\\java\\runapi-1.0.0\\runapi-1.0.1.exe" );
     }
 
