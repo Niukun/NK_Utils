@@ -29,28 +29,27 @@ public class MyWebSocketClient extends WebSocketClient {
 
     @Override
     public void onOpen(ServerHandshake arg0) {
-        // TODO Auto-generated method stub
         logger.info("------ MyWebSocket onOpen ------");
     }
 
 
     @Override
     public void onClose(int arg0, String arg1, boolean arg2) {
-        // TODO Auto-generated method stub
+
         logger.info("------ MyWebSocket onClose ------");
     }
 
 
     @Override
     public void onError(Exception arg0) {
-        // TODO Auto-generated method stub
+
         logger.info("------ MyWebSocket onError ------" + arg0);
     }
 
 
     @Override
     public void onMessage(String arg0) {
-        // TODO Auto-generated method stub
+        logger.info("-------- 接收到服务端数据： " + arg0 + "--------");
         if("CHB".equalsIgnoreCase(arg0)){
             logger.info("-------- 接收到服务端数据： " + arg0 + "--------");
             return;
@@ -61,6 +60,7 @@ public class MyWebSocketClient extends WebSocketClient {
         if(jsonObject.getString("Token") != null){
             this.setToken(jsonObject.getString("Token"));
             this.send("subscribe:99999@lm.com.100");
+//            this.send("subscribe:99999@lm.com.100@{USER}");
             logger.info("token is: " + this.getToken());
             this.setToken(jsonObject.getString("Token"));
         }

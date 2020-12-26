@@ -37,10 +37,12 @@ public class MyTest {
         // 此处的WebSocket服务端URI，上面服务端第2点有详细说明
         MyWebSocketClient myClient = new MyWebSocketClient(new URI("ws://61.171.37.10:8089"));
         myClient.connectBlocking();
-        myClient.setConnectionLostTimeout(30);
+        myClient.setConnectionLostTimeout(3000);
 //        myClient.connect();
         if(myClient.isOpen()){
             myClient.send("{<15000000003@123@8008>}");
+
+            System.out.println("send successful");
         }
 
         System.out.println(myClient.getToken());
