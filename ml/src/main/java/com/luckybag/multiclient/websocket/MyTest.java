@@ -1,9 +1,13 @@
 package com.luckybag.multiclient.websocket;
 
+import com.study.gui.ControlPanel;
 import org.java_websocket.client.WebSocketClient;
 
 import java.net.URI;
 import java.net.URISyntaxException;
+
+import static com.study.gui.CONTANTS.WS_SERVER_DEV;
+
 
 /**
  * http://218.78.51.29:18013/luckybag/main/home
@@ -35,7 +39,8 @@ public class MyTest {
     public static void main(String[] arg0) throws URISyntaxException, InterruptedException {
 
         // 此处的WebSocket服务端URI，上面服务端第2点有详细说明
-        MyWebSocketClient myClient = new MyWebSocketClient(new URI("ws://61.171.37.10:8089"));
+        MyWebSocketClient myClient = new MyWebSocketClient(new URI(WS_SERVER_DEV));
+//        MyWebSocketClient myClient = new MyWebSocketClient(new URI("ws://117.71.53.199:40007"));
         myClient.connectBlocking();
         myClient.setConnectionLostTimeout(3000);
 //        myClient.connect();
@@ -46,6 +51,11 @@ public class MyTest {
         }
 
         System.out.println(myClient.getToken());
+
+        ControlPanel controlPanel = new ControlPanel("15000000003");
+        controlPanel.showEventDemo();
+
+
 
     }
 }

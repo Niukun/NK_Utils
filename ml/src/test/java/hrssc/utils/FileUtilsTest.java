@@ -69,7 +69,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFilesCascade(){
-        String filePath = "E:\\Soft\\en_visual_studio_community_2015_x86_dvd_6847364";
+        String filePath = "E:\\files\\1228";
 
         try {
             FileUtils.cascadeDecodeFiles(filePath, filePath + "[de]\\");

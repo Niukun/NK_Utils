@@ -2,6 +2,9 @@ package hrssc.utils;
 
 import org.junit.Test;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class StringTest {
 
     @Test
@@ -10,5 +13,10 @@ public class StringTest {
         for(int i = 0; i < 100;i++){
             System.out.print(arr[i%arr.length]);
         }
+    }
+
+    @Test
+    public void test(){
+        System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
     }
 }

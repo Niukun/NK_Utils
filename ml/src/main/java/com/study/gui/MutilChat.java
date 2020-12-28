@@ -20,6 +20,6 @@ public class MutilChat implements Runnable{
 
     @Override
     public void run() {
-         new ControlSwing(Thread.currentThread().getName()).createWindow(5);
+         new ControlPanel(Thread.currentThread().getName()).createWindow(5);
     }
 }

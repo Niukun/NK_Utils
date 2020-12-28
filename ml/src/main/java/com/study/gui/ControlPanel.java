@@ -1,34 +1,64 @@
 package com.study.gui;
 
+import com.luckybag.multiclient.websocket.MyWebSocketClient;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.URI;
+import java.net.URISyntaxException;
 
-public class ControlSwing {
+import static com.study.gui.CONTANTS.WS_SERVER_DEV;
+import static com.study.gui.CONTANTS.userMap;
+
+public class ControlPanel {
     private JFrame mainFrame;
     private JLabel headerLabel;
     private JTextArea textArea;
     private JPanel controlPanel;
     private JTextField textField;
+    private MyWebSocketClient myClient = null;
     static int left = 0;
     static int top = 0;
 
-    public ControlSwing(String name) {
+    public ControlPanel(String name) {
+
+        try {
+            myClient = new MyWebSocketClient(new URI(WS_SERVER_DEV));
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+        try {
+            myClient.connectBlocking();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        myClient.setConnectionLostTimeout(3000);
+//        myClient.connect();
+        if (myClient.isOpen()) {
+            myClient.send("{<" + name + "@123@8008>}");
+
+            System.out.println("send successful");
+        }
+
+        System.out.println(myClient.getToken());
+
+
         prepareGUI(name);
     }
 
     public static void main(String[] args) {
-
+        System.out.println(userMap);
         for (int i = 0; i < 10; i++) {
-            ControlSwing swingControlDemo = new ControlSwing("I'm windows " + i);
+            ControlPanel swingControlDemo = new ControlPanel("I'm windows " + i);
             swingControlDemo.showEventDemo();
         }
     }
 
-    public void createWindow(int times){
+    public void createWindow(int times) {
         for (int i = 0; i < times; i++) {
-            ControlSwing swingControlDemo = new ControlSwing(Thread.currentThread().getName());
+            ControlPanel swingControlDemo = new ControlPanel(Thread.currentThread().getName());
             swingControlDemo.showEventDemo();
         }
     }
@@ -52,12 +82,12 @@ public class ControlSwing {
     }
 
     public void showEventDemo() {
-        JButton okButton = new JButton("Send");
+        JButton sendButton = new JButton("Send");
         textField = new JTextField(25);
-        okButton.addActionListener(new ButtonClickListener());
+        sendButton.addActionListener(new ButtonClickListener());
         textField.addActionListener(new TextFieldListener());
 
-        controlPanel.add(okButton);
+        controlPanel.add(sendButton);
         controlPanel.add(textField);
         mainFrame.setLocation(left, top);
         left += 380;
@@ -71,15 +101,14 @@ public class ControlSwing {
     }
 
 
-
     private class ButtonClickListener implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
-            String content = e.getActionCommand();
-            if (content.trim() != "") {
-                textArea.setText(textArea.getText() + content + "\n");
-                textField.setText("");
-            }
+
+            textArea.setText(textArea.getText() + textField.getText() + "\n");
+            textField.setText("");
+            myClient.send("subscribe:99999@lm.com.100");
+
 
         }
     }
@@ -91,6 +120,8 @@ public class ControlSwing {
             String content = e.getActionCommand();
             textArea.setText(textArea.getText() + content + "\n");
             textField.setText("");
+            myClient.send("subscribe:99999@lm.com.100");
+
         }
     }
 }

@@ -63,6 +63,18 @@ public class MyWebSocketClient extends WebSocketClient {
 //            this.send("subscribe:99999@lm.com.100@{USER}");
             logger.info("token is: " + this.getToken());
             this.setToken(jsonObject.getString("Token"));
+        }else if(jsonObject.getString("CONTENT") != null){
+            JSONObject content = JSONObject.parseObject(jsonObject.getString("CONTENT"));
+            String coustomname = content.getString("COUSTOMNAME");
+            if(coustomname != null){
+
+                logger.info(coustomname + "登陆了");
+            }else{
+                String userName = content.getString("USERNAME");
+                String msgcontent = content.getString("MSGCONTENT");
+                String msgcreatetime = content.getString("MSGCREATETIME");
+                logger.info(userName + " 发了消息: " + msgcontent + " 发送时间: " + msgcreatetime);
+            }
         }
 
     }
