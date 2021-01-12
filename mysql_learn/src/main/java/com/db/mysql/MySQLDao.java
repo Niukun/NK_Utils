@@ -13,7 +13,7 @@ public class MySQLDao {
     static Connection conn = MySQLUtil.getConnection();
 
     public static void main(String[] args) throws Exception {
-        FileReader fr = new FileReader("mysql_learn/src/main/resources/room.txt");
+        FileReader fr = new FileReader("D:\\github\\NK_Utils\\mysql_learn\\src\\main\\resources\\address.txt");
         BufferedReader bufr = new BufferedReader(fr);
         String line = null;
         String[] strs = new String[3];
@@ -31,12 +31,11 @@ public class MySQLDao {
         System.out.println("导入一千万条数据用时：");
         System.out.println((System.currentTimeMillis() - start)/1000);
 
-
     }
 
-    public static void insertRecordIntoRoom(String area, String roomnumber, String price) {
+    public static void insertRecordIntoRoom(String id, String code, String address) {
 
-        String sql = "insert into ml_room (area,roomnumber,price) values (" + area + "," + roomnumber + "," + price + ")";
+        String sql = "insert into address (id,code,address) values (\""  + id + "\",\"" + code + "\",\"" + address + "\")";
 
 //        System.out.println("sql is: " +sql);
 
