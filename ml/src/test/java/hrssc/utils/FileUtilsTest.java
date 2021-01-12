@@ -3,9 +3,15 @@ package com.hrssc.utils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.steadystate.css.parser.CSSOMParser;
+import com.steadystate.css.parser.SACParserCSS3;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Test;
+import org.w3c.css.sac.InputSource;
+import org.w3c.dom.css.CSSStyleSheet;
 
+
+import java.io.*;
 import java.text.DateFormat;
 import java.util.*;
 
@@ -84,7 +90,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFiles() throws Exception {
-        FileUtils.decodeAllFilesInFolder("E:\\files\\1225");
+        FileUtils.decodeAllFilesInFolder("E:\\showdoc1.0.3-win");
     }
 
 
@@ -94,7 +100,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFile() throws Exception {
-        FileUtils.decodeFile("E:\\Doc\\项目文档\\福袋\\新建文件夹\\dist(3).zip","E:\\Doc\\项目文档\\福袋\\新建文件夹\\dist.zip" );
+        FileUtils.decodeFileOld("E:\\files\\1228\\美络大学10.7.pdf","E:\\files\\1228\\美络大学10.7[de].pdf.class" );
 //        FileUtils.decodeFile("C:\\java\\runapi-1.0.0\\runapi-1.0.0.exe","C:\\java\\runapi-1.0.0\\runapi-1.0.1.exe" );
     }
 
@@ -104,6 +110,27 @@ public class FileUtilsTest {
         List<String> list = new ArrayList<String>();
         System.out.println(null == list);
         System.out.println(list);
+    }
+
+
+
+    @Test
+    public void testit(){
+        String filePath = "E:\\files\\1228\\111.pdf";
+        String destPath = filePath +".txt";
+        String f = "D:\\github\\NK_Utils\\ml\\src\\test\\java\\hrssc\\utils\\11111.pdf";
+        try {
+            File file = new File(filePath);
+            file.length();
+            file.renameTo(new File(destPath));
+//            File f = new File(destPath);
+//            f.renameTo(new File(destfile));
+//            System.out.println(f.length());
+//            FileUtils.decodeFileOld(destPath,f);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 

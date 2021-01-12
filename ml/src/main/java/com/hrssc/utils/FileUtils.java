@@ -90,6 +90,8 @@ public class FileUtils {
 
     /**
      * 解密单个文件
+     * stream
+     * endstream
      * @param srcFilePath
      * @param distFilePath
      * @throws Exception
@@ -97,7 +99,34 @@ public class FileUtils {
     public static void decodeFile(String srcFilePath, String distFilePath) throws Exception {
         FileInputStream fis = new FileInputStream(srcFilePath);
         FileOutputStream fos = new FileOutputStream(distFilePath);
-        byte[] bytes = new byte[1024];
+
+        BufferedReader bufr = new BufferedReader(new FileReader(srcFilePath));
+        BufferedWriter bufw = new BufferedWriter(new FileWriter(distFilePath));
+
+        String line = null;
+
+
+        while ((line = bufr.readLine())!= null) {
+
+        }
+        fos.close();
+        fis.close();
+
+        System.out.println(srcFilePath + " decode success!");
+        System.out.println("File located at： " + distFilePath + "\n");
+    }
+
+
+    /**
+     * 解密单个文件
+     * @param srcFilePath
+     * @param distFilePath
+     * @throws Exception
+     */
+    public static void decodeFileOld(String srcFilePath, String distFilePath) throws Exception {
+        FileInputStream fis = new FileInputStream(srcFilePath);
+        FileOutputStream fos = new FileOutputStream(distFilePath);
+        byte[] bytes = new byte[8];
         int len = fis.read(bytes);
 
         while (len != -1) {

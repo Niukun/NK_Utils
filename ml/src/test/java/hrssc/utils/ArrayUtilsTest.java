@@ -1,4 +1,4 @@
-package com.hrssc.utils;
+package hrssc.utils;
 
 
 import org.junit.jupiter.api.Test;
