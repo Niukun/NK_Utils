@@ -12,7 +12,11 @@ import java.sql.Statement;
 public class MySQLDao {
     static Connection conn = MySQLUtil.getConnection();
 
-    public static void main(String[] args) throws Exception {
+    /**
+     * 往test数据库中插入100万条数据
+     * @throws IOException
+     */
+    private static void InsertMillionRecords() throws IOException {
         FileReader fr = new FileReader("D:\\github\\NK_Utils\\mysql_learn\\src\\main\\resources\\address.txt");
         BufferedReader bufr = new BufferedReader(fr);
         String line = null;
@@ -30,7 +34,6 @@ public class MySQLDao {
         }
         System.out.println("导入一千万条数据用时：");
         System.out.println((System.currentTimeMillis() - start)/1000);
-
     }
 
     public static void insertRecordIntoRoom(String id, String code, String address) {
@@ -54,4 +57,13 @@ public class MySQLDao {
         }
 
     }
+
+
+
+
+
+
+
+
+
 }
