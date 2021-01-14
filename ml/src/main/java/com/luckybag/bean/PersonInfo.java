@@ -8,6 +8,7 @@ public class PersonInfo {
     private String level2;
     private String level3;
     private String level4;
+    private String departmentid;
     private final String strNull = "——";
 
     public String getName() {
@@ -72,5 +73,13 @@ public class PersonInfo {
         if (!strNull.equalsIgnoreCase(level4)) {
             this.level4 = level4;
         }
+    }
+
+    public String getDepartmentid() {
+        return departmentid;
+    }
+
+    public void setDepartmentid(String departmentid) {
+        this.departmentid = departmentid;
     }
 }

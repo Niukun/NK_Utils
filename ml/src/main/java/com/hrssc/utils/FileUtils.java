@@ -77,9 +77,10 @@ public class FileUtils {
         for (File f: files ) {
             if(f.isFile()){
                 String fileName = f.getAbsolutePath();
-                String newFileName = fileName.substring(0, fileName.lastIndexOf(".")) + "【DE】" + fileName.substring(fileName.lastIndexOf("."));
+                String newFileName = fileName + ".class";
+//                String newFileName = fileName.substring(0, fileName.lastIndexOf(".")) + "【DE】" + fileName.substring(fileName.lastIndexOf("."));
                 try {
-                    decodeFile(fileName, newFileName);
+                    decodeFileOld(fileName, newFileName);
                 } catch (Exception exception) {
                     exception.printStackTrace();
                 }

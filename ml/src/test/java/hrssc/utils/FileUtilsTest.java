@@ -90,7 +90,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFiles() throws Exception {
-        FileUtils.decodeAllFilesInFolder("E:\\showdoc1.0.3-win");
+        FileUtils.decodeAllFilesInFolder("D:\\data\\Intellij\\LuckyBag\\src\\main\\resources\\images0114");
     }
 
 
