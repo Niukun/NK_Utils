@@ -1,4 +1,4 @@
-package com.luckybag.entity;
+package com.luckybag.bean;
 
 public class PersonInfo {
     private String name;
@@ -8,6 +8,7 @@ public class PersonInfo {
     private String level2;
     private String level3;
     private String level4;
+    private final String strNull = "——";
 
     public String getName() {
         return name;
@@ -38,7 +39,9 @@ public class PersonInfo {
     }
 
     public void setLevel1(String level1) {
-        this.level1 = level1;
+        if (!strNull.equalsIgnoreCase(level1)) {
+            this.level1 = level1;
+        }
     }
 
     public String getLevel2() {
@@ -46,7 +49,9 @@ public class PersonInfo {
     }
 
     public void setLevel2(String level2) {
-        this.level2 = level2;
+        if (!strNull.equalsIgnoreCase(level2)) {
+            this.level2 = level2;
+        }
     }
 
     public String getLevel3() {
@@ -54,7 +59,9 @@ public class PersonInfo {
     }
 
     public void setLevel3(String level3) {
-        this.level3 = level3;
+        if (!strNull.equalsIgnoreCase(level3)) {
+            this.level3 = level3;
+        }
     }
 
     public String getLevel4() {
@@ -62,6 +69,8 @@ public class PersonInfo {
     }
 
     public void setLevel4(String level4) {
-        this.level4 = level4;
+        if (!strNull.equalsIgnoreCase(level4)) {
+            this.level4 = level4;
+        }
     }
 }
