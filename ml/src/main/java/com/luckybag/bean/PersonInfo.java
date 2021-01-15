@@ -1,15 +1,26 @@
 package com.luckybag.bean;
 
 public class PersonInfo {
+
+    private String id;
     private String name;
     private String phone;
     private String company;
+    private String amount;
     private String level1;
     private String level2;
     private String level3;
     private String level4;
     private String departmentid;
     private final String strNull = "——";
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -33,6 +44,15 @@ public class PersonInfo {
 
     public void setCompany(String company) {
         this.company = company;
+    }
+
+
+    public String getAmount() {
+        return amount;
+    }
+
+    public void setAmount(String amount) {
+        this.amount = amount;
     }
 
     public String getLevel1() {

@@ -10,21 +10,45 @@ import java.io.File;
 import java.util.*;
 
 public class LuckyBagService {
-    private static int id = 10;
 
 
+    /**
+     * 1. 部门数据初始化
+     * 2. 人员信息初始化
+     * 3. 福金预置
+     * @param file
+     */
     public void insertExcelIntoDB(File file) {
         LuckyBagParser luckyBagParser = new LuckyBagParser();
 
         List<PersonInfo> personInfos = null;
         try {
+            // 获取excel中数据
             personInfos = luckyBagParser.parseExcelFile(file);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
+        // 利用人员信息获取最新组织树
         Node node = insertDepartment(personInfos);
+
+
+        //1. 部门数据初始化
+        LuckyBagDao.insertIntoDepartment(node);
+        // 2. 人员信息初始化
         insertUserInfo(node, personInfos);
+        // 3. 福金预置
+        initLuckybagAmount(personInfos);
+
+    }
+
+    private void initLuckybagAmount(List<PersonInfo> personInfos) {
+        Iterator<PersonInfo> iterator = personInfos.iterator();
+        while(iterator.hasNext()){
+            LuckyBagDao.initLuckyBagAmount(iterator.next());
+        }
+        System.out.println("预置福金初始化成功！");
+
 
 
     }
@@ -107,8 +131,8 @@ public class LuckyBagService {
 
 
         }
-        LuckyBagDao.insertIntoDepartment(tree);
-        System.out.println("部门表初始化成功！");
+
+        System.out.println("部门树初始化成功！");
         return tree;
     }
 
@@ -131,15 +155,25 @@ public class LuckyBagService {
         Result result = departInChildren(current, node.getChildren());
 
         if(result.inList){
-
             buildDepartmentTree(levelList,result.node, personInfo);
 
         }else{
-            Node n = new Node(current,id++,new ArrayList<Node>(),node);
+
+            Node n = new Node(current,generateId(node),new ArrayList<Node>(),node);
             node.getChildren().add(n);
             personInfo.setDepartmentid(n.getCode());
         }
+    }
 
+    private int generateId(Node node) {
+
+        int strId =  node.getChildren().size() + 11;
+        String result = "" + strId;
+//        while(node.getParent() != null ){
+            result = node.getCode() + result;
+//            node = node.getParent();
+//        }
+        return Integer.parseInt(result);
     }
 
     /**

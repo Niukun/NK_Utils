@@ -9,10 +9,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
-import java.util.UUID;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class LuckyBagDao {
     static Connection connection = DBUtils.getConnection();
@@ -20,10 +18,10 @@ public class LuckyBagDao {
 
     public static void insertIntoDepartment(Node node) {
         String name = node.getName();
+
         String code = node.getCode();
         List<Node> children = node.getChildren();
         String sql = "insert into T_LUCKY_BAG_DEPARTMENT (DEPARTMENTID,DEPARTMENTNAME,DEPARTMENTCODE,PARENTID) values (?,?,?,?)";
-//        System.out.println(sql);
         Statement stmt = null;
 
         try {
@@ -32,10 +30,9 @@ public class LuckyBagDao {
             ps.setString(2, name);
             ps.setString(3, code);
             ps.setString(4, node.getParent() == null ? "0" : node.getParent().getCode());
-            int result = ps.executeUpdate();
-//            if (result != 0) {
-//                System.out.println(name + "插入成功！");
-//            }
+            if(!"-".equalsIgnoreCase(name)){
+                int result = ps.executeUpdate();
+            }
 
         } catch (SQLException throwables) {
             throwables.printStackTrace();
@@ -44,6 +41,7 @@ public class LuckyBagDao {
         while (iterator.hasNext()) {
             insertIntoDepartment(iterator.next());
         }
+
 
     }
 
@@ -55,13 +53,41 @@ public class LuckyBagDao {
 
         try {
             ps = connection.prepareStatement(sql);
-            ps.setString(1, UUID.randomUUID().toString());
+            ps.setString(1, personInfo.getId());
             ps.setString(2, personInfo.getName());
             ps.setString(3, personInfo.getPhone());
             ps.setString(4, LuckyCons.USERPASSWORD);
             ps.setString(5, LuckyCons.USERLOGINTYPE);
             ps.setString(6, LuckyCons.ROLEID);
             ps.setString(7, personInfo.getDepartmentid());
+            int result = ps.executeUpdate();
+//            if (result != 0) {
+//                System.out.println(personInfo.getName() + "插入成功！");
+//            }
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+
+    }
+
+    public static void initLuckyBagAmount(PersonInfo personInfo) {
+
+        String sql = "insert into T_LUCKY_BAG_RECORD (RECORDID,RECORDAMOUNT,RECORDTOTALAMOUNT,USERID,RESOURCETYPEID,RECORDDESC,RECORDCREATETIME) values (?,?,?,?,?,?,?)";
+
+        Statement stmt = null;
+
+        try {
+            ps = connection.prepareStatement(sql);
+            ps.setString(1, UUID.randomUUID().toString());
+            ps.setString(2, personInfo.getAmount());
+            ps.setString(3, personInfo.getAmount());
+            ps.setString(4, personInfo.getId());
+            ps.setString(5, LuckyCons.RESOURCETYPEID_INIT);
+            ps.setString(6, LuckyCons.RESOURCEDESC);
+            ps.setString(7, new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
+
             int result = ps.executeUpdate();
 //            if (result != 0) {
 //                System.out.println(personInfo.getName() + "插入成功！");

@@ -31,24 +31,24 @@ public class LuckyBagParser {
         XSSFWorkbook workbook = new XSSFWorkbook(fip);
         XSSFSheet sheet = workbook.getSheetAt(0);
         Iterator<Row> iterator = sheet.rowIterator();
-        Row next = iterator.next();
+        Row row = iterator.next();
         while (iterator.hasNext()) {
             PersonInfo person = new PersonInfo();
-            next = iterator.next();
-            Iterator<Cell> cellIterator = next.cellIterator();
-            person.setLevel1(next.getCell(3).toString());
-            person.setLevel2(next.getCell(4).toString());
-            person.setLevel3(next.getCell(5).toString());
-            person.setLevel4(next.getCell(6).toString());
-            person.setName(next.getCell(7).toString());
-            person.setPhone(next.getCell(8).toString());
+            row = iterator.next();
+            Iterator<Cell> cellIterator = row.cellIterator();
+            person.setLevel1(row.getCell(3).toString());
+            person.setLevel2(row.getCell(4).toString());
+            person.setLevel3(row.getCell(5).toString());
+            person.setLevel4(row.getCell(6).toString());
+            person.setName(row.getCell(7).toString());
+            person.setPhone(row.getCell(8).toString());
+            person.setAmount(row.getCell(9).toString());
+            person.setId(row.getRowNum() + 100 + "");
 
             list.add(person);
         }
         return list;
     }
-
-
 
 
 }
