@@ -90,7 +90,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFiles() throws Exception {
-        FileUtils.decodeAllFilesInFolder("D:\\data\\Intellij\\LuckyBag\\src\\main\\resources\\images0114");
+        FileUtils.decodeAllFilesInFolder("D:\\data\\Intellij\\LuckyBag\\src\\main\\resources\\images0120");
     }
 
 
@@ -100,7 +100,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFile() throws Exception {
-        FileUtils.decodeFileOld("E:\\files\\1228\\美络大学10.7.pdf","E:\\files\\1228\\美络大学10.7[de].pdf.class" );
+        FileUtils.decodeFileOld("E:\\Doc\\Niukun\\工作记录\\2020\\2020年终总结\\【工作总结】2020年度述职汇报V1.0【持续集成部】【顾帅】20210119.pptx","E:\\Doc\\Niukun\\工作记录\\2020\\2020年终总结\\【工作总结】2020年度述职汇报V1.0【持续集成部】【牛坤】 20210119.pptx.class" );
 //        FileUtils.decodeFile("C:\\java\\runapi-1.0.0\\runapi-1.0.0.exe","C:\\java\\runapi-1.0.0\\runapi-1.0.1.exe" );
     }
 

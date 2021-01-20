@@ -3,8 +3,10 @@ package com.luckybag.service;
 
 import com.luckybag.bean.Node;
 import com.luckybag.bean.PersonInfo;
+import com.luckybag.constants.LuckyCons;
 import com.luckybag.dao.LuckyBagDao;
 import com.luckybag.poi.LuckyBagParser;
+import scala.Int;
 
 import java.io.File;
 import java.util.*;
@@ -194,6 +196,18 @@ public class LuckyBagService {
             }
         }
         return result;
+    }
+
+    public void addLuckyBagAmountForUser(String userPhone, int amount) {
+        String userId = LuckyBagDao.getUserIdByPhone(userPhone);
+        String currentAmount = LuckyBagDao.getuserCurrentAmountByUserid(userId);
+        int totalAmount = Integer.parseInt(currentAmount) + amount;
+        String result = LuckyBagDao.addLuckyBagAmountForUser(userId, amount, totalAmount);
+        if(result.equalsIgnoreCase(LuckyCons.SUCCESS)){
+            System.out.println("手机号为： " + userPhone + " 的用户充值 "+amount+" 成功！当前总福金为： "+ totalAmount);
+
+        }
+
     }
 
 

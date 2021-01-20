@@ -2,6 +2,7 @@ package com.luckybag.poi;
 
 import com.luckybag.bean.PersonInfo;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -9,6 +10,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -41,7 +43,11 @@ public class LuckyBagParser {
             person.setLevel3(row.getCell(5).toString());
             person.setLevel4(row.getCell(6).toString());
             person.setName(row.getCell(7).toString());
+            if(row.getCell(8).getCellTypeEnum() == CellType.NUMERIC){
+                row.getCell(8).setCellType(CellType.STRING);
+            }
             person.setPhone(row.getCell(8).toString());
+//            person.setPhone( df.format(row.getCell(8).getNumericCellValue()));
             person.setAmount(row.getCell(9).toString());
             person.setId(row.getRowNum() + 100 + "");
 

@@ -1,4 +1,4 @@
-package com.leetcode.sort;
+package com.lcode.sort;
 
 import java.util.Arrays;
 

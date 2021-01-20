@@ -1,4 +1,4 @@
-package com.leetcode;
+package com.lcode;
 
 public class TestSpeed {
     public static void main(String[] args) {

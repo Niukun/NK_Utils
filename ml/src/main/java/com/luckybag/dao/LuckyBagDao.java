@@ -5,12 +5,10 @@ import com.luckybag.bean.Node;
 import com.luckybag.bean.PersonInfo;
 import com.luckybag.constants.LuckyCons;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.Date;
 
 public class LuckyBagDao {
     static Connection connection = DBUtils.getConnection();
@@ -97,6 +95,76 @@ public class LuckyBagDao {
             throwables.printStackTrace();
         }
 
+    }
+
+    public static String getUserIdByPhone(String phone){
+
+        String sql = "select userid from T_LUCKY_BAG_USER where userphone = ?";
+        Statement stmt = null;
+
+        String result = null;
+
+        try {
+            ps = connection.prepareStatement(sql);
+            ps.setString(1, phone);
+            ResultSet resultSet = ps.executeQuery();
+            while (resultSet.next()){
+                result = resultSet.getString("USERID");
+            }
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return result;
 
     }
+
+    public static String getuserCurrentAmountByUserid(String userId) {
+        String sql = "SELECT RECORDTOTALAMOUNT FROM T_LUCKY_BAG_RECORD WHERE USERID = ? ORDER BY RECORDCREATETIME DESC;";
+        Statement stmt = null;
+
+        String result = null;
+
+        try {
+            ps = connection.prepareStatement(sql);
+            ps.setString(1, userId);
+            ResultSet resultSet = ps.executeQuery();
+            while (resultSet.next()){
+                result = resultSet.getString("RECORDTOTALAMOUNT");
+                break;
+            }
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return result;
+    }
+
+    public static String addLuckyBagAmountForUser(String userId, int amount, int totalAmount) {
+        String sql = "insert into T_LUCKY_BAG_RECORD (RECORDID,RECORDAMOUNT,RECORDTOTALAMOUNT,USERID,RESOURCETYPEID,RECORDDESC,RECORDCREATETIME) values (?,?,?,?,?,?,?)";
+
+        Statement stmt = null;
+
+        try {
+            ps = connection.prepareStatement(sql);
+            ps.setString(1, UUID.randomUUID().toString());
+            ps.setString(2, Integer.toString(amount));
+            ps.setString(3, Integer.toString(totalAmount));
+            ps.setString(4, userId);
+            ps.setString(5, LuckyCons.RESOURCETYPEID_INIT);
+            ps.setString(6, LuckyCons.RESOURCEDESC_ADD);
+            ps.setString(7, new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
+
+            int result = ps.executeUpdate();
+            if (result != 0) {
+                return LuckyCons.SUCCESS;
+            }
+            return LuckyCons.ERROR;
+
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return LuckyCons.ERROR;
+    }
+
 }

@@ -1,6 +1,4 @@
-package com.leetcode;
-
-import java.util.*;
+package com.lcode;
 
 public class UnionList {
     public static void main(String[] args) {
