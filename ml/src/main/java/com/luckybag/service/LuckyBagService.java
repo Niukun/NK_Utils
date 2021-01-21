@@ -34,13 +34,46 @@ public class LuckyBagService {
         // 利用人员信息获取最新组织树
         Node node = insertDepartment(personInfos);
 
+        departmentInfo(personInfos);
+
 
         //1. 部门数据初始化
-        LuckyBagDao.insertIntoDepartment(node);
+//        LuckyBagDao.insertIntoDepartment(node);
         // 2. 人员信息初始化
-        insertUserInfo(node, personInfos);
+//        insertUserInfo(node, personInfos);
         // 3. 福金预置
-        initLuckybagAmount(personInfos);
+//        initLuckybagAmount(personInfos);
+
+    }
+
+    private void departmentInfo(List<PersonInfo> personInfos) {
+        Iterator<PersonInfo> iterator = personInfos.iterator();
+        PersonInfo personInfo = null;
+        Set<String> level1 = new HashSet<>();
+        Set<String> level2 = new HashSet<>();
+        Set<String> level3 = new HashSet<>();
+        Set<String> level4 = new HashSet<>();
+        while (iterator.hasNext()){
+            personInfo = iterator.next();
+            if(!personInfo.getLevel1().isEmpty()){
+                level1.add(personInfo.getLevel1());
+                if(!personInfo.getLevel2().isEmpty()){
+                    level2.add(personInfo.getLevel2());
+                    if(!personInfo.getLevel3().isEmpty()){
+                        level3.add(personInfo.getLevel3());
+                        if(!personInfo.getLevel4().isEmpty()){
+                            level4.add(personInfo.getLevel4());
+
+                        }
+                    }
+                }
+            }
+        }
+
+        System.out.println("1级部门总人数" + level1.size());
+        System.out.println("2级部门总人数" + level2.size());
+        System.out.println("3级部门总人数" + level3.size());
+        System.out.println("4级部门总人数" + level4.size());
 
     }
 
@@ -119,11 +152,11 @@ public class LuckyBagService {
             PersonInfo person = iterator.next();
             List<String> levelList = new ArrayList<>();
             levelList.add(person.getLevel1());
-            if (person.getLevel2() != null) {
+            if (!person.getLevel2().isEmpty()) {
                 levelList.add(person.getLevel2());
-                if (person.getLevel3() != null) {
+                if (!person.getLevel3().isEmpty()) {
                     levelList.add(person.getLevel3());
-                    if (person.getLevel4() != null) {
+                    if (!person.getLevel4().isEmpty()) {
                         levelList.add(person.getLevel4());
                     }
                 }

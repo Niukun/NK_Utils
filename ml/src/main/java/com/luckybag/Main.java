@@ -19,8 +19,8 @@ public class Main {
      */
     @Test
     public void init(){
-        String filePath = "D:\\github\\NK_Utils\\ml\\src\\main\\resources\\luckybag\\rosterlist-20210113.xlsx";
-//        new LuckyBagController().insertExcelIntoDB(filePath);
+        String filePath = "D:\\github\\NK_Utils\\ml\\src\\main\\resources\\luckybag\\rosterlist-20210121.xlsx";
+        new LuckyBagController().insertExcelIntoDB(filePath);
     }
 
 

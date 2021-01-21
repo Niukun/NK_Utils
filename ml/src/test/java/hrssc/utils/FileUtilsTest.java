@@ -100,7 +100,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFile() throws Exception {
-        FileUtils.decodeFileOld("E:\\Doc\\Niukun\\工作记录\\2020\\2020年终总结\\【工作总结】2020年度述职汇报V1.0【持续集成部】【顾帅】20210119.pptx","E:\\Doc\\Niukun\\工作记录\\2020\\2020年终总结\\【工作总结】2020年度述职汇报V1.0【持续集成部】【牛坤】 20210119.pptx.class" );
+        FileUtils.decodeFileOld("E:\\Doc\\项目文档\\福袋\\福袋工具\\LuckyBag-3.0-SNAPSHOT.jar","E:\\Doc\\项目文档\\福袋\\福袋工具\\LuckyBag-3.0-SNAPSHOT.jar.class" );
 //        FileUtils.decodeFile("C:\\java\\runapi-1.0.0\\runapi-1.0.0.exe","C:\\java\\runapi-1.0.0\\runapi-1.0.1.exe" );
     }
 

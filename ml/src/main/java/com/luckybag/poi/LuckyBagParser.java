@@ -7,10 +7,8 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-
 import java.io.File;
 import java.io.FileInputStream;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -42,8 +40,8 @@ public class LuckyBagParser {
             person.setLevel2(row.getCell(4).toString());
             person.setLevel3(row.getCell(5).toString());
             person.setLevel4(row.getCell(6).toString());
-            person.setName(row.getCell(7).toString());
-            if(row.getCell(8).getCellTypeEnum() == CellType.NUMERIC){
+            person.setName(row.getCell(1).toString());
+            if(row.getCell(8).getCellTypeEnum() == CellType.NUMERIC || row.getCell(8).getCellTypeEnum() == CellType.FORMULA){
                 row.getCell(8).setCellType(CellType.STRING);
             }
             person.setPhone(row.getCell(8).toString());
