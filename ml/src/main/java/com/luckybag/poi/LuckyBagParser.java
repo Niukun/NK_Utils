@@ -34,6 +34,7 @@ public class LuckyBagParser {
         Row row = iterator.next();
         while (iterator.hasNext()) {
             PersonInfo person = new PersonInfo();
+            int amount = 0;
             row = iterator.next();
             Iterator<Cell> cellIterator = row.cellIterator();
             person.setLevel1(row.getCell(3).toString());
@@ -46,7 +47,10 @@ public class LuckyBagParser {
             }
             person.setPhone(row.getCell(8).toString());
 //            person.setPhone( df.format(row.getCell(8).getNumericCellValue()));
-            person.setAmount(row.getCell(9).toString());
+            if(row.getCell(15) != null){
+                amount = (int) Double.parseDouble(row.getCell(15).toString());
+            }
+            person.setAmount(Integer.toString(amount));
             person.setId(row.getRowNum() + 100 + "");
 
             list.add(person);

@@ -90,7 +90,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFiles() throws Exception {
-        FileUtils.decodeAllFilesInFolder("D:\\data\\Intellij\\LuckyBag\\src\\main\\resources\\images0120");
+        FileUtils.decodeAllFilesInFolder("D:\\data\\Intellij\\LuckyBag\\src\\main\\resources\\images0125");
     }
 
 
@@ -100,7 +100,8 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFile() throws Exception {
-        FileUtils.decodeFileOld("E:\\Doc\\项目文档\\福袋\\福袋工具\\LuckyBag-3.0-SNAPSHOT.jar","E:\\Doc\\项目文档\\福袋\\福袋工具\\LuckyBag-3.0-SNAPSHOT.jar.class" );
+        String path = "E:\\files\\微信截图_20210127134510.png";
+        FileUtils.decodeFileOld(path,path+".class" );
 //        FileUtils.decodeFile("C:\\java\\runapi-1.0.0\\runapi-1.0.0.exe","C:\\java\\runapi-1.0.0\\runapi-1.0.1.exe" );
     }
 

@@ -19,7 +19,7 @@ public class Main {
      */
     @Test
     public void init(){
-        String filePath = "D:\\github\\NK_Utils\\ml\\src\\main\\resources\\luckybag\\rosterlist-20210121.xlsx";
+        String filePath = "D:\\github\\NK_Utils\\ml\\src\\main\\resources\\luckybag\\rosterlist-20210127.xlsx";
         new LuckyBagController().insertExcelIntoDB(filePath);
     }
 
@@ -29,8 +29,8 @@ public class Main {
      */
     @Test
     public void addAmountForUser(){
-        int amount = 25;
-        String userPhone = "15395150909";
+        int amount = 88888;
+        String userPhone = "18225602803";
         new LuckyBagController().addLuckyBagAmountForUser(userPhone,amount);
     }
 

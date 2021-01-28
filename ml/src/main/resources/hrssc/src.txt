@@ -1,0 +1,4215 @@
+import java.io.*;
+import java.net.*;
+public class _dynamicproxyIStaffService8001ServiceImpl implements  com.hrssc.service.IStaffService8001Service  {
+    private String strUrl="" ;
+    private String strCliendID="" ;
+public _dynamicproxyIStaffService8001ServiceImpl()
+{
+}
+public _dynamicproxyIStaffService8001ServiceImpl(String _Url,String _CliendID)
+{
+   this.strUrl=_Url;
+   this.strCliendID=_CliendID;
+}
+
+public java.util.List<com.hrssc.entity.StaffAttachmentInfoDto> QueryStaffAttachments(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffAttachmentInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffAttachmentInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffAttachments");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffAttachmentInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffAttachmentInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryStaffColleague(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffColleague");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffBasicInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffBasicInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffWorkSkill(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffWorkSkill");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffJobLevel(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffJobLevel");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.PidinfoInfoDto> QueryPidinfoInfoByStaffId(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.PidinfoInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.PidinfoInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryPidinfoInfoByStaffId");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.PidinfoInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.PidinfoInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryStaffSocialSecurity(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffSocialSecurity");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryStaffPayCard(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffPayCard");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.PIDStaffInfoDto> QueryPidStaffInfoByPid(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.PIDStaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.PIDStaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryPidStaffInfoByPid");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.PIDStaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.PIDStaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffEducation(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffEducation");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.PidcontactInfoDto> QueryPidContactInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.PidcontactInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.PidcontactInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryPidContactInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.PidcontactInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.PidcontactInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryResignStaffNum(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryResignStaffNum");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryRegularStaff(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryRegularStaff");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryStaffAgreementByStafflinkid(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffAgreementByStafflinkid");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffJobInfoDto> QueryStaffLatestJobInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffJobInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffJobInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffLatestJobInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffJobInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffJobInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffJobInfoDto> QueryStaffJobInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffJobInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffJobInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffJobInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffJobInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffJobInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryRegularStaffNum(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryRegularStaffNum");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CallTimeInfoDto> QueryCallTimeByEvent(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CallTimeInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CallTimeInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryCallTimeByEvent");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CallTimeInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CallTimeInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryCompanyAddressByCompanyId(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryCompanyAddressByCompanyId");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryStaffAgreement(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffAgreement");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryAgreementCompanyByCompanyId(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryAgreementCompanyByCompanyId");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffResignInfoDto> QueryStaffResignInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffResignInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffResignInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffResignInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffResignInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffResignInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffLanguageSkill(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffLanguageSkill");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffEmploymentRecord(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffEmploymentRecord");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffInfoInBirthdayRange(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffInfoInBirthdayRange");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffContact(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffContact");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffNumInBirthdayRange(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffNumInBirthdayRange");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryStaffPartner(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffPartner");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryStaffJobHistory(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffJobHistory");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.OrgmInfoDto> QueryStaffLinkInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.OrgmInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.OrgmInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffLinkInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.OrgmInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.OrgmInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.OrgmInfoDto> QueryOrgmDepartment(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.OrgmInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.OrgmInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryOrgmDepartment");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.OrgmInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.OrgmInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryDeficiencyOfPidStaffs(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryDeficiencyOfPidStaffs");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveCompanyAddress(java.util.List<com.hrssc.entity.CompanyInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveCompanyAddress");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.PositionCountInfoDto> QueryPositionCountInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.PositionCountInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.PositionCountInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryPositionCountInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.PositionCountInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.PositionCountInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffLanguageSkill(java.util.List<com.hrssc.entity.StaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffLanguageSkill");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.OrgmInfoDto> QueryOrgmStafflink(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.OrgmInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.OrgmInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryOrgmStafflink");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.OrgmInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.OrgmInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.ResultInfoDto> QueryHrsscLoginInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.ResultInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.ResultInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryHrsscLoginInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.ResultInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.ResultInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffEmploymentRecord(java.util.List<com.hrssc.entity.StaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffEmploymentRecord");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffAgreement(java.util.List<com.hrssc.entity.CompanyInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffAgreement");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.PositionCountDto> QueryPositionCount(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.PositionCountDto> reValue=new java.util.ArrayList<com.hrssc.entity.PositionCountDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryPositionCount");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.PositionCountDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.PositionCountDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffColleague(java.util.List<com.hrssc.entity.CompanyInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffColleague");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SavePidContactInfo(java.util.List<com.hrssc.entity.PidcontactInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SavePidContactInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveOrgmStafflink(java.util.List<com.hrssc.entity.OrgmInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveOrgmStafflink");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffInfoByPid(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffInfoByPid");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryStaffNumWithoutAgreement(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffNumWithoutAgreement");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryNotComingStaffNum(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryNotComingStaffNum");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryIncomingStaffNum(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryIncomingStaffNum");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffSocialSecurity(java.util.List<com.hrssc.entity.CompanyInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffSocialSecurity");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryNotComingStaff(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryNotComingStaff");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.VirtualDimensionInfoDto> QueryVirtualDimensionInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.VirtualDimensionInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.VirtualDimensionInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryVirtualDimensionInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.VirtualDimensionInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.VirtualDimensionInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffBasicInfoChange(java.util.List<com.hrssc.entity.StaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffBasicInfoChange");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveOrgmDepartment(java.util.List<com.hrssc.entity.OrgmInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveOrgmDepartment");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.ResultInfoDto> QueryStaffInHrssc(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.ResultInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.ResultInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffInHrssc");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.ResultInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.ResultInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveJobAssignment(java.util.List<com.hrssc.entity.JobAssignmentDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveJobAssignment");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.EmotionInfoDto> QueryEmotionInfoByStaffid(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.EmotionInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.EmotionInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryEmotionInfoByStaffid");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.EmotionInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.EmotionInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.ResultInfoDto> QueryHumanProfile(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.ResultInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.ResultInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryHumanProfile");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.ResultInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.ResultInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryIncomingStaff(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryIncomingStaff");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveVirtualDimensionInfo(java.util.List<com.hrssc.entity.VirtualDimensionInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveVirtualDimensionInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveAgreementCompany(java.util.List<com.hrssc.entity.CompanyInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveAgreementCompany");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.DepartmentInfoDto> QueryDepartmentHeader(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.DepartmentInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.DepartmentInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryDepartmentHeader");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.DepartmentInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.DepartmentInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.ArchiveSettingInfoDto> QueryArchiveSettingByCompanyid(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.ArchiveSettingInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.ArchiveSettingInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryArchiveSettingByCompanyid");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.ArchiveSettingInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.ArchiveSettingInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveReComingStaffJobInfo(java.util.List<com.hrssc.entity.StaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveReComingStaffJobInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryStaffAgreementNum(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffAgreementNum");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryStaffWithoutAgreement(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffWithoutAgreement");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryAllStaffByCompanyid(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryAllStaffByCompanyid");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryDeficiencyOfAddressStaffs(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryDeficiencyOfAddressStaffs");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffResignInfoDto> QueryStaffLastResignInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffResignInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffResignInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffLastResignInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffResignInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffResignInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.UserLoginInfoDto> QueryUserLoginInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.UserLoginInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.UserLoginInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryUserLoginInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.UserLoginInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.UserLoginInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffJobLevel(java.util.List<com.hrssc.entity.StaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffJobLevel");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffLatestJobInfo(java.util.List<com.hrssc.entity.StaffJobInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffLatestJobInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffEducation(java.util.List<com.hrssc.entity.StaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffEducation");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffResignInfo(java.util.List<com.hrssc.entity.StaffResignInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffResignInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.JobAssAchieveStandInfoDto> QueryAllJobAssignment(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.JobAssAchieveStandInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.JobAssAchieveStandInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryAllJobAssignment");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.JobAssAchieveStandInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.JobAssAchieveStandInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffAttachments(java.util.List<com.hrssc.entity.StaffAttachmentInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffAttachments");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.DepartmentInfoDto> QueryStaffByDeptid(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.DepartmentInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.DepartmentInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffByDeptid");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.DepartmentInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.DepartmentInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveDepartmentHeader(java.util.List<com.hrssc.entity.DepartmentInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveDepartmentHeader");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveReEntryStaffJobInfo(java.util.List<com.hrssc.entity.StaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveReEntryStaffJobInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveUserLoginInfo(java.util.List<com.hrssc.entity.UserLoginInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveUserLoginInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.DepartmentInfoDto> QueryDeptInfoByDeptid(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.DepartmentInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.DepartmentInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryDeptInfoByDeptid");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.DepartmentInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.DepartmentInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffWorkSkill(java.util.List<com.hrssc.entity.StaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffWorkSkill");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffNumInByEntryCompanyDate(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffNumInByEntryCompanyDate");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffInfoInByEntryCompanyDate(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffInfoInByEntryCompanyDate");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryAllStaffAgreementToBeExpired(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryAllStaffAgreementToBeExpired");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryDeficiencyOfEmergencyContactStaffs(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryDeficiencyOfEmergencyContactStaffs");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryDeficiencyOfAgreementEndDateStaffs(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryDeficiencyOfAgreementEndDateStaffs");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryAllStaffAgreementToBeExpiredNum(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryAllStaffAgreementToBeExpiredNum");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffJobInfoDto> QueryCurStaffPositionInfoByCompanyId(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffJobInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffJobInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryCurStaffPositionInfoByCompanyId");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffJobInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffJobInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryRosterNum(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryRosterNum");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.OrgmInfoDto> QueryOrgInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.OrgmInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.OrgmInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryOrgInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.OrgmInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.OrgmInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryResignStaff(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryResignStaff");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryCompanyInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryCompanyInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffContact(java.util.List<com.hrssc.entity.StaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffContact");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffTrain(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffTrain");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryStaffFile(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffFile");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.CompanyInfoDto> QueryStaffTax(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.CompanyInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.CompanyInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffTax");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.CompanyInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.CompanyInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.DepartmentInfoDto> QueryDeptCount(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.DepartmentInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.DepartmentInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryDeptCount");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.DepartmentInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.DepartmentInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.TenantInfoDto> QueryTenantInfo(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.TenantInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.TenantInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryTenantInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.TenantInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.TenantInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffCert(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffCert");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.OrgmInfoDto> QueryOrgmCompany(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.OrgmInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.OrgmInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryOrgmCompany");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.OrgmInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.OrgmInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SavePidinfoInfo(java.util.List<com.hrssc.entity.PidinfoInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SavePidinfoInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffInfo(java.util.List<com.hrssc.entity.StaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffTrain(java.util.List<com.hrssc.entity.StaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffTrain");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryRosterList(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryRosterList");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveCallTime(java.util.List<com.hrssc.entity.CallTimeInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveCallTime");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.util.List<com.hrssc.entity.StaffInfoDto> QueryStaffFamily(java.util.List<com.lgc.SqlConditionDto> arg0)
+{
+java.util.List<com.hrssc.entity.StaffInfoDto> reValue=new java.util.ArrayList<com.hrssc.entity.StaffInfoDto>();
+try {
+URL targetUrl = new URL(this.strUrl+"/QueryStaffFamily");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+int i=output.indexOf(":");
+output=output.substring(i+1, output.length()-1);
+reValue= (java.util.List<com.hrssc.entity.StaffInfoDto>)com.alibaba.fastjson.JSON.parseArray(output, com.hrssc.entity.StaffInfoDto.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffCert(java.util.List<com.hrssc.entity.StaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffCert");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffJobInfo(java.util.List<com.hrssc.entity.CompanyInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffJobInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffFamily(java.util.List<com.hrssc.entity.StaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffFamily");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SavePidStaffInfo(java.util.List<com.hrssc.entity.PIDStaffInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SavePidStaffInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffFile(java.util.List<com.hrssc.entity.CompanyInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffFile");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveCompanyInfo(java.util.List<com.hrssc.entity.CompanyInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveCompanyInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveOrgmCompany(java.util.List<com.hrssc.entity.OrgmInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveOrgmCompany");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveTenantInfo(java.util.List<com.hrssc.entity.TenantInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveTenantInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffPayCard(java.util.List<com.hrssc.entity.CompanyInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffPayCard");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveEmotionInfo(java.util.List<com.hrssc.entity.EmotionInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveEmotionInfo");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffTax(java.util.List<com.hrssc.entity.CompanyInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffTax");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveAchieveStand(java.util.List<com.hrssc.entity.AchieveStandInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveAchieveStand");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveStaffPartner(java.util.List<com.hrssc.entity.CompanyInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveStaffPartner");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+public java.lang.String SaveComDept(java.util.List<com.hrssc.entity.OrgmInfoDto> arg0)
+{
+java.lang.String reValue=null;
+try {
+URL targetUrl = new URL(this.strUrl+"/SaveComDept");
+HttpURLConnection httpConnection = (HttpURLConnection) targetUrl.openConnection();
+httpConnection.setDoOutput(true);
+httpConnection.setRequestMethod("POST");
+httpConnection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+httpConnection.setReadTimeout(30000);
+httpConnection.setRequestProperty("SOAPAction", this.strCliendID);
+String input;
+input=(String)com.alibaba.fastjson.JSON.toJSONString(arg0);
+OutputStream outputStream =(OutputStream) httpConnection.getOutputStream();
+outputStream.write(input.getBytes());
+outputStream.flush();
+if (httpConnection.getResponseCode() != 200) {
+return reValue;
+}
+BufferedReader responseBuffer = new BufferedReader(new InputStreamReader(
+          (httpConnection.getInputStream())));
+String output="";
+String tmpoutput;
+while ((tmpoutput = responseBuffer.readLine()) != null) {
+    output=output+tmpoutput;
+}
+httpConnection.disconnect();
+reValue=(java.lang.String)com.alibaba.fastjson.JSON.parseObject(output,java.lang.String.class);
+} catch (MalformedURLException e) {
+} catch (IOException e) {
+}
+return reValue;
+}
+
+  }

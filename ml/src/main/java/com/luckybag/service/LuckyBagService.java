@@ -38,11 +38,11 @@ public class LuckyBagService {
 
 
         //1. 部门数据初始化
-//        LuckyBagDao.insertIntoDepartment(node);
+        LuckyBagDao.insertIntoDepartment(node);
         // 2. 人员信息初始化
-//        insertUserInfo(node, personInfos);
+        insertUserInfo(node, personInfos);
         // 3. 福金预置
-//        initLuckybagAmount(personInfos);
+        initLuckybagAmount(personInfos);
 
     }
 
@@ -70,10 +70,10 @@ public class LuckyBagService {
             }
         }
 
-        System.out.println("1级部门总人数" + level1.size());
-        System.out.println("2级部门总人数" + level2.size());
-        System.out.println("3级部门总人数" + level3.size());
-        System.out.println("4级部门总人数" + level4.size());
+        System.out.println("1级部门总数" + level1.size());
+        System.out.println("2级部门总数" + level2.size());
+        System.out.println("3级部门总数" + level3.size());
+        System.out.println("4级部门总数" + level4.size());
 
     }
 
@@ -196,7 +196,24 @@ public class LuckyBagService {
 
             Node n = new Node(current,generateId(node),new ArrayList<Node>(),node);
             node.getChildren().add(n);
-            personInfo.setDepartmentid(n.getCode());
+            Node subNode = null;
+//            if(levelList.size() > 0){
+//                subNode = new Node(levelList.get(0),generateId(n),new ArrayList<Node>(),n);
+//            }
+
+            while(levelList.size() > 0){
+//                String subDepartment = levelList.remove(0);
+                subNode = new Node(levelList.remove(0),generateId(n),new ArrayList<Node>(),n);
+                n.getChildren().add(subNode);
+                n = subNode;
+            }
+
+            if(subNode != null){
+                personInfo.setDepartmentid(subNode.getCode());
+
+            }else{
+                personInfo.setDepartmentid(n.getCode());
+            }
         }
     }
 

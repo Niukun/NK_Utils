@@ -1,0 +1,4258 @@
+[
+  {
+    "RowState": 1,
+    "DEEP": null,
+    "DEPARTMENTCODE": "11",
+    "DEPARTMENTID": "11",
+    "DEPARTMENTNAME": "总经办",
+    "PARENTID": "0",
+    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+    "children": [
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "11",
+        "USERID": "101",
+        "USERNAME": "吴仲城",
+        "USERPHONE": "18119992099",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "11",
+        "USERID": "102",
+        "USERNAME": "罗健飞",
+        "USERPHONE": "18119992002",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "11",
+        "USERID": "103",
+        "USERNAME": "武理芬",
+        "USERPHONE": "18119992001",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "11",
+        "USERID": "104",
+        "USERNAME": "吴飞",
+        "USERPHONE": "13855175610",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "11",
+        "USERID": "105",
+        "USERNAME": "张运鑫",
+        "USERPHONE": "18715079204",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "11",
+        "USERID": "106",
+        "USERNAME": "卢小垂",
+        "USERPHONE": "13501860599",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "11",
+        "USERID": "107",
+        "USERNAME": "严宇甜",
+        "USERPHONE": "13093638787",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      }
+    ],
+    "num": 7
+  },
+  {
+    "RowState": 1,
+    "DEEP": null,
+    "DEPARTMENTCODE": "12",
+    "DEPARTMENTID": "12",
+    "DEPARTMENTNAME": "智能终端研发中心",
+    "PARENTID": "0",
+    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+    "children": [
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1211",
+        "DEPARTMENTID": "1211",
+        "DEPARTMENTNAME": "终端测试部",
+        "PARENTID": "12",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1211",
+            "USERID": "109",
+            "USERNAME": "孙洋洋",
+            "USERPHONE": "18355105253",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1211",
+            "USERID": "110",
+            "USERNAME": "李超群",
+            "USERPHONE": "18755110257",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1211",
+            "USERID": "111",
+            "USERNAME": "吕苗苗",
+            "USERPHONE": "13721029280",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1211",
+            "USERID": "112",
+            "USERNAME": "秦松",
+            "USERPHONE": "17805606809",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1211",
+            "USERID": "113",
+            "USERNAME": "朱利雅",
+            "USERPHONE": "15767354812",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1211",
+            "USERID": "114",
+            "USERNAME": "徐舒涵",
+            "USERPHONE": "15156590836",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 6
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1212",
+        "DEPARTMENTID": "1212",
+        "DEPARTMENTNAME": "终端数据部",
+        "PARENTID": "12",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1212",
+            "USERID": "115",
+            "USERNAME": "邢亚东",
+            "USERPHONE": "15055121764",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1212",
+            "USERID": "116",
+            "USERNAME": "张旭",
+            "USERPHONE": "18155120907",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1212",
+            "USERID": "117",
+            "USERNAME": "张卫庆",
+            "USERPHONE": "13665698332",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1212",
+            "USERID": "118",
+            "USERNAME": "封亚洲",
+            "USERPHONE": "19855130729",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1212",
+            "USERID": "119",
+            "USERNAME": "刘晓宇",
+            "USERPHONE": "18297311826",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 5
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1213",
+        "DEPARTMENTID": "1213",
+        "DEPARTMENTNAME": "终端研发部",
+        "PARENTID": "12",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1213",
+            "USERID": "120",
+            "USERNAME": "金鑫",
+            "USERPHONE": "13395510561",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1213",
+            "USERID": "121",
+            "USERNAME": "汪赛亮",
+            "USERPHONE": "18658208189",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1213",
+            "USERID": "122",
+            "USERNAME": "吴必汉",
+            "USERPHONE": "13852379031",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 3
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1214",
+        "DEPARTMENTID": "1214",
+        "DEPARTMENTNAME": "终端应用部",
+        "PARENTID": "12",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1214",
+            "USERID": "123",
+            "USERNAME": "刘健",
+            "USERPHONE": "18956056866",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1214",
+            "USERID": "124",
+            "USERNAME": "孙盼",
+            "USERPHONE": "17755197550",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1214",
+            "USERID": "125",
+            "USERNAME": "黄志钢",
+            "USERPHONE": "18655330936",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1214",
+            "USERID": "126",
+            "USERNAME": "吴允敏",
+            "USERPHONE": "17855598990",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1214",
+            "USERID": "127",
+            "USERNAME": "盛磊",
+            "USERPHONE": "13956960960",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1214",
+            "USERID": "128",
+            "USERNAME": "何芳",
+            "USERPHONE": "18626610881",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1214",
+            "USERID": "129",
+            "USERNAME": "王刚",
+            "USERPHONE": "13735515265",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 7
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "12",
+        "USERID": "108",
+        "USERNAME": "周瑜",
+        "USERPHONE": "18655958796",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "12",
+        "USERID": "130",
+        "USERNAME": "夏代江",
+        "USERPHONE": "15656099905",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      }
+    ],
+    "num": 3
+  },
+  {
+    "RowState": 1,
+    "DEEP": null,
+    "DEPARTMENTCODE": "13",
+    "DEPARTMENTID": "13",
+    "DEPARTMENTNAME": "移动互联研发中心",
+    "PARENTID": "0",
+    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+    "children": [
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1311",
+        "DEPARTMENTID": "1311",
+        "DEPARTMENTNAME": "交互设计部",
+        "PARENTID": "13",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1311",
+            "USERID": "132",
+            "USERNAME": "方林",
+            "USERPHONE": "13695511214",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1311",
+            "USERID": "133",
+            "USERNAME": "洪红",
+            "USERPHONE": "15256028520",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1311",
+            "USERID": "134",
+            "USERNAME": "笪久东",
+            "USERPHONE": "13033036321",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1311",
+            "USERID": "135",
+            "USERNAME": "彭俊玲",
+            "USERPHONE": "18656568990",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1311",
+            "USERID": "136",
+            "USERNAME": "李楠",
+            "USERPHONE": "18550202786",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 5
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1312",
+        "DEPARTMENTID": "1312",
+        "DEPARTMENTNAME": "前端开发部",
+        "PARENTID": "13",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "137",
+            "USERNAME": "袁艺",
+            "USERPHONE": "18705512512",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "138",
+            "USERNAME": "熊玲芳",
+            "USERPHONE": "18326688003",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "139",
+            "USERNAME": "李君",
+            "USERPHONE": "15956913673",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "140",
+            "USERNAME": "黄兆云",
+            "USERPHONE": "18355095652",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "141",
+            "USERNAME": "朱兵",
+            "USERPHONE": "18375318056",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "142",
+            "USERNAME": "王小玲",
+            "USERPHONE": "18355102925",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "143",
+            "USERNAME": "吴维维",
+            "USERPHONE": "19956017950",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "144",
+            "USERNAME": "吴启文",
+            "USERPHONE": "15255548210",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "145",
+            "USERNAME": "汪先哲",
+            "USERPHONE": "15357392505",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "146",
+            "USERNAME": "张金锁",
+            "USERPHONE": "18895381517",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "147",
+            "USERNAME": "许磊",
+            "USERPHONE": "15555606770",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "148",
+            "USERNAME": "韩林",
+            "USERPHONE": "19856535270",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "149",
+            "USERNAME": "王希顺",
+            "USERPHONE": "13585680495",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "150",
+            "USERNAME": "李海泉",
+            "USERPHONE": "18326629311",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "151",
+            "USERNAME": "张占远",
+            "USERPHONE": "18801731116",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1312",
+            "USERID": "152",
+            "USERNAME": "张猛",
+            "USERPHONE": "18302118204",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 16
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1313",
+        "DEPARTMENTID": "1313",
+        "DEPARTMENTNAME": "移动技术部",
+        "PARENTID": "13",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1313",
+            "USERID": "153",
+            "USERNAME": "何彬",
+            "USERPHONE": "18298198569",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1313",
+            "USERID": "154",
+            "USERNAME": "汪丹",
+            "USERPHONE": "18521569575",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1313",
+            "USERID": "155",
+            "USERNAME": "王雪剑",
+            "USERPHONE": "18855582584",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1313",
+            "USERID": "156",
+            "USERNAME": "刘琪",
+            "USERPHONE": "15056008985",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 4
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1314",
+        "DEPARTMENTID": "1314",
+        "DEPARTMENTNAME": "移动开发部",
+        "PARENTID": "13",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1314",
+            "USERID": "157",
+            "USERNAME": "吕盼盼",
+            "USERPHONE": "18296120284",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1314",
+            "USERID": "158",
+            "USERNAME": "赵状",
+            "USERPHONE": "17681182037",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1314",
+            "USERID": "159",
+            "USERNAME": "樊凯",
+            "USERPHONE": "18815513772",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1314",
+            "USERID": "160",
+            "USERNAME": "胡澳",
+            "USERPHONE": "13485973781",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1314",
+            "USERID": "161",
+            "USERNAME": "徐大创",
+            "USERPHONE": "15606795269",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1314",
+            "USERID": "162",
+            "USERNAME": "赵年生",
+            "USERPHONE": "17709692185",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1314",
+            "USERID": "163",
+            "USERNAME": "马松城",
+            "USERPHONE": "18214899968",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1314",
+            "USERID": "164",
+            "USERNAME": "朱振华",
+            "USERPHONE": "18311004536",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1314",
+            "USERID": "165",
+            "USERNAME": "高道斌",
+            "USERPHONE": "18214733676",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 9
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "13",
+        "USERID": "131",
+        "USERNAME": "高建华",
+        "USERPHONE": "15215604166",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "13",
+        "USERID": "166",
+        "USERNAME": "张凯翔",
+        "USERPHONE": "18556537183",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "13",
+        "USERID": "167",
+        "USERNAME": "李勇",
+        "USERPHONE": "18956071203",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      }
+    ],
+    "num": 7
+  },
+  {
+    "RowState": 1,
+    "DEEP": null,
+    "DEPARTMENTCODE": "14",
+    "DEPARTMENTID": "14",
+    "DEPARTMENTNAME": "市场营销中心",
+    "PARENTID": "0",
+    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+    "children": [
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1411",
+        "DEPARTMENTID": "1411",
+        "DEPARTMENTNAME": "解决方案部",
+        "PARENTID": "14",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1411",
+            "USERID": "169",
+            "USERNAME": "朱阔",
+            "USERPHONE": "17355118976",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1411",
+            "USERID": "170",
+            "USERNAME": "疏晴",
+            "USERPHONE": "18256092225",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1411",
+            "USERID": "171",
+            "USERNAME": "陈添辉",
+            "USERPHONE": "18756982071",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1411",
+            "USERID": "172",
+            "USERNAME": "邹瑞",
+            "USERPHONE": "18133689009",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 4
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1412",
+        "DEPARTMENTID": "1412",
+        "DEPARTMENTNAME": "客户管理部",
+        "PARENTID": "14",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1412",
+            "USERID": "173",
+            "USERNAME": "刘如霞",
+            "USERPHONE": "13505617100",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1412",
+            "USERID": "174",
+            "USERNAME": "李嘉桐",
+            "USERPHONE": "18515165446",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 2
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1413",
+        "DEPARTMENTID": "1413",
+        "DEPARTMENTNAME": "新媒体运营部",
+        "PARENTID": "14",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1413",
+            "USERID": "175",
+            "USERNAME": "陈永强",
+            "USERPHONE": "17775481075",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1413",
+            "USERID": "176",
+            "USERNAME": "韩俊国",
+            "USERPHONE": "18119992011",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1413",
+            "USERID": "177",
+            "USERNAME": "徐静",
+            "USERPHONE": "18656451260",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1413",
+            "USERID": "178",
+            "USERNAME": "蒲万晴",
+            "USERPHONE": "15852914736",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 4
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "14",
+        "USERID": "168",
+        "USERNAME": "钱春丽",
+        "USERPHONE": "13856079782",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "14",
+        "USERID": "179",
+        "USERNAME": "胡成龙",
+        "USERPHONE": "18326188123",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      }
+    ],
+    "num": 2
+  },
+  {
+    "RowState": 1,
+    "DEEP": null,
+    "DEPARTMENTCODE": "15",
+    "DEPARTMENTID": "15",
+    "DEPARTMENTNAME": "区域事业部群",
+    "PARENTID": "0",
+    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+    "children": [
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1512",
+        "DEPARTMENTID": "1512",
+        "DEPARTMENTNAME": "北方事业部",
+        "PARENTID": "15",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "151212",
+            "DEPARTMENTID": "151212",
+            "DEPARTMENTNAME": "东北大区",
+            "PARENTID": "1512",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15121211",
+                "DEPARTMENTID": "15121211",
+                "DEPARTMENTNAME": "东北大区（谈静波组）",
+                "PARENTID": "151212",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121211",
+                    "USERID": "204",
+                    "USERNAME": "管彤",
+                    "USERPHONE": "13804072479",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121211",
+                    "USERID": "207",
+                    "USERNAME": "谈静波",
+                    "USERPHONE": "18119992085",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121211",
+                    "USERID": "214",
+                    "USERNAME": "吕广业",
+                    "USERPHONE": "18341690950",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "num": 3
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "151212",
+                "USERID": "202",
+                "USERNAME": "刘春辉",
+                "USERPHONE": "18119992084",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 3
+              }
+            ],
+            "num": 2
+          },
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "151211",
+            "DEPARTMENTID": "151211",
+            "DEPARTMENTNAME": "西北大区",
+            "PARENTID": "1512",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15121111",
+                "DEPARTMENTID": "15121111",
+                "DEPARTMENTNAME": "西北大区（邹海组）",
+                "PARENTID": "151211",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121111",
+                    "USERID": "201",
+                    "USERNAME": "郭启华",
+                    "USERPHONE": "19155110672",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121111",
+                    "USERID": "206",
+                    "USERNAME": "沙俊山",
+                    "USERPHONE": "18209717472",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121111",
+                    "USERID": "208",
+                    "USERNAME": "王小玲",
+                    "USERPHONE": "18146304271",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121111",
+                    "USERID": "209",
+                    "USERNAME": "邹海",
+                    "USERPHONE": "18119992005",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121111",
+                    "USERID": "215",
+                    "USERNAME": "戴君礼",
+                    "USERPHONE": "18997000300",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121111",
+                    "USERID": "216",
+                    "USERNAME": "达哇文毛",
+                    "USERPHONE": "18897269296",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "num": 6
+              },
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15121112",
+                "DEPARTMENTID": "15121112",
+                "DEPARTMENTNAME": "西北大区（蒋书锋组）",
+                "PARENTID": "151211",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121112",
+                    "USERID": "205",
+                    "USERNAME": "包孟超",
+                    "USERPHONE": "15047977733",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121112",
+                    "USERID": "210",
+                    "USERNAME": "刘凤虎",
+                    "USERPHONE": "18119992103",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121112",
+                    "USERID": "211",
+                    "USERNAME": "顾越",
+                    "USERPHONE": "18747364311",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121112",
+                    "USERID": "212",
+                    "USERNAME": "蒋书锋",
+                    "USERPHONE": "18256951885",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15121112",
+                    "USERID": "213",
+                    "USERNAME": "王刚",
+                    "USERPHONE": "17648259945",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "num": 5
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "151211",
+                "USERID": "200",
+                "USERNAME": "郭旭东",
+                "USERPHONE": "19155110692",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 5
+              }
+            ],
+            "num": 3
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1512",
+            "USERID": "199",
+            "USERNAME": "齐旭",
+            "USERPHONE": "18119992009",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1512",
+            "USERID": "203",
+            "USERNAME": "张杰",
+            "USERPHONE": "18119992083",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 4
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1517",
+        "DEPARTMENTID": "1517",
+        "DEPARTMENTNAME": "中部事业部",
+        "PARENTID": "15",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "151711",
+            "DEPARTMENTID": "151711",
+            "DEPARTMENTNAME": "运营部",
+            "PARENTID": "1517",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "151711",
+                "USERID": "258",
+                "USERNAME": "崔康康",
+                "USERPHONE": "18119992068",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 5
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "151711",
+                "USERID": "260",
+                "USERNAME": "范永军",
+                "USERPHONE": "15762577100",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 5
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "151711",
+                "USERID": "261",
+                "USERNAME": "张灼华",
+                "USERPHONE": "15623461267",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 5
+              }
+            ],
+            "num": 3
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1517",
+            "USERID": "256",
+            "USERNAME": "黄福龙",
+            "USERPHONE": "18756915629",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1517",
+            "USERID": "257",
+            "USERNAME": "申大状",
+            "USERPHONE": "18119992095",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1517",
+            "USERID": "259",
+            "USERNAME": "高翔",
+            "USERPHONE": "18119992018",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 4
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1516",
+        "DEPARTMENTID": "1516",
+        "DEPARTMENTNAME": "云南事业部",
+        "PARENTID": "15",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "151611",
+            "DEPARTMENTID": "151611",
+            "DEPARTMENTNAME": "运营部",
+            "PARENTID": "1516",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15161111",
+                "DEPARTMENTID": "15161111",
+                "DEPARTMENTNAME": "运营部四组",
+                "PARENTID": "151611",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161111",
+                    "USERID": "238",
+                    "USERNAME": "杨应志",
+                    "USERPHONE": "18314559804",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161111",
+                    "USERID": "246",
+                    "USERNAME": "徐安涛",
+                    "USERPHONE": "15368241108",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "num": 2
+              },
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15161112",
+                "DEPARTMENTID": "15161112",
+                "DEPARTMENTNAME": "运营部三组",
+                "PARENTID": "151611",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161112",
+                    "USERID": "239",
+                    "USERNAME": "秦意",
+                    "USERPHONE": "18087029411",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161112",
+                    "USERID": "241",
+                    "USERNAME": "李兴",
+                    "USERPHONE": "14787472922",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161112",
+                    "USERID": "250",
+                    "USERNAME": "徐安志",
+                    "USERPHONE": "18314552556",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "num": 3
+              },
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15161113",
+                "DEPARTMENTID": "15161113",
+                "DEPARTMENTNAME": "运营部一组",
+                "PARENTID": "151611",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161113",
+                    "USERID": "242",
+                    "USERNAME": "陆翔",
+                    "USERPHONE": "13678734728",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161113",
+                    "USERID": "245",
+                    "USERNAME": "张林丽",
+                    "USERPHONE": "19988714854",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161113",
+                    "USERID": "249",
+                    "USERNAME": "李丽婷",
+                    "USERPHONE": "18487718361",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161113",
+                    "USERID": "251",
+                    "USERNAME": "王秀娟",
+                    "USERPHONE": "18487123646",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161113",
+                    "USERID": "252",
+                    "USERNAME": "杨帆",
+                    "USERPHONE": "15288150749",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161113",
+                    "USERID": "254",
+                    "USERNAME": "唐媛苑",
+                    "USERPHONE": "17787171172",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "num": 6
+              },
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15161114",
+                "DEPARTMENTID": "15161114",
+                "DEPARTMENTNAME": "运营部五组",
+                "PARENTID": "151611",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161114",
+                    "USERID": "248",
+                    "USERNAME": "苏靖博",
+                    "USERPHONE": "17387993051",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161114",
+                    "USERID": "255",
+                    "USERNAME": "蒋海燕",
+                    "USERPHONE": "15758007947",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "num": 2
+              },
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15161115",
+                "DEPARTMENTID": "15161115",
+                "DEPARTMENTNAME": "运营部二组",
+                "PARENTID": "151611",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15161115",
+                    "USERID": "253",
+                    "USERNAME": "王新成",
+                    "USERPHONE": "15126490860",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "num": 1
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "151611",
+                "USERID": "237",
+                "USERNAME": "刘权",
+                "USERPHONE": "13529165157",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 1
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "151611",
+                "USERID": "243",
+                "USERNAME": "张鸿羽",
+                "USERPHONE": "18187301214",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 1
+              }
+            ],
+            "num": 7
+          },
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "151612",
+            "DEPARTMENTID": "151612",
+            "DEPARTMENTNAME": "综合管理部",
+            "PARENTID": "1516",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "151612",
+                "USERID": "247",
+                "USERNAME": "王晓艳",
+                "USERPHONE": "15808863220",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 1
+              }
+            ],
+            "num": 1
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1516",
+            "USERID": "236",
+            "USERNAME": "王应春",
+            "USERPHONE": "19988714851",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1516",
+            "USERID": "240",
+            "USERNAME": "鲍锦",
+            "USERPHONE": "18119992007",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1516",
+            "USERID": "244",
+            "USERNAME": "周亚磊",
+            "USERPHONE": "18119992080",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 5
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1515",
+        "DEPARTMENTID": "1515",
+        "DEPARTMENTNAME": "用户运营部",
+        "PARENTID": "15",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1515",
+            "USERID": "233",
+            "USERNAME": "虞紫星",
+            "USERPHONE": "18355182922",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1515",
+            "USERID": "234",
+            "USERNAME": "吴晓宁",
+            "USERPHONE": "18356529322",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1515",
+            "USERID": "235",
+            "USERNAME": "陈建辉",
+            "USERPHONE": "18119992226",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 3
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1514",
+        "DEPARTMENTID": "1514",
+        "DEPARTMENTNAME": "宁夏事业部",
+        "PARENTID": "15",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1514",
+            "USERID": "231",
+            "USERNAME": "刘鹏",
+            "USERPHONE": "18955258638",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1514",
+            "USERID": "232",
+            "USERNAME": "马启宝",
+            "USERPHONE": "13409517805",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 2
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1513",
+        "DEPARTMENTID": "1513",
+        "DEPARTMENTNAME": "广西事业部",
+        "PARENTID": "15",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "151312",
+            "DEPARTMENTID": "151312",
+            "DEPARTMENTNAME": "综合管理部",
+            "PARENTID": "1513",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "151312",
+                "USERID": "223",
+                "USERNAME": "韦远",
+                "USERPHONE": "13978841351",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 1
+              }
+            ],
+            "num": 1
+          },
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "151311",
+            "DEPARTMENTID": "151311",
+            "DEPARTMENTNAME": "运营部",
+            "PARENTID": "1513",
+            "children": [
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15131112",
+                "DEPARTMENTID": "15131112",
+                "DEPARTMENTNAME": "运营部二组",
+                "PARENTID": "151311",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15131112",
+                    "USERID": "220",
+                    "USERNAME": "姜海娇",
+                    "USERPHONE": "13878179472",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15131112",
+                    "USERID": "228",
+                    "USERNAME": "潘河锦",
+                    "USERPHONE": "18587692008",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 2
+              },
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15131111",
+                "DEPARTMENTID": "15131111",
+                "DEPARTMENTNAME": "运营部一组",
+                "PARENTID": "151311",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15131111",
+                    "USERID": "219",
+                    "USERNAME": "梅光凤",
+                    "USERPHONE": "18776724672",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15131111",
+                    "USERID": "221",
+                    "USERNAME": "黄茜",
+                    "USERPHONE": "15878802706",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15131111",
+                    "USERID": "222",
+                    "USERNAME": "覃柳芸",
+                    "USERPHONE": "18260932900",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15131111",
+                    "USERID": "230",
+                    "USERNAME": "杨浩",
+                    "USERPHONE": "17777050615",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 4
+              },
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15131113",
+                "DEPARTMENTID": "15131113",
+                "DEPARTMENTNAME": "运营部三组",
+                "PARENTID": "151311",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15131113",
+                    "USERID": "224",
+                    "USERNAME": "吕权志",
+                    "USERPHONE": "18978989748",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15131113",
+                    "USERID": "227",
+                    "USERNAME": "廖浩源",
+                    "USERPHONE": "18378833761",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 2
+              },
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15131114",
+                "DEPARTMENTID": "15131114",
+                "DEPARTMENTNAME": "运营部四组",
+                "PARENTID": "151311",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15131114",
+                    "USERID": "226",
+                    "USERNAME": "邓钰峰",
+                    "USERPHONE": "17377147414",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15131114",
+                    "USERID": "229",
+                    "USERNAME": "甘德鹏",
+                    "USERPHONE": "18321151828",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 2
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "151311",
+                "USERID": "218",
+                "USERNAME": "王俊",
+                "USERPHONE": "18119992219",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 2
+              }
+            ],
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "num": 5
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1513",
+            "USERID": "217",
+            "USERNAME": "刘东佳",
+            "USERPHONE": "13667880819",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1513",
+            "USERID": "225",
+            "USERNAME": "李海照",
+            "USERPHONE": "18119992215",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 1
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1511",
+        "DEPARTMENTID": "1511",
+        "DEPARTMENTNAME": "安徽事业部",
+        "PARENTID": "15",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "151111",
+            "DEPARTMENTID": "151111",
+            "DEPARTMENTNAME": "运营部",
+            "PARENTID": "1511",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15111115",
+                "DEPARTMENTID": "15111115",
+                "DEPARTMENTNAME": "运营部一组",
+                "PARENTID": "151111",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15111115",
+                    "USERID": "193",
+                    "USERNAME": "范龙",
+                    "USERPHONE": "18119992006",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15111115",
+                    "USERID": "197",
+                    "USERNAME": "王庆宇",
+                    "USERPHONE": "18326690912",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "num": 2
+              },
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15111114",
+                "DEPARTMENTID": "15111114",
+                "DEPARTMENTNAME": "运营部五组",
+                "PARENTID": "151111",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15111114",
+                    "USERID": "190",
+                    "USERNAME": "牛攀飞",
+                    "USERPHONE": "18119992104",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15111114",
+                    "USERID": "194",
+                    "USERNAME": "韦虎",
+                    "USERPHONE": "18119992012",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15111114",
+                    "USERID": "196",
+                    "USERNAME": "胡豪杰",
+                    "USERPHONE": "15305662421",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "num": 3
+              },
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15111113",
+                "DEPARTMENTID": "15111113",
+                "DEPARTMENTNAME": "运营部三组",
+                "PARENTID": "151111",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15111113",
+                    "USERID": "186",
+                    "USERNAME": "帅祝兵",
+                    "USERPHONE": "18119992087",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15111113",
+                    "USERID": "187",
+                    "USERNAME": "左权",
+                    "USERPHONE": "18119992093",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15111113",
+                    "USERID": "192",
+                    "USERNAME": "桑贯林",
+                    "USERPHONE": "18119992081",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "num": 3
+              },
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15111112",
+                "DEPARTMENTID": "15111112",
+                "DEPARTMENTNAME": "运营部四组",
+                "PARENTID": "151111",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15111112",
+                    "USERID": "185",
+                    "USERNAME": "郑磊",
+                    "USERPHONE": "18119992067",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15111112",
+                    "USERID": "188",
+                    "USERNAME": "陈钊",
+                    "USERPHONE": "18119992066",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15111112",
+                    "USERID": "189",
+                    "USERNAME": "程超",
+                    "USERPHONE": "18119992094",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "num": 3
+              },
+              {
+                "RowState": 1,
+                "DEEP": null,
+                "DEPARTMENTCODE": "15111111",
+                "DEPARTMENTID": "15111111",
+                "DEPARTMENTNAME": "运营部二组",
+                "PARENTID": "151111",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "children": [
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15111111",
+                    "USERID": "183",
+                    "USERNAME": "李光",
+                    "USERPHONE": "18119992071",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  },
+                  {
+                    "RowState": 1,
+                    "DEPARTMENTID": "15111111",
+                    "USERID": "184",
+                    "USERNAME": "王超",
+                    "USERPHONE": "15375531381",
+                    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+                  }
+                ],
+                "num": 2
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "151111",
+                "USERID": "182",
+                "USERNAME": "陶文彦",
+                "USERPHONE": "18788830602",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 2
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "151111",
+                "USERID": "191",
+                "USERNAME": "王学永",
+                "USERPHONE": "18119992010",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 2
+              }
+            ],
+            "num": 7
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1511",
+            "USERID": "181",
+            "USERNAME": "李泽阳",
+            "USERPHONE": "18119992100",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1511",
+            "USERID": "195",
+            "USERNAME": "李成好",
+            "USERPHONE": "18119992122",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1511",
+            "USERID": "198",
+            "USERNAME": "刘辉",
+            "USERPHONE": "18655116915",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 4
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "15",
+        "USERID": "180",
+        "USERNAME": "吴言胡",
+        "USERPHONE": "19155110687",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      }
+    ],
+    "num": 5
+  },
+  {
+    "RowState": 1,
+    "DEEP": null,
+    "DEPARTMENTCODE": "16",
+    "DEPARTMENTID": "16",
+    "DEPARTMENTNAME": "企业管理中心",
+    "PARENTID": "0",
+    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+    "children": [
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1614",
+        "DEPARTMENTID": "1614",
+        "DEPARTMENTNAME": "综合办公室",
+        "PARENTID": "16",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1614",
+            "USERID": "444",
+            "USERNAME": "王辉",
+            "USERPHONE": "18225528695",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1614",
+            "USERID": "445",
+            "USERNAME": "陈季涛",
+            "USERPHONE": "18019965041",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1614",
+            "USERID": "450",
+            "USERNAME": "庾朝富",
+            "USERPHONE": "15255185573",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1614",
+            "USERID": "451",
+            "USERNAME": "焦姣",
+            "USERPHONE": "18096610756",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1614",
+            "USERID": "452",
+            "USERNAME": "檀江玉",
+            "USERPHONE": "15856589503",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 5
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1613",
+        "DEPARTMENTID": "1613",
+        "DEPARTMENTNAME": "人力资源部",
+        "PARENTID": "16",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1613",
+            "USERID": "268",
+            "USERNAME": "张艳",
+            "USERPHONE": "18758056863",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1613",
+            "USERID": "269",
+            "USERNAME": "刘谢华",
+            "USERPHONE": "18956065823",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1613",
+            "USERID": "270",
+            "USERNAME": "方敏",
+            "USERPHONE": "15655112031",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1613",
+            "USERID": "271",
+            "USERNAME": "邓浩",
+            "USERPHONE": "15256900862",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 4
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1612",
+        "DEPARTMENTID": "1612",
+        "DEPARTMENTNAME": "行政部",
+        "PARENTID": "16",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1612",
+            "USERID": "265",
+            "USERNAME": "王亚",
+            "USERPHONE": "13866759200",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1612",
+            "USERID": "266",
+            "USERNAME": "杨蓉",
+            "USERPHONE": "18010885144",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1612",
+            "USERID": "267",
+            "USERNAME": "方芹",
+            "USERPHONE": "17356529798",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 3
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1611",
+        "DEPARTMENTID": "1611",
+        "DEPARTMENTNAME": "采购部",
+        "PARENTID": "16",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1611",
+            "USERID": "263",
+            "USERNAME": "汪文娟",
+            "USERPHONE": "18255130685",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1611",
+            "USERID": "264",
+            "USERNAME": "郝志鹏",
+            "USERPHONE": "18375337986",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 2
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "16",
+        "USERID": "262",
+        "USERNAME": "陈玉娟",
+        "USERPHONE": "15955076791",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "16",
+        "USERID": "272",
+        "USERNAME": "王秀琴",
+        "USERPHONE": "13965016854",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      }
+    ],
+    "num": 3
+  },
+  {
+    "RowState": 1,
+    "DEEP": null,
+    "DEPARTMENTCODE": "17",
+    "DEPARTMENTID": "17",
+    "DEPARTMENTNAME": "平台运营中心",
+    "PARENTID": "0",
+    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+    "children": [
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1714",
+        "DEPARTMENTID": "1714",
+        "DEPARTMENTNAME": "运营服务部",
+        "PARENTID": "17",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1714",
+            "USERID": "288",
+            "USERNAME": "张海秀",
+            "USERPHONE": "18019906657",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1714",
+            "USERID": "289",
+            "USERNAME": "钱慧敏",
+            "USERPHONE": "18297995202",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1714",
+            "USERID": "290",
+            "USERNAME": "汤伟囡",
+            "USERPHONE": "13696796382",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1714",
+            "USERID": "291",
+            "USERNAME": "葛盼盼",
+            "USERPHONE": "13637084862",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1714",
+            "USERID": "292",
+            "USERNAME": "管宏光",
+            "USERPHONE": "18119992076",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1714",
+            "USERID": "293",
+            "USERNAME": "孙佳佳",
+            "USERPHONE": "13211748800",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1714",
+            "USERID": "294",
+            "USERNAME": "吕钦",
+            "USERPHONE": "13856089852",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 7
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1715",
+        "DEPARTMENTID": "1715",
+        "DEPARTMENTNAME": "终端运维部",
+        "PARENTID": "17",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1715",
+            "USERID": "295",
+            "USERNAME": "梁春亮",
+            "USERPHONE": "13381119587",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1715",
+            "USERID": "296",
+            "USERNAME": "王枫",
+            "USERPHONE": "18375319385",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1715",
+            "USERID": "297",
+            "USERNAME": "杨慧玉",
+            "USERPHONE": "15656554910",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1715",
+            "USERID": "298",
+            "USERNAME": "张坤龙",
+            "USERPHONE": "18134501886",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1715",
+            "USERID": "299",
+            "USERNAME": "许书铭",
+            "USERPHONE": "18375345200",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1715",
+            "USERID": "300",
+            "USERNAME": "杨红兵",
+            "USERPHONE": "18119992008",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1715",
+            "USERID": "301",
+            "USERNAME": "张壮存",
+            "USERPHONE": "13023058400",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1715",
+            "USERID": "302",
+            "USERNAME": "周敏敏",
+            "USERPHONE": "15056049768",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 8
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1713",
+        "DEPARTMENTID": "1713",
+        "DEPARTMENTNAME": "项目交付部",
+        "PARENTID": "17",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1713",
+            "USERID": "282",
+            "USERNAME": "曹超群",
+            "USERPHONE": "18119992003",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1713",
+            "USERID": "283",
+            "USERNAME": "任宏俊",
+            "USERPHONE": "18119992119",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1713",
+            "USERID": "284",
+            "USERNAME": "杨乐",
+            "USERPHONE": "13023085971",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1713",
+            "USERID": "285",
+            "USERNAME": "陈城",
+            "USERPHONE": "18555890818",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1713",
+            "USERID": "286",
+            "USERNAME": "徐伊君",
+            "USERPHONE": "17305560060",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1713",
+            "USERID": "287",
+            "USERNAME": "孙万刚",
+            "USERPHONE": "18355200732",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 6
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1711",
+        "DEPARTMENTID": "1711",
+        "DEPARTMENTNAME": "客户服务部",
+        "PARENTID": "17",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1711",
+            "USERID": "274",
+            "USERNAME": "蔡伟",
+            "USERPHONE": "18355558125",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1711",
+            "USERID": "275",
+            "USERNAME": "李韵",
+            "USERPHONE": "18856968356",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1711",
+            "USERID": "276",
+            "USERNAME": "黄琴",
+            "USERPHONE": "18255111091",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1711",
+            "USERID": "277",
+            "USERNAME": "储翩翩",
+            "USERPHONE": "15072409058",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1711",
+            "USERID": "278",
+            "USERNAME": "程伟",
+            "USERPHONE": "15105512786",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 5
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1712",
+        "DEPARTMENTID": "1712",
+        "DEPARTMENTNAME": "项目管理部",
+        "PARENTID": "17",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1712",
+            "USERID": "279",
+            "USERNAME": "陈振兴",
+            "USERPHONE": "18605658584",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1712",
+            "USERID": "280",
+            "USERNAME": "梁文",
+            "USERPHONE": "15256011682",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1712",
+            "USERID": "281",
+            "USERNAME": "冯丹丹",
+            "USERPHONE": "15656540377",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 3
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "17",
+        "USERID": "273",
+        "USERNAME": "刘杰",
+        "USERPHONE": "13866192579",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "17",
+        "USERID": "303",
+        "USERNAME": "王磊",
+        "USERPHONE": "13773655673",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "17",
+        "USERID": "304",
+        "USERNAME": "孙健",
+        "USERPHONE": "13155130877",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      }
+    ],
+    "num": 8
+  },
+  {
+    "RowState": 1,
+    "DEEP": null,
+    "DEPARTMENTCODE": "18",
+    "DEPARTMENTID": "18",
+    "DEPARTMENTNAME": "平台研发中心",
+    "PARENTID": "0",
+    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+    "children": [
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1811",
+        "DEPARTMENTID": "1811",
+        "DEPARTMENTNAME": "测试技术部",
+        "PARENTID": "18",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1811",
+            "USERID": "306",
+            "USERNAME": "王浩然",
+            "USERPHONE": "15156079323",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 1
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1812",
+        "DEPARTMENTID": "1812",
+        "DEPARTMENTNAME": "持续集成部",
+        "PARENTID": "18",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1812",
+            "USERID": "307",
+            "USERNAME": "顾帅",
+            "USERPHONE": "15555398990",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1812",
+            "USERID": "308",
+            "USERNAME": "周超",
+            "USERPHONE": "18056097884",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1812",
+            "USERID": "309",
+            "USERNAME": "朱晓英",
+            "USERPHONE": "18656978598",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1812",
+            "USERID": "310",
+            "USERNAME": "房伟",
+            "USERPHONE": "15855512221",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1812",
+            "USERID": "311",
+            "USERNAME": "邓晨皓",
+            "USERPHONE": "15862518424",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1812",
+            "USERID": "312",
+            "USERNAME": "牛坤",
+            "USERPHONE": "15021597239",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 6
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1813",
+        "DEPARTMENTID": "1813",
+        "DEPARTMENTNAME": "共享服务部",
+        "PARENTID": "18",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1813",
+            "USERID": "313",
+            "USERNAME": "韩成艳",
+            "USERPHONE": "18656001032",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1813",
+            "USERID": "314",
+            "USERNAME": "唐军",
+            "USERPHONE": "18715169877",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1813",
+            "USERID": "315",
+            "USERNAME": "朱文睿",
+            "USERPHONE": "15375491107",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1813",
+            "USERID": "316",
+            "USERNAME": "刘成",
+            "USERPHONE": "17801464858",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1813",
+            "USERID": "317",
+            "USERNAME": "卢鲁",
+            "USERPHONE": "19956900544",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1813",
+            "USERID": "318",
+            "USERNAME": "王杨",
+            "USERPHONE": "18133624060",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1813",
+            "USERID": "319",
+            "USERNAME": "龚伟",
+            "USERPHONE": "18751853479",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1813",
+            "USERID": "320",
+            "USERNAME": "纪文静",
+            "USERPHONE": "18225602803",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1813",
+            "USERID": "321",
+            "USERNAME": "束程晨",
+            "USERPHONE": "19965048045",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1813",
+            "USERID": "322",
+            "USERNAME": "王静",
+            "USERPHONE": "13739232107",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 10
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1814",
+        "DEPARTMENTID": "1814",
+        "DEPARTMENTNAME": "数据中台部",
+        "PARENTID": "18",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1814",
+            "USERID": "323",
+            "USERNAME": "刘欢",
+            "USERPHONE": "18956060621",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1814",
+            "USERID": "324",
+            "USERNAME": "余超",
+            "USERPHONE": "13731995093",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1814",
+            "USERID": "325",
+            "USERNAME": "朱中亚",
+            "USERPHONE": "15280036186",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 3
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "18",
+        "USERID": "305",
+        "USERNAME": "鞠永秀",
+        "USERPHONE": "13329019937",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "18",
+        "USERID": "326",
+        "USERNAME": "周洪华",
+        "USERPHONE": "13866777453",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      }
+    ],
+    "num": 1
+  },
+  {
+    "RowState": 1,
+    "DEEP": null,
+    "DEPARTMENTCODE": "19",
+    "DEPARTMENTID": "19",
+    "DEPARTMENTNAME": "技术研究中心",
+    "PARENTID": "0",
+    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+    "children": [
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1911",
+        "DEPARTMENTID": "1911",
+        "DEPARTMENTNAME": "持续运维部",
+        "PARENTID": "19",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1911",
+            "USERID": "328",
+            "USERNAME": "陈永康",
+            "USERPHONE": "18019947194",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1911",
+            "USERID": "329",
+            "USERNAME": "孙献宇",
+            "USERPHONE": "15755166921",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1911",
+            "USERID": "330",
+            "USERNAME": "潘勇胜",
+            "USERPHONE": "15055178907",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1911",
+            "USERID": "331",
+            "USERNAME": "吴小光",
+            "USERPHONE": "18326624367",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1911",
+            "USERID": "332",
+            "USERNAME": "鹿禄",
+            "USERPHONE": "18855555266",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1911",
+            "USERID": "333",
+            "USERNAME": "黄东平",
+            "USERPHONE": "13855127531",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 6
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "1912",
+        "DEPARTMENTID": "1912",
+        "DEPARTMENTNAME": "云技术研究部",
+        "PARENTID": "19",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "1912",
+            "USERID": "334",
+            "USERNAME": "肖伟",
+            "USERPHONE": "18355133889",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 1
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "19",
+        "USERID": "327",
+        "USERNAME": "乔印路",
+        "USERPHONE": "17775367919",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "19",
+        "USERID": "335",
+        "USERNAME": "吴同仁",
+        "USERPHONE": "18605811368",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      }
+    ],
+    "num": 4
+  },
+  {
+    "RowState": 1,
+    "DEEP": null,
+    "DEPARTMENTCODE": "20",
+    "DEPARTMENTID": "20",
+    "DEPARTMENTNAME": "产品线事业部群",
+    "PARENTID": "0",
+    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+    "children": [
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2019",
+        "DEPARTMENTID": "2019",
+        "DEPARTMENTNAME": "云PaaS平台事业部",
+        "PARENTID": "20",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2019",
+            "USERID": "455",
+            "USERNAME": "王敬",
+            "USERPHONE": "13721080047",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 1
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2021",
+        "DEPARTMENTID": "2021",
+        "DEPARTMENTNAME": "质监质检事业部",
+        "PARENTID": "20",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2021",
+            "USERID": "466",
+            "USERNAME": "邹文敏",
+            "USERPHONE": "13866741962",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2021",
+            "USERID": "467",
+            "USERNAME": "李超",
+            "USERPHONE": "15209839831",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2021",
+            "USERID": "468",
+            "USERNAME": "程艳",
+            "USERPHONE": "18715135341",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2021",
+            "USERID": "469",
+            "USERNAME": "于忠波",
+            "USERPHONE": "18255184213",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2021",
+            "USERID": "470",
+            "USERNAME": "徐礼辉",
+            "USERPHONE": "13269201768",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2021",
+            "USERID": "471",
+            "USERNAME": "李道存",
+            "USERPHONE": "18756954038",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2021",
+            "USERID": "472",
+            "USERNAME": "吴厚东",
+            "USERPHONE": "17612163161",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2021",
+            "USERID": "473",
+            "USERNAME": "夏子豪",
+            "USERPHONE": "18269712956",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2021",
+            "USERID": "474",
+            "USERNAME": "黄兰兰",
+            "USERPHONE": "15956985081",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2021",
+            "USERID": "475",
+            "USERNAME": "杨明娟",
+            "USERPHONE": "15510720812",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2021",
+            "USERID": "476",
+            "USERNAME": "刘艺天",
+            "USERPHONE": "13966764580",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 11
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2020",
+        "DEPARTMENTID": "2020",
+        "DEPARTMENTNAME": "战略发展事业部",
+        "PARENTID": "20",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2020",
+            "USERID": "456",
+            "USERNAME": "戴朋龙",
+            "USERPHONE": "18326117694",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2020",
+            "USERID": "457",
+            "USERNAME": "林静",
+            "USERPHONE": "15656906065",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2020",
+            "USERID": "458",
+            "USERNAME": "程哲",
+            "USERPHONE": "15955132935",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2020",
+            "USERID": "459",
+            "USERNAME": "王婷婷",
+            "USERPHONE": "18019909053",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2020",
+            "USERID": "460",
+            "USERNAME": "王琼",
+            "USERPHONE": "18815519585",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2020",
+            "USERID": "461",
+            "USERNAME": "耿凡凡",
+            "USERPHONE": "15255568450",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2020",
+            "USERID": "462",
+            "USERNAME": "吴迪",
+            "USERPHONE": "15905546055",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2020",
+            "USERID": "463",
+            "USERNAME": "童乐",
+            "USERPHONE": "15111807123",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2020",
+            "USERID": "464",
+            "USERNAME": "王愿愿",
+            "USERPHONE": "15805605075",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2020",
+            "USERID": "465",
+            "USERNAME": "刘勇",
+            "USERPHONE": "15918658367",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 10
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2011",
+        "DEPARTMENTID": "2011",
+        "DEPARTMENTNAME": "产品运营部",
+        "PARENTID": "20",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2011",
+            "USERID": "337",
+            "USERNAME": "张满香",
+            "USERPHONE": "18119992092",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2011",
+            "USERID": "338",
+            "USERNAME": "张慧萍",
+            "USERPHONE": "18119992097",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2011",
+            "USERID": "339",
+            "USERNAME": "杨晓洁",
+            "USERPHONE": "13956968449",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2011",
+            "USERID": "340",
+            "USERNAME": "李玲",
+            "USERPHONE": "15705608429",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2011",
+            "USERID": "341",
+            "USERNAME": "杨自豪",
+            "USERPHONE": "15616161176",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2011",
+            "USERID": "342",
+            "USERNAME": "周建富",
+            "USERPHONE": "18119992217",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2011",
+            "USERID": "343",
+            "USERNAME": "杜亮",
+            "USERPHONE": "13295516568",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 7
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2012",
+        "DEPARTMENTID": "2012",
+        "DEPARTMENTNAME": "车联网产品线",
+        "PARENTID": "20",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "201211",
+            "DEPARTMENTID": "201211",
+            "DEPARTMENTNAME": "产品设计组",
+            "PARENTID": "2012",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201211",
+                "USERID": "345",
+                "USERNAME": "邹维军",
+                "USERPHONE": "13601874322",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201211",
+                "USERID": "363",
+                "USERNAME": "周国银",
+                "USERPHONE": "19956017908",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201211",
+                "USERID": "364",
+                "USERNAME": "胡红燕",
+                "USERPHONE": "15375278723",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201211",
+                "USERID": "365",
+                "USERNAME": "叶森旺",
+                "USERPHONE": "15556936665",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201211",
+                "USERID": "372",
+                "USERNAME": "许童",
+                "USERPHONE": "13385609908",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              }
+            ],
+            "num": 5
+          },
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "201212",
+            "DEPARTMENTID": "201212",
+            "DEPARTMENTNAME": "技术开发组",
+            "PARENTID": "2012",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "346",
+                "USERNAME": "蔡广灯",
+                "USERPHONE": "18214899507",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "347",
+                "USERNAME": "高瑶",
+                "USERPHONE": "15077954655",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "348",
+                "USERNAME": "周子韬",
+                "USERPHONE": "18356621855",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "349",
+                "USERNAME": "杨鹏飞",
+                "USERPHONE": "15856902812",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "350",
+                "USERNAME": "袁涛",
+                "USERPHONE": "18755183168",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "351",
+                "USERNAME": "彭华杰",
+                "USERPHONE": "18269855115",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "352",
+                "USERNAME": "夏建军",
+                "USERPHONE": "18551677015",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "353",
+                "USERNAME": "方毅",
+                "USERPHONE": "18255001078",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "354",
+                "USERNAME": "查道丰",
+                "USERPHONE": "17730233835",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "355",
+                "USERNAME": "鲍豪",
+                "USERPHONE": "18655667507",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "356",
+                "USERNAME": "苏毅",
+                "USERPHONE": "13665656951",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "357",
+                "USERNAME": "金鹏",
+                "USERPHONE": "15011284586",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "358",
+                "USERNAME": "吴亥",
+                "USERPHONE": "18875088348",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "361",
+                "USERNAME": "张飞",
+                "USERPHONE": "18715059330",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "367",
+                "USERNAME": "普清",
+                "USERPHONE": "18856922650",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "368",
+                "USERNAME": "叶良成",
+                "USERPHONE": "18656414183",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "370",
+                "USERNAME": "周维磊",
+                "USERPHONE": "17754115128",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "371",
+                "USERNAME": "圣毛毛",
+                "USERPHONE": "18956054240",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201212",
+                "USERID": "373",
+                "USERNAME": "崔军",
+                "USERPHONE": "18519533969",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              }
+            ],
+            "num": 19
+          },
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "201213",
+            "DEPARTMENTID": "201213",
+            "DEPARTMENTNAME": "共享资源组",
+            "PARENTID": "2012",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201213",
+                "USERID": "359",
+                "USERNAME": "徐文斌",
+                "USERPHONE": "15897695001",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201213",
+                "USERID": "360",
+                "USERNAME": "韦伶伶",
+                "USERPHONE": "18156247289",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201213",
+                "USERID": "362",
+                "USERNAME": "汪国霞",
+                "USERPHONE": "18955165692",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201213",
+                "USERID": "366",
+                "USERNAME": "张珊珊",
+                "USERPHONE": "13675514076",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201213",
+                "USERID": "369",
+                "USERNAME": "姚有楠",
+                "USERPHONE": "18255382584",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201213",
+                "USERID": "374",
+                "USERNAME": "凡晴晴",
+                "USERPHONE": "18226604614",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              }
+            ],
+            "num": 6
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2012",
+            "USERID": "344",
+            "USERNAME": "厉京京",
+            "USERPHONE": "17354016591",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 4
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2013",
+        "DEPARTMENTID": "2013",
+        "DEPARTMENTNAME": "执法执勤产品线",
+        "PARENTID": "20",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "201311",
+            "DEPARTMENTID": "201311",
+            "DEPARTMENTNAME": "技术开发组",
+            "PARENTID": "2013",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201311",
+                "USERID": "376",
+                "USERNAME": "张琨",
+                "USERPHONE": "18609653090",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201311",
+                "USERID": "377",
+                "USERNAME": "季鑫",
+                "USERPHONE": "18856899197",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201311",
+                "USERID": "379",
+                "USERNAME": "李彬",
+                "USERPHONE": "18557539048",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201311",
+                "USERID": "380",
+                "USERNAME": "杜安生",
+                "USERPHONE": "15256037412",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201311",
+                "USERID": "381",
+                "USERNAME": "姚润",
+                "USERPHONE": "13034046503",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201311",
+                "USERID": "384",
+                "USERNAME": "卜俊杰",
+                "USERPHONE": "15156871747",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201311",
+                "USERID": "385",
+                "USERNAME": "董旭",
+                "USERPHONE": "13285655785",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              }
+            ],
+            "num": 7
+          },
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "201312",
+            "DEPARTMENTID": "201312",
+            "DEPARTMENTNAME": "共享资源部",
+            "PARENTID": "2013",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201312",
+                "USERID": "378",
+                "USERNAME": "刘伟",
+                "USERPHONE": "18110927229",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201312",
+                "USERID": "383",
+                "USERNAME": "朱文敬",
+                "USERPHONE": "18611383553",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              }
+            ],
+            "num": 2
+          },
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "201313",
+            "DEPARTMENTID": "201313",
+            "DEPARTMENTNAME": "产品设计组",
+            "PARENTID": "2013",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201313",
+                "USERID": "382",
+                "USERNAME": "刘大增",
+                "USERPHONE": "13615606036",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201313",
+                "USERID": "386",
+                "USERNAME": "张咪娜",
+                "USERPHONE": "17717022563",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              }
+            ],
+            "num": 2
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2013",
+            "USERID": "375",
+            "USERNAME": "陈丽平",
+            "USERPHONE": "18756910493",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 2
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2014",
+        "DEPARTMENTID": "2014",
+        "DEPARTMENTNAME": "智慧后勤产品线",
+        "PARENTID": "20",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "201411",
+            "DEPARTMENTID": "201411",
+            "DEPARTMENTNAME": "产品设计组",
+            "PARENTID": "2014",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201411",
+                "USERID": "388",
+                "USERNAME": "王帅",
+                "USERPHONE": "15395139921",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201411",
+                "USERID": "394",
+                "USERNAME": "李倩",
+                "USERPHONE": "13615544269",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201411",
+                "USERID": "397",
+                "USERNAME": "杨瑱",
+                "USERPHONE": "15375275275",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              }
+            ],
+            "num": 3
+          },
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "201412",
+            "DEPARTMENTID": "201412",
+            "DEPARTMENTNAME": "技术开发组",
+            "PARENTID": "2014",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201412",
+                "USERID": "389",
+                "USERNAME": "孙志豪",
+                "USERPHONE": "18326089515",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201412",
+                "USERID": "390",
+                "USERNAME": "郑亚",
+                "USERPHONE": "15210093835",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201412",
+                "USERID": "391",
+                "USERNAME": "崔鹏鹏",
+                "USERPHONE": "18556578193",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201412",
+                "USERID": "392",
+                "USERNAME": "孟俊俊",
+                "USERPHONE": "15556518607",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201412",
+                "USERID": "393",
+                "USERNAME": "叶婷",
+                "USERPHONE": "18501504676",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201412",
+                "USERID": "395",
+                "USERNAME": "杨方刚",
+                "USERPHONE": "19955177618",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201412",
+                "USERID": "396",
+                "USERNAME": "杨益权",
+                "USERPHONE": "15605539219",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201412",
+                "USERID": "398",
+                "USERNAME": "涂勇",
+                "USERPHONE": "18559756159",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              }
+            ],
+            "num": 8
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2014",
+            "USERID": "387",
+            "USERNAME": "杨媛媛",
+            "USERPHONE": "15221109941",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 3
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2015",
+        "DEPARTMENTID": "2015",
+        "DEPARTMENTNAME": "智慧机关产品线",
+        "PARENTID": "20",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "201513",
+            "DEPARTMENTID": "201513",
+            "DEPARTMENTNAME": "共享资源组",
+            "PARENTID": "2015",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201513",
+                "USERID": "407",
+                "USERNAME": "熊蓉",
+                "USERPHONE": "17755160158",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201513",
+                "USERID": "408",
+                "USERNAME": "周翔",
+                "USERPHONE": "17681127087",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201513",
+                "USERID": "418",
+                "USERNAME": "沈秉露",
+                "USERPHONE": "18017763496",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201513",
+                "USERID": "419",
+                "USERNAME": "张思雨",
+                "USERPHONE": "18305616696",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              }
+            ],
+            "num": 4
+          },
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "201512",
+            "DEPARTMENTID": "201512",
+            "DEPARTMENTNAME": "技术开发组",
+            "PARENTID": "2015",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201512",
+                "USERID": "401",
+                "USERNAME": "吴超",
+                "USERPHONE": "18056097286",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201512",
+                "USERID": "402",
+                "USERNAME": "梅亚辉",
+                "USERPHONE": "18395592415",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201512",
+                "USERID": "403",
+                "USERNAME": "杨元山",
+                "USERPHONE": "18868807966",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201512",
+                "USERID": "404",
+                "USERNAME": "方会",
+                "USERPHONE": "18110275751",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201512",
+                "USERID": "405",
+                "USERNAME": "付永庆",
+                "USERPHONE": "18655100835",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201512",
+                "USERID": "406",
+                "USERNAME": "卢志熠",
+                "USERPHONE": "18158872278",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201512",
+                "USERID": "410",
+                "USERNAME": "陈东",
+                "USERPHONE": "18300629571",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201512",
+                "USERID": "411",
+                "USERNAME": "许惠惠",
+                "USERPHONE": "18895351297",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201512",
+                "USERID": "412",
+                "USERNAME": "刘兵飞",
+                "USERPHONE": "13855525097",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201512",
+                "USERID": "414",
+                "USERNAME": "张洋",
+                "USERPHONE": "13003080614",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201512",
+                "USERID": "416",
+                "USERNAME": "董俊庆",
+                "USERPHONE": "15656020458",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201512",
+                "USERID": "417",
+                "USERNAME": "杨首领",
+                "USERPHONE": "17612169628",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              }
+            ],
+            "num": 12
+          },
+          {
+            "RowState": 1,
+            "DEEP": null,
+            "DEPARTMENTCODE": "201511",
+            "DEPARTMENTID": "201511",
+            "DEPARTMENTNAME": "产品设计组",
+            "PARENTID": "2015",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+            "children": [
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201511",
+                "USERID": "400",
+                "USERNAME": "付登云",
+                "USERPHONE": "18375330339",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201511",
+                "USERID": "409",
+                "USERNAME": "胡婕茹",
+                "USERPHONE": "18225854245",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201511",
+                "USERID": "413",
+                "USERNAME": "陈炜",
+                "USERPHONE": "15256057183",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              },
+              {
+                "RowState": 1,
+                "DEPARTMENTID": "201511",
+                "USERID": "415",
+                "USERNAME": "郭泽超",
+                "USERPHONE": "16605127811",
+                "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+                "num": 0
+              }
+            ],
+            "num": 4
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2015",
+            "USERID": "399",
+            "USERNAME": "王晓婉",
+            "USERPHONE": "17730203315",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 4
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2016",
+        "DEPARTMENTID": "2016",
+        "DEPARTMENTNAME": "络宝管家事业部",
+        "PARENTID": "20",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2016",
+            "USERID": "446",
+            "USERNAME": "刘程",
+            "USERPHONE": "18119992073",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2016",
+            "USERID": "447",
+            "USERNAME": "程荣慧",
+            "USERPHONE": "18010855901",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 2
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2017",
+        "DEPARTMENTID": "2017",
+        "DEPARTMENTNAME": "内容运营事业部",
+        "PARENTID": "20",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2017",
+            "USERID": "448",
+            "USERNAME": "常明好",
+            "USERPHONE": "18756286251",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2017",
+            "USERID": "449",
+            "USERNAME": "程文",
+            "USERPHONE": "13866725136",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 2
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2018",
+        "DEPARTMENTID": "2018",
+        "DEPARTMENTNAME": "供应链管理事业部",
+        "PARENTID": "20",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2018",
+            "USERID": "453",
+            "USERNAME": "刘玉方",
+            "USERPHONE": "18119992030",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2018",
+            "USERID": "454",
+            "USERNAME": "孟庆洋",
+            "USERPHONE": "13665659447",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 2
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "20",
+        "USERID": "336",
+        "USERNAME": "王碧菁",
+        "USERPHONE": "15005607135",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      }
+    ],
+    "num": -1
+  },
+  {
+    "RowState": 1,
+    "DEEP": null,
+    "DEPARTMENTCODE": "21",
+    "DEPARTMENTID": "21",
+    "DEPARTMENTNAME": "产品设计中心",
+    "PARENTID": "0",
+    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+    "children": [
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2113",
+        "DEPARTMENTID": "2113",
+        "DEPARTMENTNAME": "基础产品部",
+        "PARENTID": "21",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2113",
+            "USERID": "427",
+            "USERNAME": "朱阳军",
+            "USERPHONE": "18715516407",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2113",
+            "USERID": "428",
+            "USERNAME": "赵钧",
+            "USERPHONE": "15955147221",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2113",
+            "USERID": "429",
+            "USERNAME": "秦东",
+            "USERPHONE": "18155117489",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2113",
+            "USERID": "430",
+            "USERNAME": "朱东杰",
+            "USERPHONE": "13515600211",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2113",
+            "USERID": "431",
+            "USERNAME": "王明明",
+            "USERPHONE": "15609609069",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2113",
+            "USERID": "432",
+            "USERNAME": "郑建辉",
+            "USERPHONE": "15155119938",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2113",
+            "USERID": "433",
+            "USERNAME": "宋民亮",
+            "USERPHONE": "15705512144",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2113",
+            "USERID": "434",
+            "USERNAME": "田文龙",
+            "USERPHONE": "17755122833",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 8
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2111",
+        "DEPARTMENTID": "2111",
+        "DEPARTMENTNAME": "产品设计部",
+        "PARENTID": "21",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2111",
+            "USERID": "421",
+            "USERNAME": "路翔",
+            "USERPHONE": "18618150612",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2111",
+            "USERID": "422",
+            "USERNAME": "汪波",
+            "USERPHONE": "18060506384",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2111",
+            "USERID": "423",
+            "USERNAME": "王超",
+            "USERPHONE": "15300883910",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 3
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2112",
+        "DEPARTMENTID": "2112",
+        "DEPARTMENTNAME": "产品质量管理部",
+        "PARENTID": "21",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2112",
+            "USERID": "424",
+            "USERNAME": "章莉",
+            "USERPHONE": "18096679186",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2112",
+            "USERID": "425",
+            "USERNAME": "杨可",
+            "USERPHONE": "17356502046",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2112",
+            "USERID": "426",
+            "USERNAME": "宋陆",
+            "USERPHONE": "18720918521",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 3
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "21",
+        "USERID": "420",
+        "USERNAME": "郭硕",
+        "USERPHONE": "18056090731",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      }
+    ],
+    "num": 3
+  },
+  {
+    "RowState": 1,
+    "DEEP": null,
+    "DEPARTMENTCODE": "22",
+    "DEPARTMENTID": "22",
+    "DEPARTMENTNAME": "财务管理中心",
+    "PARENTID": "0",
+    "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+    "children": [
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2212",
+        "DEPARTMENTID": "2212",
+        "DEPARTMENTNAME": "预算管理部",
+        "PARENTID": "22",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2212",
+            "USERID": "441",
+            "USERNAME": "张永平",
+            "USERPHONE": "15375293601",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2212",
+            "USERID": "442",
+            "USERNAME": "肖坚",
+            "USERPHONE": "15105607755",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2212",
+            "USERID": "443",
+            "USERNAME": "程业貌",
+            "USERPHONE": "18656699495",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 3
+      },
+      {
+        "RowState": 1,
+        "DEEP": null,
+        "DEPARTMENTCODE": "2211",
+        "DEPARTMENTID": "2211",
+        "DEPARTMENTNAME": "核算共享部",
+        "PARENTID": "22",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png",
+        "children": [
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2211",
+            "USERID": "436",
+            "USERNAME": "胡烁丹",
+            "USERPHONE": "13365690446",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2211",
+            "USERID": "437",
+            "USERNAME": "蔡玉华",
+            "USERPHONE": "15375360787",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2211",
+            "USERID": "438",
+            "USERNAME": "陈孟杰",
+            "USERPHONE": "15056093014",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2211",
+            "USERID": "439",
+            "USERNAME": "张水石",
+            "USERPHONE": "15255117295",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          },
+          {
+            "RowState": 1,
+            "DEPARTMENTID": "2211",
+            "USERID": "440",
+            "USERNAME": "左从晴",
+            "USERPHONE": "18256006439",
+            "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+          }
+        ],
+        "num": 5
+      },
+      {
+        "RowState": 1,
+        "DEPARTMENTID": "22",
+        "USERID": "435",
+        "USERNAME": "丁南婷",
+        "USERPHONE": "18715121086",
+        "select": "http://117.71.53.199:50021/group2/M00/04/53/CgUEPWAABUqAJ_PBAAADi4vGtd4388.png"
+      }
+    ],
+    "num": 3
+  }
+]
