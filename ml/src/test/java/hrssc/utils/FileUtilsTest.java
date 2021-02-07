@@ -90,7 +90,8 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFiles() throws Exception {
-        FileUtils.decodeAllFilesInFolder("D:\\data\\Intellij\\LuckyBag\\src\\main\\resources\\images0125");
+        FileUtils.decodeAllFilesInFolder("D:\\data\\Intellij\\LuckyBag\\src\\main\\resources\\images0207");
+//        FileUtils.decodeAllFilesInFolder("E:\\Doc\\项目文档\\容器化\\jar");
     }
 
 
@@ -100,7 +101,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFile() throws Exception {
-        String path = "E:\\files\\微信截图_20210127134510.png";
+        String path = "D:\\data\\Intellij\\HRSSC\\target\\hrssc.war";
         FileUtils.decodeFileOld(path,path+".class" );
 //        FileUtils.decodeFile("C:\\java\\runapi-1.0.0\\runapi-1.0.0.exe","C:\\java\\runapi-1.0.0\\runapi-1.0.1.exe" );
     }

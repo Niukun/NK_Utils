@@ -127,7 +127,7 @@ public class FileUtils {
     public static void decodeFileOld(String srcFilePath, String distFilePath) throws Exception {
         FileInputStream fis = new FileInputStream(srcFilePath);
         FileOutputStream fos = new FileOutputStream(distFilePath);
-        byte[] bytes = new byte[8];
+        byte[] bytes = new byte[1024];
         int len = fis.read(bytes);
 
         while (len != -1) {

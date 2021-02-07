@@ -48,7 +48,13 @@ public class LuckyBagParser {
             person.setPhone(row.getCell(8).toString());
 //            person.setPhone( df.format(row.getCell(8).getNumericCellValue()));
             if(row.getCell(15) != null){
-                amount = (int) Double.parseDouble(row.getCell(15).toString());
+                Cell cell = row.getCell(15);
+                if(cell.toString().isEmpty()){
+                    amount = 0;
+                }else{
+
+                amount = (int) Double.parseDouble(cell.toString());
+                }
             }
             person.setAmount(Integer.toString(amount));
             person.setId(row.getRowNum() + 100 + "");

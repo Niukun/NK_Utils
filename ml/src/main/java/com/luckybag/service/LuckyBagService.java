@@ -6,7 +6,6 @@ import com.luckybag.bean.PersonInfo;
 import com.luckybag.constants.LuckyCons;
 import com.luckybag.dao.LuckyBagDao;
 import com.luckybag.poi.LuckyBagParser;
-import scala.Int;
 
 import java.io.File;
 import java.util.*;
@@ -257,7 +256,6 @@ public class LuckyBagService {
             System.out.println("手机号为： " + userPhone + " 的用户充值 "+amount+" 成功！当前总福金为： "+ totalAmount);
 
         }
-
     }
 
 
