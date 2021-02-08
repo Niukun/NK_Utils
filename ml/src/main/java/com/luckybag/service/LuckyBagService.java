@@ -192,7 +192,6 @@ public class LuckyBagService {
             buildDepartmentTree(levelList,result.node, personInfo);
 
         }else{
-
             Node n = new Node(current,generateId(node),new ArrayList<Node>(),node);
             node.getChildren().add(n);
             Node subNode = null;
