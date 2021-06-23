@@ -16,8 +16,8 @@ public class MySQLDao {
      * 往test数据库中插入100万条数据
      * @throws IOException
      */
-    private static void InsertMillionRecords() throws IOException {
-        FileReader fr = new FileReader("D:\\github\\NK_Utils\\mysql_learn\\src\\main\\resources\\address.txt");
+    public static void InsertMillionRecords() throws IOException {
+        FileReader fr = new FileReader("F:\\Data\\IntellijIdea\\NK_Utils\\mysql_learn\\target\\classes\\address.txt ");
         BufferedReader bufr = new BufferedReader(fr);
         String line = null;
         String[] strs = new String[3];
@@ -26,7 +26,7 @@ public class MySQLDao {
         int i = 0;
         while ((line = bufr.readLine()) != null) {
             strs = line.split(",");
-            if (i++ % 1000 == 0) {
+            if (i++ % 2 == 0) {
                 System.out.println(i);
             }
             insertRecordIntoRoom(strs[0], strs[1], strs[2]);
@@ -38,7 +38,7 @@ public class MySQLDao {
 
     public static void insertRecordIntoRoom(String id, String code, String address) {
 
-        String sql = "insert into address (id,code,address) values (\""  + id + "\",\"" + code + "\",\"" + address + "\")";
+        String sql = "insert into ml_room (id,code,address) values (\""  + id + "\",\"" + code + "\",\"" + address + "\")";
 
 //        System.out.println("sql is: " +sql);
 

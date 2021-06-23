@@ -251,5 +251,10 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.activemq:activemq-all:5.14.5" level="project" />
+    <orderEntry type="library" name="Maven: com.drewnoakes:metadata-extractor:2.12.0" level="project" />
+    <orderEntry type="library" name="Maven: com.adobe.xmp:xmpcore:6.0.6" level="project" />
+    <orderEntry type="library" name="Maven: com.asprise.ocr:java-ocr-api:15.3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: javax.mail:mail:1.4.7" level="project" />
+    <orderEntry type="library" name="Maven: javax.activation:activation:1.1.1" level="project" />
   </component>
 </module>

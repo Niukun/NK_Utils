@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mysql_learn" />
+        <module name="mb_learn" />
         <module name="quartz_learn" />
         <module name="ml" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mb_learn" target="1.8" />
       <module name="ml" target="1.8" />
       <module name="mysql_learn" target="1.8" />
       <module name="MyUtils" target="1.8" />

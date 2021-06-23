@@ -22,52 +22,47 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e393c580-2be0-457e-8344-a4511766141c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_73.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_belerweb_pinyin4j_2_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_SparseBitSet_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jfree_jcommon_1_0_16.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_pdfbox_fontbox_2_0_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_pdfbox_pdfbox_2_0_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_all_1_10_19.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfreechart_1_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e393c580-2be0-457e-8344-a4511766141c" name="Default Changelist" comment="add bag algorithm demo">
+      <change afterPath="$PROJECT_DIR$/mb_learn/mb_learn.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mb_learn/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mb_learn/src/main/resources/note/day01.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_learn/src/test/java/com/db/mysql/MySQLDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/leetcode/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niukun/email/MailStudy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niukun/email/MyAuthenticator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niukun/file/PictureTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niukun/test/HasStatic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_SparseBitSet_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_4_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyUtils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyUtils.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ml/ml.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ml/ml.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql_learn/mysql_learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_learn/mysql_learn.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_learn/src/main/java/com/db/mysql/MySQLDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_learn/src/main/java/com/db/mysql/MySQLDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_learn/src/main/java/com/luckybag/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_learn/src/main/java/com/luckybag/controller/LuckyBagController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_learn/src/main/java/com/luckybag/dao/LuckyBagDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_learn/src/main/java/com/luckybag/poi/LuckyBagParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_learn/src/main/java/com/luckybag/service/LuckyBagService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysql_learn/src/main/java/com/utils/MySQLUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_learn/src/main/java/com/utils/MySQLUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quartz_learn/quartz_learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/quartz_learn/quartz_learn.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niukun/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niukun/test/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +82,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit3 Test Class" />
       </list>
     </option>
   </component>
@@ -114,13 +110,15 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ml/lib" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Eclipse/onTheWay" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -130,47 +128,14 @@
       <recent name="D:\github\NK_Utils\ml\src\main\resources" />
       <recent name="D:\github\NK_Utils\ml\src\main\java" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.db.mysql" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.GaussianDemo">
-    <configuration name="AverageDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.luckybag.algorithm.AverageDemo" />
-      <module name="ml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.luckybag.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GaussianDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.luckybag.algorithm.GaussianDemo" />
-      <module name="ml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.luckybag.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MySQLDao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.db.mysql.MySQLDao" />
-      <module name="mysql_learn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MySQLDaoTest.test01">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -182,33 +147,72 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileUtilsTest.testDecodeFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ml" />
+    <configuration name="HasStatic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niukun.test.HasStatic" />
+      <module name="MyUtils" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hrssc.utils.*" />
+          <option name="PATTERN" value="com.niukun.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hrssc.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.hrssc.utils.FileUtilsTest" />
-      <option name="METHOD_NAME" value="testDecodeFile" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MailStudy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niukun.email.MailStudy" />
+      <module name="MyUtils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niukun.email.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niukun.test.Test" />
+      <module name="MyUtils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niukun.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySQLDaoTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mysql_learn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.db.mysql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.db.mysql" />
+      <option name="MAIN_CLASS_NAME" value="com.db.mysql.MySQLDaoTest" />
+      <option name="METHOD_NAME" value="test01" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringUtil.testRe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ml" />
+    <configuration name="MySQLDaoTest.testit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mysql_learn" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hrssc.utils.*" />
+          <option name="PATTERN" value="com.db.mysql.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.hrssc.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.hrssc.utils.StringUtil" />
-      <option name="METHOD_NAME" value="testRe" />
+      <option name="PACKAGE_NAME" value="com.db.mysql" />
+      <option name="MAIN_CLASS_NAME" value="com.db.mysql.MySQLDaoTest" />
+      <option name="METHOD_NAME" value="testit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -216,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GaussianDemo" />
-        <item itemvalue="Application.AverageDemo" />
-        <item itemvalue="JUnit.FileUtilsTest.testDecodeFile" />
-        <item itemvalue="JUnit.StringUtil.testRe" />
-        <item itemvalue="Application.MySQLDao" />
+        <item itemvalue="JUnit.MySQLDaoTest.test01" />
+        <item itemvalue="JUnit.MySQLDaoTest.testit" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.HasStatic" />
+        <item itemvalue="Application.MailStudy" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +287,14 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="51" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="112" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -310,8 +321,34 @@
           <line>46</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Solution.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Solution.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Solution.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/leetcode/Solution.java</url>
+          <line>85</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="metadata._directories.get(7)" />
+        <watch expression="((java.util.ArrayList)((HuffmanTablesDirectory)metadata._directories.get(6)).tables).get(1)" custom="com.drew.metadata.jpeg.HuffmanTablesDirectory,java.util.ArrayList" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>
