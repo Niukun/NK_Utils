@@ -3,12 +3,9 @@ package com.hrssc.utils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.steadystate.css.parser.CSSOMParser;
-import com.steadystate.css.parser.SACParserCSS3;
 import org.apache.log4j.Logger;
+import org.apache.poi.ss.formula.functions.T;
 import org.junit.jupiter.api.Test;
-import org.w3c.css.sac.InputSource;
-import org.w3c.dom.css.CSSStyleSheet;
 
 
 import java.io.*;
@@ -43,7 +40,6 @@ public class FileUtilsTest {
 
     @Test
     public void testid(){
-
         System.out.println(DateFormat.getDateInstance(DateFormat.MEDIUM, Locale.CHINA).format(new Date()));
     }
 
@@ -75,7 +71,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFilesCascade(){
-        String filePath = "E:\\files\\1228";
+        String filePath = "E:\\logs\\0622\\转正材料V1.1";
 
         try {
             FileUtils.cascadeDecodeFiles(filePath, filePath + "[de]\\");
@@ -90,7 +86,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFiles() throws Exception {
-        FileUtils.decodeAllFilesInFolder("D:\\data\\Intellij\\LuckyBag\\src\\main\\resources\\images0207");
+        FileUtils.decodeAllFilesInFolder("E:\\logs\\0622");
 //        FileUtils.decodeAllFilesInFolder("E:\\Doc\\项目文档\\容器化\\jar");
     }
 
@@ -101,10 +97,29 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFile() throws Exception {
-        String path = "D:\\data\\Intellij\\HRSSC\\target\\hrssc.war";
-        FileUtils.decodeFileOld(path,path+".class" );
+        String path = "E:\\Doc\\项目文档\\PAAS\\第三期\\【培训管理】PaaS数据操作设计【牛坤】20210519.pptx";
+        FileUtils.decodeFilev2(path,path+".class" );
+//        FileUtils.decodeFileOld(path+".class" ,path1 );
 //        FileUtils.decodeFile("C:\\java\\runapi-1.0.0\\runapi-1.0.0.exe","C:\\java\\runapi-1.0.0\\runapi-1.0.1.exe" );
     }
+
+
+
+
+    /**
+     * 解密单个文件
+     * @throws Exception
+     */
+    @Test
+    public void testDecodeFileV3() throws Exception {
+        String path = "E:\\Doc\\项目文档\\福袋\\V2.1\\生产环境代码备份\\libs\\orms\\orm_zkml_mysql.luckybag.main.xml";
+        FileUtils.decodeFilev3(path );
+//        FileUtils.decodeFileOld(path+".class" ,path1 );
+//        FileUtils.decodeFile("C:\\java\\runapi-1.0.0\\runapi-1.0.0.exe","C:\\java\\runapi-1.0.0\\runapi-1.0.1.exe" );
+
+    }
+
+
 
 
     @Test
