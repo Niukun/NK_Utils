@@ -55,7 +55,8 @@ public class FileUtils {
         File[] files = file.listFiles();
         for (File f: files) {
             if(f.isFile()){
-                decodeFile(f.getAbsolutePath(),distFilePath +f.getName());
+                decodeFilev2(f.getAbsolutePath(),distFilePath +f.getName() + ".class");
+//                decodeFile(f.getAbsolutePath(),distFilePath +f.getName());
             }else {
                 String newPath = distFilePath + f.getName() + "\\";
                 File newPathFile = new File(newPath);
@@ -80,7 +81,7 @@ public class FileUtils {
                 String newFileName = fileName + ".class";
 //                String newFileName = fileName.substring(0, fileName.lastIndexOf(".")) + "【DE】" + fileName.substring(fileName.lastIndexOf("."));
                 try {
-                    decodeFileOld(fileName, newFileName);
+                    decodeFilev2(fileName, newFileName);
                 } catch (Exception exception) {
                     exception.printStackTrace();
                 }
@@ -124,7 +125,7 @@ public class FileUtils {
      * @param distFilePath
      * @throws Exception
      */
-    public static void decodeFileOld(String srcFilePath, String distFilePath) throws Exception {
+    public static void decodeFilev2(String srcFilePath, String distFilePath) throws Exception {
         FileInputStream fis = new FileInputStream(srcFilePath);
         FileOutputStream fos = new FileOutputStream(distFilePath);
         byte[] bytes = new byte[1024];
@@ -140,6 +141,31 @@ public class FileUtils {
 
         System.out.println(srcFilePath + " decode success!");
         System.out.println("File located at： " + distFilePath + "\n");
+    }
+
+
+
+    /**
+     * 解密单个文件v3
+     * @param srcFilePath
+     * @throws Exception
+     */
+    public static void decodeFilev3(String srcFilePath) throws Exception {
+        FileInputStream fis = new FileInputStream(srcFilePath);
+        FileOutputStream fos = new FileOutputStream(srcFilePath);
+        byte[] bytes = new byte[1024];
+        int len = fis.read(bytes);
+
+        while (len != -1) {
+            fos.write(bytes, 0, len);
+            fos.flush();
+            len=fis.read(bytes);
+        }
+        fos.close();
+        fis.close();
+
+        System.out.println(srcFilePath + " decode success!");
+        System.out.println("File located at： " + srcFilePath + "\n");
     }
 
 

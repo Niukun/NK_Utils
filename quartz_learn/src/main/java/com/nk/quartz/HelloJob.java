@@ -37,7 +37,7 @@ public class HelloJob implements Job {
         Trigger trigger = TriggerBuilder.newTrigger()
                 .withIdentity("trigger1", "group1")
                 .usingJobData("t1", "tv1")
-                .withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(3)
+                .withSchedule(SimpleScheduleBuilder.simpleSchedule().withIntervalInSeconds(1)
                         .repeatForever()).build();
         trigger.getJobDataMap().put("t2", "tv2");
 

@@ -84,7 +84,7 @@ public class LuckyBagDao {
             ps.setString(4, personInfo.getId());
             ps.setString(5, LuckyCons.RESOURCETYPEID_INIT);
             ps.setString(6, LuckyCons.RESOURCEDESC);
-            ps.setString(7, new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
+            ps.setString(7, String.valueOf(System.currentTimeMillis()));
 
             int result = ps.executeUpdate();
 //            if (result != 0) {
