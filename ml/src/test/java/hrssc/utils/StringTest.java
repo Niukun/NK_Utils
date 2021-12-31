@@ -29,16 +29,9 @@ public class StringTest {
 
     @Test
     public void testNum(){
-        int sum = 0;
-        int num1 = 1;
-        int num2 = 1;
-        for(int i = 3; i <= 12; i++)
-        {
-            sum = num1+ num2;
-            num1 = num2;
-            num2 = sum;
-        }
-        System.out.println(sum);
+        double a = 9;
+        double b = 11;
+        System.out.println(a/b);
 
     }
 
@@ -46,7 +39,8 @@ public class StringTest {
 
     @Test
     public void testNum1(){
-        System.out.println(getNum(12));
+        System.out.println(System.getProperty("user.dir") + "/src/test/java/com/hrssc/utils/PasswordUtilsTest.java");
+        System.out.println(System.getProperty("user.home"));
     }
 
 

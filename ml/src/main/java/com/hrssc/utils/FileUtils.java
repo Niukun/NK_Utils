@@ -51,6 +51,12 @@ public class FileUtils {
      * @throws Exception
      */
     public static void cascadeDecodeFiles(String srcFilePath, String distFilePath) throws Exception {
+        File distFile = new File(distFilePath);
+        if(!distFile.exists()){
+            distFile.mkdirs();
+        }
+
+
         File file = new File(srcFilePath);
         File[] files = file.listFiles();
         for (File f: files) {

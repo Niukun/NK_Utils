@@ -20,7 +20,7 @@ public class PictureTest {
 
     public static  void readPic() throws ImageProcessingException, IOException {
         System.out.println("开始读取图片信息...");
-        File jpegFile = new File("C:\\Users\\KNiu\\Pictures\\微信图片_20210128225050.jpg");
+        File jpegFile = new File("C:\\Users\\Niuk\\Pictures\\test.png");
         Metadata metadata;
         try {
             metadata = JpegMetadataReader.readMetadata(jpegFile);
