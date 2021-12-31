@@ -112,7 +112,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFileV3() throws Exception {
-        String path = "E:\\logs\\1220\\HRSSCPro-0.0.1-SNAPSHOT.jar";
+        String path = "E:\\logs\\1231\\firefly计划.png";
         FileUtils.decodeFilev2(path,path+".class" );
 //        FileUtils.decodeFileOld(path+".class" ,path1 );
 //        FileUtils.decodeFile("C:\\java\\runapi-1.0.0\\runapi-1.0.0.exe","C:\\java\\runapi-1.0.0\\runapi-1.0.1.exe" );
