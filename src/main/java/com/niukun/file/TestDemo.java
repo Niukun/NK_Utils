@@ -1,16 +1,24 @@
 package com.niukun.file;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 public class TestDemo {
-    public static void main(String[] args) throws InterruptedException {
-        String property = System.getProperty("oracle.native.driver");
-        if(null == property){
-            System.out.println("aaa" + true);
-            System.out.println("aaa" + Boolean.TRUE);
+    public static void main(String[] args) throws Exception {
+        String filename = "E:\\Data\\ML\\jwj\\wechat\\Msg\\OpenIMMsg.db";
+        FileInputStream fis = new FileInputStream(filename);
+        byte[] bytes = new byte[1024];
+        int len = fis.read(bytes);
+
+        while (len != -1) {
+            for (byte b: bytes ) {
+                System.out.print(b);
+            }
+            len=fis.read(bytes);
         }
-        System.out.println(property);
+
+        fis.close();
+
+
 
     }
 }
