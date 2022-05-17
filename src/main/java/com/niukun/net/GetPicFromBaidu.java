@@ -14,9 +14,7 @@ import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static com.niukun.net.GetPicFromBaidu.getPicFromCertainURL;
-
-public class URLDemo {
+public class GetPicFromBaidu {
     static final String homeStr = "http://w1.adca2cf2fdb.xyz/pw/";
 //    static final String homeStr = "http://w1.adca2cf2fdb.xyz/pw/";
     static final String siWaEntry = "http://w1.adca2cf2fdb.xyz/pw/thread.php?fid=21&page=";
@@ -118,5 +116,31 @@ public class URLDemo {
 //        fw.close();
         bufr.close();
         return sb.toString();
+    }
+
+
+    /**
+     *
+     * @param uri 图片的url
+     * @param abPath 图片要存放的目录（绝对路径）
+     * @throws IOException
+     */
+    public static void getPicFromCertainURL(String uri,String abPath) throws IOException {
+        URL url;
+        String urlStr = uri;
+        BufferedInputStream bufi;
+        FileOutputStream file;
+
+        String filePath = abPath;
+        url = new URL(urlStr);
+        URLConnection connection = url.openConnection();
+        connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36)");
+        bufi = new BufferedInputStream(connection.getInputStream());
+        file = new FileOutputStream(new File(filePath));
+        int t;
+        while((t = bufi.read())!=-1){
+            file.write(t);
+        }
+        file.close();
     }
 }
