@@ -10,8 +10,6 @@ public class ClassLoaderTest {
     public void testIt(){
         ClassLoader classLoader = this.getClass().getClassLoader();
         System.out.println(classLoader.toString());
-
     }
-
 
 }

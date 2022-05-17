@@ -71,8 +71,9 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFilesCascade(){
-        String filePath = "C:\\java\\jdk-8u281-docs-all";
+        String filePath = "C:\\Users\\Niuk\\Documents\\WXWork\\1688851899071626\\Cache\\Image";
 
+//        "E:\\logs\\0315\\chuangxinyuan02\\chuangxinyuan[de]"
         try {
             FileUtils.cascadeDecodeFiles(filePath, filePath + "[de]\\");
         } catch (Exception exception) {
@@ -86,10 +87,9 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFiles() throws Exception {
-        FileUtils.decodeAllFilesInFolder("E:\\log");
+        FileUtils.decodeAllFilesInFolder("E:\\logs\\0511\\运营经理5.16简历资料");
 //        FileUtils.decodeAllFilesInFolder("E:\\Doc\\项目文档\\容器化\\jar");
     }
-
 
     /**
      * 解密单个文件
@@ -97,13 +97,13 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFile() throws Exception {
-        String path = "E:\\logs\\logs\\考勤情况说明及检讨.docx";
+        String path = "E:\\logs\\0511\\运营5.17上午.zip";
+//        path = "E:\\logs\\0418\\【乐分享】数据交换机产品规划与使用-牛坤.pptx";
         FileUtils.decodeFilev2(path,path+".class" );
 //
 
 //        String path = "D:\\data\\svn\\低代码pass平台\\V1.0.0\\开发库\\05编码\\源码\\meta-exchange\\psbc\\target\\psbc-0.0.1-SNAPSHOT.jar";
 //        FileUtils.decodeFilev2(path,path+".class" );
-
     }
 
     /**
@@ -112,7 +112,7 @@ public class FileUtilsTest {
      */
     @Test
     public void testDecodeFileV3() throws Exception {
-        String path = "E:\\logs\\1231\\firefly计划.png";
+        String path = "D:\\data\\Intellij\\meta-exchange\\integrate\\target\\integrate-0.0.7-SNAPSHOT.jar";
         FileUtils.decodeFilev2(path,path+".class" );
 //        FileUtils.decodeFileOld(path+".class" ,path1 );
 //        FileUtils.decodeFile("C:\\java\\runapi-1.0.0\\runapi-1.0.0.exe","C:\\java\\runapi-1.0.0\\runapi-1.0.1.exe" );

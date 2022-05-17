@@ -18,8 +18,8 @@ public class IntegrateLogSummary {
         BufferedReader bufr = null;
         BufferedWriter bufw = null;
         try {
-            bufr = new BufferedReader(new FileReader("E:\\Download\\log\\integrate.2021-12-22.0.log"));
-            bufw = new BufferedWriter(new FileWriter("E:\\Download\\log\\integrate.2021-12-22.0.log.log"));
+            bufr = new BufferedReader(new FileReader("C:\\Users\\Niuk\\Downloads\\log\\integrate.2022-01-17.0.log"));
+            bufw = new BufferedWriter(new FileWriter("C:\\Users\\Niuk\\Downloads\\log\\integrate.2022-01-17.0.log.log"));
 
             int number = 1;
             String line = null;

@@ -21,11 +21,11 @@ public class NetworkTest {
     @Test
     public void test01() throws IOException {
         String ip = "192.168.";
-        for(int i = 100; i<255;i++){
+//        for(int i = 100; i<255;i++){
             for(int j = 0; j<255;j++){
-                isReachIp(ip + i +"." + j);
+                isReachIp(ip + 110 +"." + j);
             }
-        }
+//        }
 
     }
 

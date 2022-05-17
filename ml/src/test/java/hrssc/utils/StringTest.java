@@ -86,12 +86,9 @@ public class StringTest {
             for (int j = 1; j <=day; j++) {
                 System.out.println(year + "-" + i + "-" + j);
                 System.out.println("TODO");
+                System.out.println();
                 System.out.println("DONE");
             }
         }
-
-
     }
-
-
 }
