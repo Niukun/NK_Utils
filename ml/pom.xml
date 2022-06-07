@@ -53,7 +53,6 @@
 <!--            <version>4.1.2</version>-->
 <!--        </dependency>-->
 
-
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
@@ -74,6 +73,23 @@
             <artifactId>commons-collections4</artifactId>
             <version>4.4</version>
         </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.openpnp/opencv -->
+        <dependency>
+            <groupId>org.openpnp</groupId>
+            <artifactId>opencv</artifactId>
+            <version>4.5.1-2</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.opencv/opencv-java -->
+        <dependency>
+            <groupId>org.opencv</groupId>
+            <artifactId>opencv-java</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
 
 
         <!-- https://mvnrepository.com/artifact/org.quartz-scheduler/quartz-jobs -->
