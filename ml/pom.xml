@@ -75,20 +75,20 @@
         </dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/org.openpnp/opencv -->
-        <dependency>
-            <groupId>org.openpnp</groupId>
-            <artifactId>opencv</artifactId>
-            <version>4.5.1-2</version>
-        </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.openpnp/opencv &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.openpnp</groupId>-->
+<!--            <artifactId>opencv</artifactId>-->
+<!--            <version>4.5.1-2</version>-->
+<!--        </dependency>-->
 
 
-        <!-- https://mvnrepository.com/artifact/org.opencv/opencv-java -->
-        <dependency>
-            <groupId>org.opencv</groupId>
-            <artifactId>opencv-java</artifactId>
-            <version>3.2.0</version>
-        </dependency>
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.opencv/opencv-java &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.opencv</groupId>-->
+<!--            <artifactId>opencv-java</artifactId>-->
+<!--            <version>3.2.0</version>-->
+<!--        </dependency>-->
 
 
 

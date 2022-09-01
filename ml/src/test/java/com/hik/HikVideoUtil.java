@@ -1,3 +1,4 @@
+/*
 package com.hik;
 
 import lombok.Setter;
@@ -16,12 +17,14 @@ import java.awt.image.WritableRaster;
 import java.io.OutputStream;
 
 
+*/
 /**
  * @program: smartpark-exchange
  * @description:
  * @author: dch
  * @create: 2022-05-31 16:37
- **/
+ **//*
+
 @Slf4j
 public class HikVideoUtil {
 
@@ -95,9 +98,11 @@ public class HikVideoUtil {
 
     private boolean isStart = false;
 
-    /**
+    */
+/**
      * 开启获取rtsp流
-     */
+     *//*
+
     public void live(OutputStream outputStream, String transferType, String rtspTransportType) {
         log.info("连接rtsp：" + rtspUrl + ",开始创建grabber");
         boolean isSuccess = createGrabber(rtspUrl);
@@ -109,12 +114,14 @@ public class HikVideoUtil {
         startCameraPush();
     }
 
-    /**
+    */
+/**
      * 构造视频抓取器
      *
      * @param rtsp 拉流地址
      * @return 创建成功与否
-     */
+     *//*
+
     private boolean createGrabber(String rtsp) {
         // 获取视频源
         try {
@@ -141,9 +148,11 @@ public class HikVideoUtil {
         }
     }
 
-    /**
+    */
+/**
      * 推送图片（摄像机直播）
-     */
+     *//*
+
     private void startCameraPush() {
         if (grabber == null) {
             log.info("重试连接rtsp：" + rtspUrl + ",开始创建grabber");
@@ -192,3 +201,4 @@ public class HikVideoUtil {
         isStart = false;
     }
 }
+*/
