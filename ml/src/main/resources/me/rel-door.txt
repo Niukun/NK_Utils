@@ -1,8 +1,22 @@
 # this is a file contains the relationships between a certain device and it's producer
 # each line will follow the format: factory,code,code,stdcode
-haikang,001,doorname,name
-haikang,001,doorsize,size
-haikang,001,owner,owner
-haikang,001,positionX,locationX
-haikang,001,positionY,locationY
-haikang,001,positionZ,locationZ
+
+nd,guangda,1002,AAA,aaa
+
+door,haikang,001,doorsize,size
+
+haikang,1001,Owner,owner
+haikang,1001,positionX,locationX
+haikang,1001,positionY,locationY
+haikang,1001,positionZ,locationZ
+
+haikang,menjin,1001,positionZ,locationZ
+haikang,menjin,1001,positionS,locations
+
+haikang,menjin,1001,aaa,positionS,locations
+
+haikang,menjin,aaa,1001,positionS,locations
+
+haikang,aaa,1001,positionS,locations
+
+aaa,1001,positionS,locations
