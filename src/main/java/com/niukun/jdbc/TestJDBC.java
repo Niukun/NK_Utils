@@ -7,18 +7,19 @@ import java.sql.Statement;
 
 public class TestJDBC {
 	public static void main(String[] args) {
-
+		Connection connection = getConnection();
+		System.out.println(connection);
 	}
 
 	// 获取数据库连接
 	public static Connection getConnection() {
 		Connection conn = null;
 		try {
-			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			conn = DriverManager
 					.getConnection(
-							"jdbc:sqlserver://localhost:1433;DatabaseName=EmrPatientOld",
-							"sa", "123456");
+							"jdbc:mysql://localhost:3306/xy?useSSL=false&serverTimezone=GMT%2B8",
+							"root", "Niukun@12");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
