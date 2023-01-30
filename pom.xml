@@ -9,7 +9,7 @@
         <module>mysql_learn</module>
         <module>quartz_learn</module>
         <module>ml</module>
-        <module>mb_learn</module>
+<!--        <module>mb_learn</module>-->
     </modules>
     <packaging>pom</packaging>
 
@@ -285,5 +285,14 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.12.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.11</version>
+        </dependency>
+
+
     </dependencies>
 </project>
