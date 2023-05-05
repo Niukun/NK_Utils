@@ -292,6 +292,12 @@
             <artifactId>hutool-all</artifactId>
             <version>5.8.11</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.jacob/jacob -->
+        <dependency>
+            <groupId>com.jacob</groupId>
+            <artifactId>jacob</artifactId>
+            <version>1.10</version>
+        </dependency>
 
 
     </dependencies>

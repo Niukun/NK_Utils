@@ -23,12 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e393c580-2be0-457e-8344-a4511766141c" name="Default Changelist" comment="0130">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/niukun/java8/ListDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyUtils.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyUtils.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ml/ml.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ml/ml.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml/src/main/java/com/study/tree/11.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ml/src/test/java/hrssc/utils/logs/LuckyBagServiceService.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mysql_learn/mysql_learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql_learn/mysql_learn.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quartz_learn/quartz_learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/quartz_learn/quartz_learn.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niukun/file/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niukun/file/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/niukun/file/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/niukun/file/TestDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,12 +95,12 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Data/IntellijIdea/spring&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Data/IntellijIdea/NK_Utils&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;9f321dc160c676c55aae3c20e779e853&quot;
   }
 }</component>
@@ -117,13 +123,26 @@
       <recent name="com.db.mysql" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestDemo">
+  <component name="RunManager" selected="Application.ListDemo">
     <configuration name="InstanceOfHutool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.niukun.hutool.InstanceOfHutool" />
       <module name="MyUtils" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.niukun.hutool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.niukun.java8.ListDemo" />
+      <module name="MyUtils" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.niukun.java8.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,29 +192,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileUtilsTest.testDecodeFiles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ml" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hrssc.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hrssc.utils" />
-      <option name="MAIN_CLASS_NAME" value="com.hrssc.utils.FileUtilsTest" />
-      <option name="METHOD_NAME" value="testDecodeFiles" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ListDemo" />
         <item itemvalue="Application.TestDemo" />
         <item itemvalue="Application.InstanceOfHutool" />
         <item itemvalue="Application.TestJDBC" />
         <item itemvalue="JUnit.FileUtilsTest.testDecodeFile" />
-        <item itemvalue="JUnit.FileUtilsTest.testDecodeFiles" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +234,12 @@
       <workItem from="1674002252601" duration="3942000" />
       <workItem from="1674008493135" duration="360000" />
       <workItem from="1674033522010" duration="641000" />
-      <workItem from="1674971030484" duration="2539000" />
+      <workItem from="1674971030484" duration="6684000" />
+      <workItem from="1682663896007" duration="483000" />
+      <workItem from="1682665052634" duration="547000" />
+      <workItem from="1682665700408" duration="599000" />
+      <workItem from="1682666815716" duration="748000" />
+      <workItem from="1683248087659" duration="1661000" />
     </task>
     <task id="LOCAL-00001" summary="0715">
       <created>1594750354292</created>
@@ -289,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675047531641</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="config change">
+      <created>1675048076985</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675048076985</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +344,8 @@
     <MESSAGE value="test it" />
     <MESSAGE value="add todo and done" />
     <MESSAGE value="0130" />
-    <option name="LAST_COMMIT_MESSAGE" value="0130" />
+    <MESSAGE value="config change" />
+    <option name="LAST_COMMIT_MESSAGE" value="config change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -387,6 +403,15 @@
           </properties>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/niukun/file/FileUtils.java</url>
+          <line>124</line>
+          <properties class="com.niukun.file.FileUtils" method="FilesBeginsWithCertainString">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
@@ -400,6 +425,10 @@
         <watch expression="((java.util.ArrayList)((HuffmanTablesDirectory)metadata._directories.get(6)).tables).get(1)" custom="com.drew.metadata.jpeg.HuffmanTablesDirectory,java.util.ArrayList" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>
